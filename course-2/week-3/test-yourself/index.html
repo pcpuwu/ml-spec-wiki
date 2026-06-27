@@ -1,3 +1,22 @@
+<!--
+pyodide-mkdocs-theme
+Copyleft GNU GPLv3 🄯 2024 Frédéric Zinelli
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.
+If not, see <https://www.gnu.org/licenses/>.
+-->
+
 
 <!doctype html>
 <html lang="en" class="no-js">
@@ -39,8 +58,83 @@
 
     
     
+
+<script type="importmap">{"imports": {"functools": "../../../js-libs/functools.js", "functoolsStorage": "../../../js-libs/functoolsStorage.js", "functoolsTxt": "../../../js-libs/functoolsTxt.js", "functoolsUi": "../../../js-libs/functoolsUi.js", "functoolsUiBuilder": "../../../js-libs/functoolsUiBuilder.js", "jsLogger": "../../../js-libs/jsLogger.js", "process_and_gui": "../../../js-libs/process_and_gui.js", "0-generic-python-snippets-pyodide": "../../../js-per-pages/0-generic-python-snippets-pyodide.js", "1-error_logs-pyodide": "../../../js-per-pages/1-error_logs-pyodide.js", "1-packagesInstaller-install-pyodide": "../../../js-per-pages/1-packagesInstaller-install-pyodide.js", "1-runtimeManager-runtime-pyodide": "../../../js-per-pages/1-runtimeManager-runtime-pyodide.js", "2-0-runnersManager-runners": "../../../js-per-pages/2-0-runnersManager-runners.js", "2-pyodideSectionsRunner-runner-pyodide": "../../../js-per-pages/2-pyodideSectionsRunner-runner-pyodide.js", "3-btnRunner-py_btn": "../../../js-per-pages/3-btnRunner-py_btn.js", "3-terminalRunner-term": "../../../js-per-pages/3-terminalRunner-term.js", "4-0-idesManager-ide": "../../../js-per-pages/4-0-idesManager-ide.js", "4-ideLogistic-ide": "../../../js-per-pages/4-ideLogistic-ide.js", "4-ideRunner-ide": "../../../js-per-pages/4-ideRunner-ide.js", "5-ideTester-ides_test": "../../../js-per-pages/5-ideTester-ides_test.js", "6-2-init-playground": "../../../js-per-pages/6-2-init-playground.js", "6-idePlayground-playground": "../../../js-per-pages/6-idePlayground-playground.js", "qcms-qcm": "../../../js-per-pages/qcms-qcm.js", "start-pyodide": "../../../js-per-pages/start-pyodide.js", "overlord": "../../../js-scripts/overlord.js", "subscriptions": "../../../js-scripts/subscriptions.js"}}</script>
+
+
+
       
     
+<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.20/lodash.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" type="text/javascript"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" type="text/javascript"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/jquery.terminal@2.43.1/css/jquery.terminal.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" rel="stylesheet"/>
+
+<link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" rel="stylesheet"/>
+
+<script src="../../../js-libs/0-config.js" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" type="text/javascript"></script>
+
+<script type="text/javascript">
+if(!window.CONFIG) window.CONFIG={}
+CONFIG.argsFigureDivId="figure1"
+CONFIG.baseUrl="../../.."
+CONFIG.buttonIconsDirectory="../../../assets/images"
+CONFIG.editorFontFamily="monospace"
+CONFIG.editorFontSize=15
+CONFIG.exportZipPrefix=""
+CONFIG.exportZipWithNames=false
+CONFIG.inServe=false
+CONFIG.keyStrokesAutoSave=30
+CONFIG.language="en"
+CONFIG.pmtUrl="https://gitlab.com/frederic-zinelli/pyodide-mkdocs-theme"
+CONFIG.projectId="ml-spec"
+CONFIG.projectMoveFromOldId=null
+CONFIG.projectNoJsWarning=false
+CONFIG.pythonLibs=[]
+CONFIG.siteUrl="http://127.0.0.1:8000/"
+CONFIG.version="5.5.0"
+CONFIG.lang={"allOthersTrash": {"msg": "1 entry has been found that are is associated to the current project. Do You want to suppress it?\n(You might delete data from another project!)", "plural": "{N} entries have been found that are not associated to the current project. Do You want to suppress them?\n(You might delete data from another project!)"}, "attemptsLeft": {"msg": "Attempts left"}, "check": {"msg": "Validate<br><kbd>Ctrl</kbd>+<kbd>Enter</kbd><br>(Right click for historic)", "em": 9, "kbd": ""}, "comments": {"msg": "(De-)Activate the code after the line <code># Tests</code> (case insensitive)<br>(<kbd>Ctrl</kbd>+<kbd>I</kbd>)", "em": 16, "kbd": "Ctrl+I"}, "complementTrash": {"msg": "Note: 1 entry found that is not associated to this project, which will not be removed", "plural": "Note: {N} entries found that are not associated to this project, which will not be removed"}, "corr": {"msg": "\ud83d\udc0d Suggested solution"}, "corrBtn": {"msg": "Test the solution (serve)", "em": 9, "kbd": ""}, "delayedReveal": {"msg": "{N} validation(s) left before the solution becomes visible.", "format": "info"}, "download": {"msg": "Download", "em": 0, "kbd": ""}, "editorCode": {"msg": "Editor", "format": "info"}, "failHead": {"msg": "Oops!", "format": "warning"}, "failTail": {"msg": "is now available", "plural": "are now available"}, "feedback": {"msg": "Truncate or not the feedback in the terminals (standard output & stacktrace / run the code again to apply)", "em": 19, "kbd": ""}, "figureAdmoTitle": {"msg": "Your figure"}, "figureText": {"msg": "Your figure will appear here"}, "fullScreen": {"msg": "Enter or exit the \"full screen\" mode<br>(<kbd>Esc</kbd>)", "em": 10, "kbd": "Esc"}, "installDone": {"msg": "Installations completed!", "format": "info"}, "installStart": {"msg": "Installing Python packages. This may take some time...", "format": "info"}, "loadIde": {"msg": "Setup the IDE with this.", "em": 8, "kbd": ""}, "noCodesTrash": {"msg": "No codes found for the current project in this browser."}, "p5Start": {"msg": "Start the animation", "em": 0, "kbd": ""}, "p5Step": {"msg": "One step forward", "em": 0, "kbd": ""}, "p5Stop": {"msg": "Stop the animation", "em": 0, "kbd": ""}, "pickerFailure": {"msg": "Please, click somewhere on the page in between keyboard shortcuts or use a button to be able to upload a file."}, "play": {"msg": "Run the code<br>(<kbd>Ctrl</kbd>+<kbd>S</kbd>)", "em": 9, "kbd": "Ctrl+S"}, "publicTests": {"msg": "Public tests", "format": "info"}, "pyBtn": {"msg": "Run the code", "em": 8, "kbd": ""}, "qcmCheckTip": {"msg": "Check answers", "em": 8, "kbd": ""}, "qcmMaskTip": {"msg": "Answers will stay hidden...", "em": 13, "kbd": ""}, "qcmRedoTip": {"msg": "Restart", "em": 8, "kbd": ""}, "qcmTitle": {"msg": "Question", "plural": "Questions"}, "refresh": {"msg": "A newer version of the code exists.\nPlease copy any of your changes then reset the IDE.", "format": "warning"}, "rem": {"msg": "Comments"}, "removeTrash": {"msg": "There is currently 1 reference found in this browser.\nDo you want to delete it?", "plural": "There are currently {N} references found in this browser.\nDo you want to delete them?"}, "restart": {"msg": "Reset the editor", "em": 6, "kbd": ""}, "restartConfirm": {"msg": "WARNING: resetting the editor, you will lose previous codes, validation status and histories.", "em": 0, "kbd": ""}, "revealCorr": {"msg": "the solution"}, "revealJoin": {"msg": "and"}, "revealRem": {"msg": "comments"}, "runScript": {"msg": "Script started...", "format": "info"}, "save": {"msg": "Save in the browser", "em": 7, "kbd": ""}, "secretTests": {"msg": "Secret tests", "format": "info"}, "show": {"msg": "Show corr & REMs", "em": 10, "kbd": ""}, "splitModePlaceholder": {"msg": "Editor in the other column"}, "splitScreen": {"msg": "Enter or exit the \"split screen\" mode<br>(<kbd>Alt+:</kbd> / <kbd>Ctrl</kbd> to reverse the columns)", "em": 23, "kbd": ""}, "storageIdCollision": {"msg": "Contact the author of the website and provide them with this complete message. A potential collision of IDs between multiple projects has been detected. The ID argument must be added or modified for the following IDE:"}, "successHead": {"msg": "Bravo !", "format": "success"}, "successHeadExtra": {"msg": "You have passed all the tests!"}, "successMsg": {"msg": "OK", "format": "success"}, "successMsgNoTests": {"msg": "Ended without error.", "format": "info"}, "successTail": {"msg": "Don't forget to read"}, "test1Ide": {"msg": "Run this test", "em": 7, "kbd": ""}, "testIdes": {"msg": "Run all tests...", "em": 8, "kbd": ""}, "testStop": {"msg": "Stop all tests", "em": 6, "kbd": ""}, "tests": {"msg": "\n\n# Tests\n\n", "as_pattern": "^#\\s*Tests"}, "testsDone": {"msg": "Tests done.", "format": "info"}, "tipTrash": {"msg": "Remove the saved codes for Machine Learning Specialization \u2014 Study Companion from the browser", "em": 15, "kbd": ""}, "titleCorr": {"msg": "Solution"}, "titleRem": {"msg": "Comments"}, "unforgettable": {"msg": "Don't forget to validate the code!", "format": "warning"}, "upload": {"msg": "Upload", "em": 0, "kbd": ""}, "validation": {"msg": "Validation - ", "format": "info"}, "wrapTerm": {"msg": "If enabled, text copied from the terminal is joined into a single line before being copied to the clipboard", "em": 18, "kbd": ""}, "zip": {"msg": "Archive all codes", "em": 0, "kbd": ""}, "zipAskForNames": {"msg": "Please enter your name (no empty string):"}}
+</script>
+<script src="../../../js-libs/0-legacy-subscriber.js" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" type="text/javascript"></script>
+
+<script src="../../../js-libs/functools.js" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" type="module"></script>
+
+<script src="../../../js-libs/functoolsStorage.js" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" type="module"></script>
+
+<script src="../../../js-libs/functoolsTxt.js" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" type="module"></script>
+
+<script src="../../../js-libs/functoolsUi.js" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" type="module"></script>
+
+<script src="../../../js-libs/functoolsUiBuilder.js" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" type="module"></script>
+
+<script src="../../../js-libs/jsLogger.js" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" type="module"></script>
+
+<script src="../../../js-libs/mathjax-libs.js" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" type="text/javascript"></script>
+
+<script src="../../../js-libs/process_and_gui.js" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" type="module"></script>
+
+<link href="../../../pyodide-css/0-generic.css" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" rel="stylesheet"/>
+
+<link href="../../../pyodide-css/btns-header.css" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" rel="stylesheet"/>
+
+<link href="../../../pyodide-css/history.css" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" rel="stylesheet"/>
+
+<link href="../../../pyodide-css/hourglass.css" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" rel="stylesheet"/>
+
+<link href="../../../pyodide-css/ide.css" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" rel="stylesheet"/>
+
+<link href="../../../pyodide-css/qcm.css" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" rel="stylesheet"/>
+
+<link href="../../../pyodide-css/terminal.css" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" rel="stylesheet"/>
+
+<link href="../../../pyodide-css/testing.css" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" rel="stylesheet"/>
+
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" type="text/javascript"></script>
+
+<input type="checkbox" id="ace_palette" autocomplete="off" class="md-toggle" data-ace-dark-mode="tomorrow_night_bright" data-ace-light-mode="crimson_editor">
+
+
     
       
     
@@ -53,6 +147,7 @@
 
     
     
+  
   <meta name="robots" content="noindex, nofollow">
 
   </head>
@@ -5795,6 +5890,8 @@
               
               <article class="md-content__inner md-typeset">
                 
+
+
                   
 
 
@@ -5821,7 +5918,7 @@ Cross-validation makes training faster</p>
 </ul></p>
 <details class="tip py_mk_hidden py_mk_comment_qcm py_mk_encrypted_qcm">
 <summary>Remarque</summary>
-.bc_VenJyC;T/Ia.sklpzrtmogif dh,u050s040m0A0B0h0x0F0B0s0z0b0q0B0n0B0w0x0C0e0r0B0F0p0z0f0y0B0v0D0e0,0e0p0v0B0p0e0v0E0B0g0c0v0;0?0a0e0b0x0w0;0B0x0s0v0z0w0z0=0R0o0B0k0.0B0i0d0@0_0B1e0B0A0x0u0B0b0D0x0x0(0*0j0,1k0 0=1o0?1r0v0N1x0e0C180f0r0h0U0?0-0/0e0f1P1L0B0u0e0s1u0?0y1Y0e0u0n0r0z0t0n1b0x0f1s0n0z0u1S0o050l0H.
+.,Cms eclhTdV/oguak;bJizt.ypIrnf_050A040B0E0e0z0n0p0e0A0v0g0r0e0q0e0c0n0k0f0h0e0p0d0v0D0o0e0x0i0f0,0f0d0x0e0d0f0x0a0e0u0F0x0;0?0t0f0g0n0c0;0e0n0A0x0v0c0v0=0R0y0e0j0.0e0b0l0@0_0e1e0e0E0n0C0e0g0i0n0n0(0*0s0,1k0 0=1o0?1r0x0N1x0f0k180D0h0z0U0?0-0/0f0D1P1L0e0C0f0A1u0?0o1Y0f0C0q0h0v0w0q1b0n0D1s0q0v0C1S0y050m0H.
 </details>
 </li>
 <p></p KEEP><li class="py_mk_question_qcm qcm_single qcm_shuffle" correct="2" markdown>
@@ -5842,7 +5939,7 @@ High bias means J_test is low</p>
 </ul></p>
 <details class="tip py_mk_hidden py_mk_comment_qcm py_mk_encrypted_qcm">
 <summary>Remarque</summary>
-.bc_eHnvJy;/Ia.shlpw)rtm=o(gi df,u050r040e0B0A0p0C0a0B0m0o0C0x0C0D0y0d0o0f000v0C0d0g0d0f0C0E0B0$0v0p0d0C0v0u0m0B0f0`0A0C0o0d0$0z0h0c0@0_0+0p0L0p0t0n0C0K0M0C0g0m0u0Q0f0b0=0U0W0Y0C0w0G0b0N0s0y0u0 0C0y0+0G0f0 0*0V0m0v0m0C120c0b0g0C020A0v0j1R1T0C13150`1b0C0l0v000S0r0y0o0o0B0a0q0d0F1A0b0b0R0B1B0m0q0q0i1?0v0y0C0p0m0)0O0y0:0n050k0I.
+.,ms ehcldw/ogu(a;bvJiHt.ypr=Inf_)050z040v0u0m0f0d0r0u0p0c0d0B0d0i0l0e0c0D000w0d0e0s0e0D0d0E0u0$0w0f0e0d0w0A0p0u0D0`0m0d0c0e0$0o0t0F0@0_0+0f0L0f0G0x0d0K0M0d0s0p0A0Q0D0g0=0U0W0Y0d0b0n0g0N0j0l0A0 0d0l0+0n0D0 0*0V0p0w0p0d120F0g0s0d020m0w0q1R1T0d13150`1b0d0C0w000S0z0l0c0c0u0r0h0e0a1A0g0g0R0u1B0p0h0h0y1?0w0l0d0f0p0)0O0l0:0x050k0I.
 </details>
 </li>
 <p></p KEEP><li class="py_mk_question_qcm qcm_single qcm_shuffle" correct="2" markdown>
@@ -5863,7 +5960,7 @@ To replace the cross-validation set</p>
 </ul></p>
 <details class="tip py_mk_hidden py_mk_comment_qcm py_mk_encrypted_qcm">
 <summary>Remarque</summary>
-.8594bc_envOJyC/a.sklp)rtmo(gif dh,u050r040h0f0B0f0w0z0o0j0B0u0m0o0p0o0E0B0r0e0t0A0e0c0u0Y0!0A0w0t0v0m0f0c0e0B0O0@0v0r0w0o0o0z0b0q0e0n0B0k0w0`0m0t0?0u0D0?0b0T0e0q0z0f0e0a0i0d0u0t0m1i0B0y0m0r0B0x0b0z0T0s0B0:0C0R1c0B1m1o1q0f1l0d0c0g1s1u1w0g181z0;0e1B1p1b0!1F0:1C0U1i0y0@0A1H1n1p1r0^000D0z0y0D000@0K0m0b0o0w0q0F0u1a0!0v0o0n050l0H.
+.8594,Cms Oeclhd/ogu(akbvJit.yprnf_)050A040g0C0f0C0n0w0e0z0f0x0r0e0s0e0b0f0A0h0B0D0h0i0x0Y0!0D0n0B0d0r0C0i0h0f0O0@0d0A0n0e0e0w0t0j0h0y0f0c0n0`0r0B0?0x0k0?0t0T0h0j0w0C0h0a0v0E0x0B0r1i0f0o0r0A0f0q0t0w0T0F0f0:0l0R1c0f1m1o1q0C1l0E0i0u1s1u1w0u181z0;0h1B1p1b0!1F0:1C0U1i0o0@0D1H1n1p1r0^000k0w0o0k000@0K0r0t0e0n0j0p0x1a0!0d0e0y050m0H.
 </details>
 </li>
 <p></p KEEP><li class="py_mk_question_qcm qcm_single qcm_shuffle" correct="2" markdown>
@@ -5884,7 +5981,7 @@ It's impossible to tell from a learning curve</p>
 </ul></p>
 <details class="tip py_mk_hidden py_mk_comment_qcm py_mk_encrypted_qcm">
 <summary>Remarque</summary>
-.955.8211bcVeHnNvAyCG/Ia.EMshklpw)rtmo(giRF df,u050y040t0E0B0f0K0L0q0C0q0K0v0f0x0y0u0K0g0p0n0g0K0e0k0I0p0k0i0m0s0K0F0H0C0K0d0x0E0u0f0*0C0$0K0C0B0q0H0h0b0m0e0K0G0q0y0A0r0K0J0T0#0H0G0v0K0c0H0q0u0N19180d0O0B0j150#0q1G0K0M0x0Y0C0f0h0f0L1A0u0E0K0q0L0L1L0f0Y1E1H0o0K0y0E0x0l0h0E0D1x0x190f0B0D0*1*0L0f0d0U1y0V0a0K1*0O141X1v1s0G1_0K1R0C0z0T0w0r050o0Q.
+.955.8211,ECmsFe hlVcdw/RoNgu(akbvAiHt.yprInfMG)050H040M0s0I0i0j0o0x0E0x0j0k0i0l0H0g0j0D0J0N0D0j0m0B0r0J0B0t0e0d0j0w0C0E0j0n0l0s0g0i0*0E0$0j0E0I0x0C0K0b0e0m0j0u0x0H0O0F0j0h0T0#0C0u0k0j0z0C0x0g0c19180n0v0I0A150#0x1G0j0L0l0Y0E0i0K0i0o1A0g0s0j0x0o0o1L0i0Y1E1H0q0j0H0s0l0G0K0s0f1x0l190i0I0f0*1*0o0i0n0U1y0V0a0j1*0v141X1v1s0u1_0j1R0E0p0T0y0F050q0Q.
 </details>
 </li>
 <p></p KEEP><li class="py_mk_question_qcm qcm_single qcm_shuffle" correct="2" markdown>
@@ -5905,7 +6002,7 @@ Reduce the training set size</p>
 </ul></p>
 <details class="tip py_mk_hidden py_mk_comment_qcm py_mk_encrypted_qcm">
 <summary>Remarque</summary>
-.8594.955bceHnvNOSYyP/IaM.Esklpxw)rtmo(giRFfL dh,u050x040f0H0G0O0M0h0q0B0H0q0g0d0e0M0a0M0G0e0C0M0D0E0B0*0N0q0C0q0M0?0M0k0p0r0n0L0p0J0l0M0F0K0e0z0e0B0M1a0`0Q0@0u0P0M0w0!0.1e0b0A0s0M0U0W0M0c0$0u0+0;0q0v0*0C0O0*0=0N0e0w0M0r0j0I0t0M0x0E1c0B0K0Q1M0F0=0@0o1T0w0m0g0E0D0$1M1g0C1i0e1k0M0u0D0q0w0w1d0M0b1l1y0G1p0M0g0/0z0?0v1s0M0i0e0h1~0u0O0#0g0v0M1G1F0B0q0H0g2r0G1^0/2m0E1f0H0y1x1z0s051%04.
+.955.8594,EfmsF ehclOdw/RoNgu(akYbvxPSiHt.yprInLM)050K040G0F0u0k0i0B0x0L0F0x0N0l0j0i0b0i0u0j0H0i0f0s0L0*0o0x0H0x0i0?0i0E0M0P0D0O0M0h0z0i0w0e0j0p0j0L0i1a0`0v0@0g0c0i0m0!0.1e0a0Q0I0i0U0W0i0A0$0g0+0;0x0y0*0H0k0*0=0o0j0m0i0P0n0r0d0i0K0s1c0L0e0v1M0w0=0@0q1T0m0J0N0s0f0$1M1g0H1i0j1k0i0g0f0x0m0m1d0i0a1l1y0u1p0i0N0/0p0?0y1s0i0t0j0B1~0g0k0#0N0y0i1G1F0L0x0F0N2r0u1^0/2m0s1f0F0C1x1z0I051%04.
 </details>
 </li>
 <p></p KEEP><li class="py_mk_question_qcm qcm_single qcm_shuffle" correct="2" markdown>
@@ -5926,7 +6023,7 @@ Shrink the network until J_cv drops</p>
 </ul></p>
 <details class="tip py_mk_hidden py_mk_comment_qcm py_mk_encrypted_qcm">
 <summary>Remarque</summary>
-.bcVenvAyCG-/a.shklpxwz)rtmo(giL df,u050s040E0m0x0C0d0F0e0d0y0u0A0x0q0o0F0O0R0r0A0u0k0a0D0m0!0z0m0b0p0D0T0o0n0F0j0x0)0F0y0p0R0T0V0X0q0F0J0e0y0D0r0 0x0m0@0F0d0x0}0x0F0D0!0;0b0d0s0y0m0a0r0R0B0H0D0t0d0!0,0.0w0I0 110e0#0G0G0F0G0m1t17191b0F0i0c1h1j0X1m1o0b1q1s1u1w0F1y1A1C0F0f0O0-0e1q0w0`0g0F0r0O0Q0F0u0d0r0r0k0x0d0C0J1}0x0D0v0d1N130F1e260r0h0F0p0J0x0y0_050l0L.
+.,Cmse lchVdw/ogu(ak-bvAxizt.yprLnfG)050D040F0r0E0o0e0f0G0e0A0l0n0E0s0d0f0O0R0g0n0l0t0u0y0r0!0c0r0h0i0y0T0d0B0f0I0E0)0f0A0i0R0T0V0X0s0f0p0G0A0y0g0 0E0r0@0f0e0E0}0E0f0y0!0;0h0e0D0A0r0u0g0R0q0H0y0x0e0!0,0.0J0a0 110G0#0k0k0f0k0r1t17191b0f0b0j1h1j0X1m1o0h1q1s1u1w0f1y1A1C0f0v0O0-0G1q0J0`0w0f0g0O0Q0f0l0e0g0g0t0E0e0o0p1}0E0y0z0e1N130f1e260g0C0f0i0p0E0A0_050m0L.
 </details>
 </li>
 <p></p KEEP><li class="py_mk_question_qcm qcm_single qcm_shuffle" correct="2" markdown>
@@ -5947,7 +6044,7 @@ Measuring the test-set accuracy</p>
 </ul></p>
 <details class="tip py_mk_hidden py_mk_comment_qcm py_mk_encrypted_qcm">
 <summary>Remarque</summary>
-.8212bcenvy10/a.slpxwz)rtmo(giRf~ dhu050o040A0d0k0E0z0e0y0D0C0h0i0i0D0v0z0m0c0n0k0m0m0z0B0z0d0E0D0d0p0k0v0o0n0d0m0D0k0e0-0u0k0n0n0g0O0Q0c0k0u0d0y0w0t0+0_0m0F0w0q0_0q0F0z0c0F0D0o0t0w0b0@0v0_0k0t0d0D0b0z0Q0x0q1a0u1n0*0p130s0`0|0D1j1l1n1w1y0t1S0D0x0e0w0u1O1F1n0z0u1L0a0D0m0k0f130D0g0w0G0D0B1q0v0D0w0o0u0z0X0r1:0m0w0v0d1G1:0q1(1n1 0e0g0D200o0k0c0u0l050j0I.
+.8212mse clhdw/Rogu(0abv~x1izt.yprnf)050C040l0d0r0i0x0E0n0e0u0w0q0q0e0b0x0c0f0g0r0c0c0x0F0x0d0i0e0d0v0r0b0C0g0d0c0e0r0E0-0z0r0g0g0B0O0Q0f0r0z0d0n0m0D0+0_0c0h0m0j0_0j0h0x0f0h0e0C0D0m0s0@0b0_0r0D0d0e0s0x0Q0p0j1a0z1n0*0v130G0`0|0e1j1l1n1w1y0D1S0e0p0E0m0z1O1F1n0x0z1L0a0e0c0r0t130e0B0m0o0e0F1q0b0e0m0C0z0x0X0y1:0c0m0b0d1G1:0j1(1n1 0E0B0e200C0r0f0z0A050k0I.
 </details>
 </li>
 <p></p KEEP><li class="py_mk_question_qcm qcm_single qcm_shuffle" correct="2" markdown>
@@ -5968,7 +6065,7 @@ Augmentation only works for tabular data</p>
 </ul></p>
 <details class="tip py_mk_hidden py_mk_comment_qcm py_mk_encrypted_qcm">
 <summary>Remarque</summary>
-.ceWnvA-/a.slpxwrtmogi dh,050m040c0i0p0m0u0d0t0v0i0v0l0b0q0q0b0p0v0s0R0i0w0w0G0I0a0p0s0o0w0h0a0D0v0d0s0u0k0b0v0r0u0?0a0k0v0p0b0i0l0v0P0k0q0g0:0q0v0e0D0u0i0q0u0s0d0y0v0k0s0v0u160x0b0l0m0k0j0v0f0W0Y0v0m0Q0g0F0n1o0{0i0d0w0s0r0,0.0:100x1b0,0b0e0Q0J0m1y0D0`0G1N0;1116150v1H0b0`0-0q0j050h0A.
+.,ms lechdw/oga-WvAxit.prn050w040p0n0x0w0t0y0m0d0n0d0e0f0u0u0f0x0d0l0R0n0i0i0G0I0g0x0l0j0i0k0g0D0d0y0l0t0c0f0d0b0t0?0g0c0d0x0f0n0e0d0P0c0u0o0:0u0d0q0D0t0n0u0t0l0y0a0d0c0l0d0t160h0f0e0w0c0v0d0r0W0Y0d0w0Q0o0F0s1o0{0n0y0i0l0b0,0.0:100h1b0,0f0q0Q0J0w1y0D0`0G1N0;1116150d1H0f0`0-0u0v050k0A.
 </details>
 </li>
 <p></p KEEP><li class="py_mk_question_qcm qcm_single qcm_shuffle" correct="2" markdown>
@@ -5989,7 +6086,7 @@ It only works if the two datasets are the same size</p>
 </ul></p>
 <details class="tip py_mk_hidden py_mk_comment_qcm py_mk_encrypted_qcm">
 <summary>Remarque</summary>
-.8212bcenvSYy-/Ia.shklpxw)rtmo(gi df,u050s040g0H0s0d0w0f0C0o0d0E0D0s0w0d0j0x0w0m0C0e0%0B0D0z0e0D0m0D0b0C0*0E0m0x0m0S0x0D0x0d0m0c0p0d0o0D0B0d0e0O0C0c0D0 0w0r0i0j0r0m0i0O0D0F0 0x0H0X0o0n0D0h0z0H0D0q0d0d0s0}0p0z0S0G0D0o0u0m1C0%0.0D180u0+0H0x0s1T0D1i1k0w1H0m0e0U0F0%0Y1p180D0a1I0z1O0o0y0m0r0r0D0@0_0{0D0c1$1I0x0C1_0D0X100p150z0z0U0N0w0F0z0w1@0e0c0d1t0l0e1V0|0x0i0N0D0A0C1@160k0m0H0E0C0z0k0~0t0x0v0D0y0H0o0|1@0x110n050k0J.
+.8212,mse chldw/ogu(akY-bvxSit.yprInf)050C040x0o0C0e0D0v0y0d0e0j0f0C0D0e0t0z0D0q0y0F0%0n0f0m0F0f0q0f0u0y0*0j0q0z0q0S0z0f0z0e0q0g0h0e0d0f0n0e0F0O0y0g0f0 0D0i0B0t0i0q0B0O0f0G0 0z0o0X0d0A0f0s0m0o0f0r0e0e0C0}0h0m0S0b0f0d0k0q1C0%0.0f180k0+0o0z0C1T0f1i1k0D1H0q0F0U0G0%0Y1p180f0a1I0m1O0d0c0q0i0i0f0@0_0{0f0g1$1I0z0y1_0f0X100h150m0m0U0N0D0G0m0D1@0F0g0e1t0E0F1V0|0z0B0N0f0p0y1@160l0q0o0j0y0m0l0~0w0z0H0f0c0o0d0|1@0z110A050l0J.
 </details>
 </li>
 <p></p KEEP><li class="py_mk_question_qcm qcm_single qcm_shuffle" correct="2" markdown>
@@ -6010,7 +6107,7 @@ F1 is only for regression</p>
 </ul></p>
 <details class="tip py_mk_hidden py_mk_comment_qcm py_mk_encrypted_qcm">
 <summary>Remarque</summary>
-.59bceWn+vN%OHy10PT;/a.Bslpw)rtm=o(giRFf dh,u050z040f0J0D0P0N0p0v0a0k0N0z0G0x0W0J0i0e0x0Q0N000z0C0e0O0J0d0D0N0g0e0I0u0D0-0e0N0u0y0A0u0n0x000N0x0d0G0^0x0N0b0b0#0%0u0d0d0R0C1p0n0N0c0R0}0^0d170y0Z0v0N0q1A0J0+0G0g0N0F0N0r0q0t0H1Q0h0L0q0B0;1A1C1N1P1R1T0q1V0j0B0s0N0L0o001j0P0u0C0E1L0{0N0E0e0u1M1J0N0P0J0I0Y1L0y1v0A0P0e1M0w0l0r0m160^23250P1F0K0u1J0J0g0I0N0X150O0e0d2r1L2v0P1i0P0G0y0O2v1t2y1j1!0y1D0M1h0(1I1K0g0v050t0T.
+.,msF ehclTdw/ORoNgu(0a5W;bv+P19iHBt.ypr=%nf)050L040x0F0I0g0e0u0J0w0O0e0L0p0c0W0F0A0f0c0a0e000L0M0f0k0F0h0I0e0P0f0r0v0I0-0f0e0v0i0l0v0K0c000e0c0h0p0^0c0e0E0E0#0%0v0h0h0s0M1p0K0e0z0s0}0^0h170i0Z0J0e0C1A0F0+0p0P0e0N0e0j0C0m0t1Q0B0d0C0R0;1A1C1N1P1R1T0C1V0q0R0y0e0d0D001j0g0v0M0b1L0{0e0b0f0v1M1J0e0g0F0r0Y1L0i1v0l0g0f1M0H0n0j0G160^23250g1F0o0v1J0F0P0r0e0X150k0f0h2r1L2v0g1i0g0p0i0k2v1t2y1j1!0i1D0Q1h0(1I1K0P0J050m0T.
 </details>
 </li>
 <p></p KEEP></ol></p>
@@ -6033,6 +6130,8 @@ globalThis.PAGE_IDES_CONFIG = '.\x1e}{\x1e0b0a.'
 
 
                 
+
+
               </article>
             </div>
           
@@ -6089,6 +6188,8 @@ globalThis.PAGE_IDES_CONFIG = '.\x1e}{\x1e0b0a.'
       <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tracking", "navigation.top", "navigation.indexes", "toc.follow", "search.highlight", "search.suggest", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
+
+
       <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
         <script src="../../../javascripts/mathjax.js"></script>
@@ -6096,5 +6197,11 @@ globalThis.PAGE_IDES_CONFIG = '.\x1e}{\x1e0b0a.'
         <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
+<script src="../../../js-scripts/overlord.js" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" type="module"></script>
+
+<script src="../../../js-scripts/subscriptions.js" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" type="module"></script>
+
+
+
   </body>
 </html>

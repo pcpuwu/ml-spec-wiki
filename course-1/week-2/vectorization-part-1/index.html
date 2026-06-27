@@ -1,3 +1,22 @@
+<!--
+pyodide-mkdocs-theme
+Copyleft GNU GPLv3 🄯 2024 Frédéric Zinelli
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.
+If not, see <https://www.gnu.org/licenses/>.
+-->
+
 
 <!doctype html>
 <html lang="en" class="no-js">
@@ -39,8 +58,91 @@
 
     
     
+
+<script type="importmap">{"imports": {"functools": "../../../js-libs/functools.js", "functoolsStorage": "../../../js-libs/functoolsStorage.js", "functoolsTxt": "../../../js-libs/functoolsTxt.js", "functoolsUi": "../../../js-libs/functoolsUi.js", "functoolsUiBuilder": "../../../js-libs/functoolsUiBuilder.js", "jsLogger": "../../../js-libs/jsLogger.js", "process_and_gui": "../../../js-libs/process_and_gui.js", "0-generic-python-snippets-pyodide": "../../../js-per-pages/0-generic-python-snippets-pyodide.js", "1-error_logs-pyodide": "../../../js-per-pages/1-error_logs-pyodide.js", "1-packagesInstaller-install-pyodide": "../../../js-per-pages/1-packagesInstaller-install-pyodide.js", "1-runtimeManager-runtime-pyodide": "../../../js-per-pages/1-runtimeManager-runtime-pyodide.js", "2-0-runnersManager-runners": "../../../js-per-pages/2-0-runnersManager-runners.js", "2-pyodideSectionsRunner-runner-pyodide": "../../../js-per-pages/2-pyodideSectionsRunner-runner-pyodide.js", "3-btnRunner-py_btn": "../../../js-per-pages/3-btnRunner-py_btn.js", "3-terminalRunner-term": "../../../js-per-pages/3-terminalRunner-term.js", "4-0-idesManager-ide": "../../../js-per-pages/4-0-idesManager-ide.js", "4-ideLogistic-ide": "../../../js-per-pages/4-ideLogistic-ide.js", "4-ideRunner-ide": "../../../js-per-pages/4-ideRunner-ide.js", "5-ideTester-ides_test": "../../../js-per-pages/5-ideTester-ides_test.js", "6-2-init-playground": "../../../js-per-pages/6-2-init-playground.js", "6-idePlayground-playground": "../../../js-per-pages/6-idePlayground-playground.js", "qcms-qcm": "../../../js-per-pages/qcms-qcm.js", "start-pyodide": "../../../js-per-pages/start-pyodide.js", "overlord": "../../../js-scripts/overlord.js", "subscriptions": "../../../js-scripts/subscriptions.js"}}</script>
+
+
+
       
     
+<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.20/lodash.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" type="text/javascript"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" type="text/javascript"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/jquery.terminal@2.43.1/css/jquery.terminal.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" rel="stylesheet"/>
+
+<link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" rel="stylesheet"/>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery.terminal@2.43.1/js/jquery.terminal.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" type="text/javascript"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/ace-builds@1.44.0/src-min-noconflict/ace.js" integrity="sha256-By0T5T0R4s7M//4aD6fxXPacVDXYl99T2YxxvhxKLn8=" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" type="text/javascript"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/ace-builds@1.44.0/src-min-noconflict/ext-language_tools.js" integrity="sha256-eZ46N0b3QkDX+7GjjlJfoBuXGKIH86UKJVARHhGzpWA=" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" type="text/javascript"></script>
+
+<script src="https://cdn.jsdelivr.net/pyodide/v0.25.0/full/pyodide.js" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" type="text/javascript"></script>
+
+<script src="../../../js-libs/0-config.js" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" type="text/javascript"></script>
+
+<script type="text/javascript">
+if(!window.CONFIG) window.CONFIG={}
+CONFIG.argsFigureDivId="figure1"
+CONFIG.baseUrl="../../.."
+CONFIG.buttonIconsDirectory="../../../assets/images"
+CONFIG.editorFontFamily="monospace"
+CONFIG.editorFontSize=15
+CONFIG.exportZipPrefix=""
+CONFIG.exportZipWithNames=false
+CONFIG.inServe=false
+CONFIG.keyStrokesAutoSave=30
+CONFIG.language="en"
+CONFIG.pmtUrl="https://gitlab.com/frederic-zinelli/pyodide-mkdocs-theme"
+CONFIG.projectId="ml-spec"
+CONFIG.projectMoveFromOldId=null
+CONFIG.projectNoJsWarning=false
+CONFIG.pythonLibs=[]
+CONFIG.siteUrl="http://127.0.0.1:8000/"
+CONFIG.version="5.5.0"
+CONFIG.lang={"allOthersTrash": {"msg": "1 entry has been found that are is associated to the current project. Do You want to suppress it?\n(You might delete data from another project!)", "plural": "{N} entries have been found that are not associated to the current project. Do You want to suppress them?\n(You might delete data from another project!)"}, "attemptsLeft": {"msg": "Attempts left"}, "check": {"msg": "Validate<br><kbd>Ctrl</kbd>+<kbd>Enter</kbd><br>(Right click for historic)", "em": 9, "kbd": ""}, "comments": {"msg": "(De-)Activate the code after the line <code># Tests</code> (case insensitive)<br>(<kbd>Ctrl</kbd>+<kbd>I</kbd>)", "em": 16, "kbd": "Ctrl+I"}, "complementTrash": {"msg": "Note: 1 entry found that is not associated to this project, which will not be removed", "plural": "Note: {N} entries found that are not associated to this project, which will not be removed"}, "corr": {"msg": "\ud83d\udc0d Suggested solution"}, "corrBtn": {"msg": "Test the solution (serve)", "em": 9, "kbd": ""}, "delayedReveal": {"msg": "{N} validation(s) left before the solution becomes visible.", "format": "info"}, "download": {"msg": "Download", "em": 0, "kbd": ""}, "editorCode": {"msg": "Editor", "format": "info"}, "failHead": {"msg": "Oops!", "format": "warning"}, "failTail": {"msg": "is now available", "plural": "are now available"}, "feedback": {"msg": "Truncate or not the feedback in the terminals (standard output & stacktrace / run the code again to apply)", "em": 19, "kbd": ""}, "figureAdmoTitle": {"msg": "Your figure"}, "figureText": {"msg": "Your figure will appear here"}, "fullScreen": {"msg": "Enter or exit the \"full screen\" mode<br>(<kbd>Esc</kbd>)", "em": 10, "kbd": "Esc"}, "installDone": {"msg": "Installations completed!", "format": "info"}, "installStart": {"msg": "Installing Python packages. This may take some time...", "format": "info"}, "loadIde": {"msg": "Setup the IDE with this.", "em": 8, "kbd": ""}, "noCodesTrash": {"msg": "No codes found for the current project in this browser."}, "p5Start": {"msg": "Start the animation", "em": 0, "kbd": ""}, "p5Step": {"msg": "One step forward", "em": 0, "kbd": ""}, "p5Stop": {"msg": "Stop the animation", "em": 0, "kbd": ""}, "pickerFailure": {"msg": "Please, click somewhere on the page in between keyboard shortcuts or use a button to be able to upload a file."}, "play": {"msg": "Run the code<br>(<kbd>Ctrl</kbd>+<kbd>S</kbd>)", "em": 9, "kbd": "Ctrl+S"}, "publicTests": {"msg": "Public tests", "format": "info"}, "pyBtn": {"msg": "Run the code", "em": 8, "kbd": ""}, "qcmCheckTip": {"msg": "Check answers", "em": 8, "kbd": ""}, "qcmMaskTip": {"msg": "Answers will stay hidden...", "em": 13, "kbd": ""}, "qcmRedoTip": {"msg": "Restart", "em": 8, "kbd": ""}, "qcmTitle": {"msg": "Question", "plural": "Questions"}, "refresh": {"msg": "A newer version of the code exists.\nPlease copy any of your changes then reset the IDE.", "format": "warning"}, "rem": {"msg": "Comments"}, "removeTrash": {"msg": "There is currently 1 reference found in this browser.\nDo you want to delete it?", "plural": "There are currently {N} references found in this browser.\nDo you want to delete them?"}, "restart": {"msg": "Reset the editor", "em": 6, "kbd": ""}, "restartConfirm": {"msg": "WARNING: resetting the editor, you will lose previous codes, validation status and histories.", "em": 0, "kbd": ""}, "revealCorr": {"msg": "the solution"}, "revealJoin": {"msg": "and"}, "revealRem": {"msg": "comments"}, "runScript": {"msg": "Script started...", "format": "info"}, "save": {"msg": "Save in the browser", "em": 7, "kbd": ""}, "secretTests": {"msg": "Secret tests", "format": "info"}, "show": {"msg": "Show corr & REMs", "em": 10, "kbd": ""}, "splitModePlaceholder": {"msg": "Editor in the other column"}, "splitScreen": {"msg": "Enter or exit the \"split screen\" mode<br>(<kbd>Alt+:</kbd> / <kbd>Ctrl</kbd> to reverse the columns)", "em": 23, "kbd": ""}, "storageIdCollision": {"msg": "Contact the author of the website and provide them with this complete message. A potential collision of IDs between multiple projects has been detected. The ID argument must be added or modified for the following IDE:"}, "successHead": {"msg": "Bravo !", "format": "success"}, "successHeadExtra": {"msg": "You have passed all the tests!"}, "successMsg": {"msg": "OK", "format": "success"}, "successMsgNoTests": {"msg": "Ended without error.", "format": "info"}, "successTail": {"msg": "Don't forget to read"}, "test1Ide": {"msg": "Run this test", "em": 7, "kbd": ""}, "testIdes": {"msg": "Run all tests...", "em": 8, "kbd": ""}, "testStop": {"msg": "Stop all tests", "em": 6, "kbd": ""}, "tests": {"msg": "\n\n# Tests\n\n", "as_pattern": "^#\\s*Tests"}, "testsDone": {"msg": "Tests done.", "format": "info"}, "tipTrash": {"msg": "Remove the saved codes for Machine Learning Specialization \u2014 Study Companion from the browser", "em": 15, "kbd": ""}, "titleCorr": {"msg": "Solution"}, "titleRem": {"msg": "Comments"}, "unforgettable": {"msg": "Don't forget to validate the code!", "format": "warning"}, "upload": {"msg": "Upload", "em": 0, "kbd": ""}, "validation": {"msg": "Validation - ", "format": "info"}, "wrapTerm": {"msg": "If enabled, text copied from the terminal is joined into a single line before being copied to the clipboard", "em": 18, "kbd": ""}, "zip": {"msg": "Archive all codes", "em": 0, "kbd": ""}, "zipAskForNames": {"msg": "Please enter your name (no empty string):"}}
+</script>
+<script src="../../../js-libs/0-legacy-subscriber.js" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" type="text/javascript"></script>
+
+<script src="../../../js-libs/functools.js" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" type="module"></script>
+
+<script src="../../../js-libs/functoolsStorage.js" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" type="module"></script>
+
+<script src="../../../js-libs/functoolsTxt.js" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" type="module"></script>
+
+<script src="../../../js-libs/functoolsUi.js" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" type="module"></script>
+
+<script src="../../../js-libs/functoolsUiBuilder.js" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" type="module"></script>
+
+<script src="../../../js-libs/jsLogger.js" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" type="module"></script>
+
+<script src="../../../js-libs/mathjax-libs.js" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" type="text/javascript"></script>
+
+<script src="../../../js-libs/process_and_gui.js" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" type="module"></script>
+
+<link href="../../../pyodide-css/0-generic.css" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" rel="stylesheet"/>
+
+<link href="../../../pyodide-css/btns-header.css" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" rel="stylesheet"/>
+
+<link href="../../../pyodide-css/history.css" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" rel="stylesheet"/>
+
+<link href="../../../pyodide-css/hourglass.css" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" rel="stylesheet"/>
+
+<link href="../../../pyodide-css/ide.css" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" rel="stylesheet"/>
+
+<link href="../../../pyodide-css/qcm.css" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" rel="stylesheet"/>
+
+<link href="../../../pyodide-css/terminal.css" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" rel="stylesheet"/>
+
+<link href="../../../pyodide-css/testing.css" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" rel="stylesheet"/>
+
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" type="text/javascript"></script>
+
+<input type="checkbox" id="ace_palette" autocomplete="off" class="md-toggle" data-ace-dark-mode="tomorrow_night_bright" data-ace-light-mode="crimson_editor">
+
+
     
       
     
@@ -53,6 +155,7 @@
 
     
     
+  
   <meta name="robots" content="noindex, nofollow">
 
   </head>
@@ -5939,6 +6042,8 @@
               
               <article class="md-content__inner md-typeset">
                 
+
+
                   
 
 
@@ -5990,7 +6095,7 @@ sequential loop. With large <span class="arithmatex">\(n\)</span> that's a drama
 <div id="global_editor_629c9be9dfcb87399cae82d8150ff9a36b9cb3d0" class="py_mk_ide"><div class="py_mk_wrapper md-typeset"><div class="comment_py_mk_wrapper"><div is_v="false" mode="" id="editor_629c9be9dfcb87399cae82d8150ff9a36b9cb3d0"></div><span id="comment_editor_629c9be9dfcb87399cae82d8150ff9a36b9cb3d0" class="comment tooltip">###<span style="--tool_shift: 95%;width:16em;" class="tooltiptext bottom">(De-)Activate the code after the line <code># Tests</code> (case insensitive)<br>(<kbd>Ctrl</kbd>+<kbd>I</kbd>)</span></span><div class="ide-split-screen tooltip svg-switch-btn twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">   <path d="M3,3H11V5H3V3M13,3H21V5H13V3M3,7H11V9H3V7M13,7H21V9H13V7M3,11H11V13H3V11M13,11H21V13H13V11M3,15H11V17H3V15M13,15H21V17H13V15M3,19H11V21H3V19M13,19H21V21H13V19Z" /> </svg><span style="--tool_shift: 95%;width:23em;" class="tooltiptext bottom">Enter or exit the "split screen" mode<br>(<kbd>Alt+:</kbd> / <kbd>Ctrl</kbd> to reverse the columns)</span></div><div class="ide-full-screen tooltip svg-switch-btn twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">   <path d="M17 4H20C21.1 4 22 4.9 22 6V8H20V6H17V4M4 8V6H7V4H4C2.9 4 2 4.9 2 6V8H4M20 16V18H17V20H20C21.1 20 22 19.1 22 18V16H20M7 18H4V16H2V18C2 19.1 2.9 20 4 20H7V18M18 8H6V16H18V8Z" /> </svg><span style="--tool_shift: 95%;width:10em;" class="tooltiptext bottom">Enter or exit the "full screen" mode<br>(<kbd>Esc</kbd>)</span></div></div><div style="--n-buttons:2" class="term_wrapper"><div is_v="False" style="line-height:24px;--n-lines:10;" id="term_editor_629c9be9dfcb87399cae82d8150ff9a36b9cb3d0" class="term_editor py_mk_terminal"></div><div class="term_btns_wrapper"><div class="twemoji stdout-ctrl tooltip"><svg viewBox="0 0 24 24" fill="none"     stroke="var(--md-default-fg-color)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"     xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg"> <g>   <path d="M 4,21.4 V 2.6 C 4,2.3 4.3,2 4.6,2 h 11.65 c 0.16,0 0.31,0.06 0.42,0.18 l 3.15,3.15 C 19.94,5.44 20,5.59 20,5.75 V 21.4 C 20,21.73 19.73,22 19.4,22 H 4.6 C 4.3,22 4,21.73 4,21.4 Z" ></path>   <path d="M 16,5.4 V 2.35 C 16,2.16 16.16,2 16.35,2 c 0.09,0 0.18,0.03 0.25,0.10 l 3.29,3.29 C 19.96,5.46 20,5.55 20,5.65 20,5.84 19.84,6 19.65,6 H 16.6 C 16.27,6 16,5.73 16,5.4 Z" ></path>   <path d="m 8,9.25 h 8" ></path>   <path d="M 7.9,13.25 H 15.9"></path>   <path d="M 7.9,11.25 H 14.4" ></path>   <path d="M 7.9,19.25 H 14.4" ></path>   <path d="m 7.9,15.25 h 8" ></path>   <path d="M 7.9,17.25 H 11.9" ></path>   <path d="m 8,5.25 h 4" ></path>   <path d="m 8,7.25 h 4" ></path> </g> <g><path class="stdout-x-ray-svg" d="M 3,11.4 v 6 L 21,13.8 V 7.7 Z" style="fill:var(--md-default-bg-color);stroke-width:0;" ></path></g> </svg><span style="--tool_shift: 97%;width:19em;" class="tooltiptext bottom">Truncate or not the feedback in the terminals (standard output & stacktrace / run the code again to apply)</span></div><div class="stdout-wraps-btn tooltip svg-switch-btn twemoji deactivated"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <path d="M7 21H5V3h2v18m7-18h-2v6h2V3m0 12h-2v6h2v-6m5-3-3-3v2H9v2h7v2l3-3Z"> </path></svg><span style="--tool_shift: 97%;width:18em;" class="tooltiptext bottom">If enabled, text copied from the terminal is joined into a single line before being copied to the clipboard</span></div></div></div></div><div class="ide_buttons_div_wrapper"><div class="ide_buttons_div"><button btn_kind="play" style="margin-left:0.2em; margin-right:0.2em;" class="tooltip " data-tip-txt="Run the code<br>(<kbd>Ctrl</kbd>+<kbd>S</kbd>)" data-tip-width="9"><img src="../../../assets/images/icons8-play-64.png" class="skip_light_box" /></button><button btn_kind="check" style="margin-left:0.2em; margin-right:0.2em;" class="tooltip " data-tip-txt="Validate<br><kbd>Ctrl</kbd>+<kbd>Enter</kbd><br>(Right click for historic)" data-tip-width="9"><img src="../../../assets/images/icons8-check-64.png" class="skip_light_box" /></button><button btn_kind="download" style="margin-left:1em; margin-right:0.2em;" class="tooltip " data-tip-txt="Download"><img src="../../../assets/images/icons8-download-64.png" class="skip_light_box" /></button><button btn_kind="upload" style="margin-left:0.2em; margin-right:1em;" class="tooltip " data-tip-txt="Upload"><img src="../../../assets/images/icons8-upload-64.png" class="skip_light_box" /></button><button btn_kind="restart" style="margin-left:0.2em; margin-right:0.2em;" class="tooltip " data-tip-txt="Reset the editor" data-tip-width="6"><img src="../../../assets/images/icons8-restart-64.png" class="skip_light_box" /></button><button btn_kind="save" style="margin-left:0.2em; margin-right:0.2em;" class="tooltip " data-tip-txt="Save in the browser" data-tip-width="7"><img src="../../../assets/images/icons8-save-64.png" class="skip_light_box" /></button></div><div class="compteur_wrapper"><div class="compteur"><span class="compteur_txt">Attempts left : </span><span id="compteur_editor_629c9be9dfcb87399cae82d8150ff9a36b9cb3d0">5</span>/<span id="compteur_editor_629c9be9dfcb87399cae82d8150ff9a36b9cb3d0-low">5</span></div></div></div></div>
 
 <div class="py_mk_hidden" id="solution_editor_629c9be9dfcb87399cae82d8150ff9a36b9cb3d0">
-.128013bce+nvS2y1/a.shklpxw)rtm=o(gi d:f,u050F0d0x0m0D0r0o0E0c0r0m0o0o0z010x0D0s010406050o0J0y0y0m0w0j040h0A0r0J0!0A0f050l0+0-0/0;0)0s0405140}170l140)0F0D0g0S0U0W0Y0p0D0C0p0r1l0p0x0%050N0b0r0d1g0V0X011k1m1o1m0x1u1w1s0x0w150x0p0S0@0o0s0m0f0Y0i011y1i010H0P0d0f0m0y0d1s1R1T1Y1A1#1w1(1*0%0a0E0h0J0C0C0d0o0x0d0F0E0o0@0_0D0{0}1-0f150l1N2d1K1M1L1t230T1z0Y1o0f1%0A0o1s1d1f2m1Z2p2r2v1s0s0w0d152b2d2H0*1S0f1/0Y0f0A0w0.0r0%0k2a2L0(2K1.2x1A2P2R0m2T040i2W1T2d2D2F0}2v2g0F1M2l1h1A0c0A0L2u1e152:2G2X2-2c052}0L342!2{0Y0q0%0L0H363b2M2#0Y0u0%0E3j2Z3l3d010f0H0%2:1d0c0x3r2b2N010$040B3D2L3F0f0%0t3K3c2n3G0%0I3j3q3E3m3v0%0u3Q3t3S3H3V0~2X3X3L3Z3N040b3%3F3H0v0G3j060E3~3.3R1Z3f042E0x0J0w0|3,2.403(1Z0f0b0%0H0r0A0m3C4a373Y3u3H3J4n3k3M0%0f0s3@3Z0A0%0n4z3u3;0F0A4m2J4p3)0%4s4K3/4F3#4E4M043+2H4c4v043P4t3s3^0%0v3W4%4A0%0e4+4L4e0%3?4$4;1A3_3|0}392;1a2E2d2?0}0x2^542j2e0m1v4 2?0)0l0L0N0P0o04.
+.128013,ms:el chdw/ogu(ak2bv+x1Sit.ypr=nf)050k0f0B0r0A0g0d0h0i0g0r0d0d0G010B0A0E010406050d0p0c0c0r0F0D040z0n0g0p0!0n0H050m0+0-0/0;0)0E0405140}170m140)0k0A0v0S0U0W0Y0j0A0o0j0g1l0j0B0%050N0u0g0f1g0V0X011k1m1o1m0B1u1w1s0B0F150B0j0S0@0d0E0r0H0Y0t011y1i010I0P0f0H0r0c0f1s1R1T1Y1A1#1w1(1*0%0a0h0z0p0o0o0f0d0B0f0k0h0d0@0_0A0{0}1-0H150m1N2d1K1M1L1t230T1z0Y1o0H1%0n0d1s1d1f2m1Z2p2r2v1s0E0F0f152b2d2H0*1S0H1/0Y0H0n0F0.0g0%0y2a2L0(2K1.2x1A2P2R0r2T040t2W1T2d2D2F0}2v2g0k1M2l1h1A0i0n0L2u1e152:2G2X2-2c052}0L342!2{0Y0s0%0L0I363b2M2#0Y0l0%0h3j2Z3l3d010H0I0%2:1d0i0B3r2b2N010$040q3D2L3F0H0%0x3K3c2n3G0%0b3j3q3E3m3v0%0l3Q3t3S3H3V0~2X3X3L3Z3N040u3%3F3H0J0e3j060h3~3.3R1Z3f042E0B0p0F0|3,2.403(1Z0H0u0%0I0g0n0r3C4a373Y3u3H3J4n3k3M0%0H0E3@3Z0n0%0C4z3u3;0k0n4m2J4p3)0%4s4K3/4F3#4E4M043+2H4c4v043P4t3s3^0%0J3W4%4A0%0w4+4L4e0%3?4$4;1A3_3|0}392;1a2E2d2?0}0B2^542j2e0r1v4 2?0)0m0L0N0P0d04.
 </div>
 <p>The next topic looks at <em>why</em> the vectorized version is so much faster — what the
 hardware is actually doing. <code>[06:48]</code></p>
@@ -5999,8 +6104,8 @@ hardware is actually doing. <code>[06:48]</code></p>
 <p><a class="md-button" href="../vectorization-part-2/">Vectorization, Part 2 →</a></p>
 </div><script type="text/javascript">
 CONFIG.needMermaid = false;
-CONFIG.overlordClasses = ["Terminal", "GlobalRunnersManager", "Ide"];
-globalThis.PAGE_IDES_CONFIG = '.\x1e5bcZ+Dy@0-*TEs4lk{zw)rtU8qRf[9_eVnvO}2]71CPIa.M6pxm=o(gi3 d:h,u\x1e0r010F0*0%0w0!0v0E0V0L0D0c0D0b0F0D0*0B0c0b0y0N0(0D0}0S0F0y0L0*0y0O0a0i0B0B0D0S0(0V0b0}0b0(0*0i010+0)0/0W0g0E0H0S0Y0F1x0)010I0F0c0@0v0%0s0S0w0%0!0H0j0W0S0v0w0j0O0j1L1N0^1Q0;1X0v0;0%1N1U0H0E0F0X0!0T1B010-1J0F0H0I0E0c1V0w210w1I010%0Y0W0^0w0)0H0.2d0g0)0S0n2h0W090H2r032m0)0,0!0.0n0F1y0C0n1,0)0n0z0B0w1 100*0v0!0!0Y0n1 0B0p2P0v2S2m0$0F0)0g2X0M2r0X0)0Z2p0T1Z0v0S0g0#0C0O0o0O0V0T0i1 0(2}1 0L310)0o0i2}0M0u2r0t2,2.2:2=2@370O1 0o340O372~0)0j330i392r0b3d0y3o1~20220E270v0Y2426282a3A012z0F0_250H273R2a0*0F0B0)0W1/0=1N0#0X1 0t2L0u0+2r0)3/0)09013=3=0U0.0p1T0W0p0F0j0p0%0H0F1Z0j1/0$1/0n2E1V3Y3!1;1T4c0B3%0u3d0t090.0i0i0b0N2+0e0)0b0T2r3.3:0x2A2v0G0m0P0l0J0A0R0d0m0f0)0*0!2g3Z0!0*0.1N0)0#0H0W0T4P0w0u1 0H4Q2v0Q0g0w2x0H0)2V0!4!4z3/0A0F0w0.0v4;0S0)2U0!1S4x4;3:3@3?3?573/0T5e3L250v3P3I3T1y013V3X3Z1:3$3(0)3*4v3,4_0)1/4}4 522V1S4Y4!4$0#5v0X4k4u0b0u3L0W0.0b410c3D0F0n0w0n2a2u3i0k2_2{0)4u0o0k0(5+0)3n0k0L3q0)0L0k365:3y3d0O180T0V2r2n2A1!2m0b0n0#5q3#0w3%3)3+5^60300V4k055;3 0V3L2A0c5A5W5Y5!5m0h0S0.0@0E0v0.2s0H5o0)276w0#5x5c4O3W5z3W6f5u3+3-6O3:6R5B4;535F4Z4#4Q5J1 5L5:5O4y6O0c2n5X3d0C5y6Y5G2/5i3g2^343s2 384(3e6~2?0C3l3p0a342|3t750O2}4(6`3:6|3f780L3n7a1 7c3p7h3p0o7t394)4!7n3h0T3j353m3o1 3r741 3y7i0-7k3/7m777D3p3o7z762;78303p0N7L3q330a7j6X7l6(7C2^7W757/7T0C7*7X3o7,6Y2)6O0B0^0)0X0%3)854v0%0)420)6=2A0n6W6Y6Y0$4+2-6c4f3%870t870b0%3a7-3/1_0W3d1/4i84862L8t7Q2m4a3O2g0S690#8j2g0j0)8x6m6o0j0V2T3=8m3$0r840T0@415Y6M0K1 0r8q8%0!8)6e0u8,1z8s0K4k2-0r8O8^8x1M270*1z8x0K3=5Q0!5Y5W3F3H3R3J5m999b3Q3S299h1 0:0X0c0p0.3V0*1I0C0M9o1_9r9t0;0E1G4/4T6x0)9x9z9q9s9u0E0q0t9I9K1J1B9G1@41699w011B0E9Y5!9y9U0g0W0%0E0t0,0?1H1y2i0p0p9o1/5V410Y0?1I1$9o9:9=9%0%5Y9w9*016A6C6E0H1I3p01ae0E482y0Wag9o0^3V0_42ak2O0.an1y7F012A0z6D6F3K9oaB0E3}2=1I0B0S0p2A9o4S0B0%3~aF1J1S272d5Z9%3W9m0)0a9oac0!9%0!0$0E658J1I0w6E0F9o5h0_1/2R9E2n0q1Iaz0,2n240,1M0q0E0b0waf1ya@0.a_1Jb40n3H5ibabcaLaNaPbib51/1LaNbnbd52bqbh01bj3H6F3Ea?a^9oa70E1L1!bpaObB0Y0S0X0E0%3Va6439I0(ah9 1@bV0FbX5X1I0(9o3V6t442Aa:0waY0Wa!1V0E3N5jbWaMaT4~9?200=1O3L3V0S1=0I1Sb)5Y4P6B0E810_6s5A9IbfbBa}0!1La:8I1!1?bk5Yc90qa@c9c3aMbPaG2x0t0E1V0p1Ca;cub{3O2O2Xch0^0Eck4|9IcDbraA0v5Vbj0,2a0D0O1d0V0S0a0c0o0Dc;0(0N1g0*0L0a0a0V0N0D0V0V1u0o0B0o0L0c0B0N0V0O0*c 0B0O3n0b600i36dkd90F0F0L0V1hc.0o0S0O6r0w0*9P0F0gaV010w0ta,25aObOcZ8x2fdKbBce2y0w24cg0!1l1I0L4pa`cg0Bdo0*0bcybHbg0K0K.'
+CONFIG.overlordClasses = ["Ide", "GlobalRunnersManager", "Terminal"];
+globalThis.PAGE_IDES_CONFIG = '.\x1e,[:e chTOdRog(6@3Z4*+p=D_M1ECmsVlwqUu0a5k-2bv87xP9izt{.yrI]n}f)\x1e0#010d0j0Y0!0l0(0y0o0Q0X0f0X0R0d0X0j0-0f0R0T0U0q0X0}0M0d0T0Q0j0T0A0N0L0-0-0X0M0q0o0R0}0R0q0j0L010c0e0/0v0%0y0+0M0D0d1x0e010S0d0f0@0(0Y0Z0M0!0Y0l0+0P0v0M0(0!0P0A0P1L1N0^1Q0;1X0(0;0Y1N1U0+0y0d0V0l0$1B010a1J0d0+0S0y0f1V0!210!1I010Y0D0v0^0!0e0+0K2d0%0e0M0E2h0v090+2r032m0e0g0l0K0E0d1y0b0E1,0e0E0I0-0!1 100j0(0l0l0D0E1 0-0G2P0(2S2m0m0d0e0%2X0*2r0V0e0w2p0$1Z0(0M0%0n0b0A0s0A0o0$0L1 0q2}1 0Q310e0s0L2}0*0.2r0H2,2.2:2=2@370A1 0s340A372~0e0P330L392r0R3d0T3o1~20220y270(0D2426282a3A012z0d0_250+273R2a0j0d0-0e0v1/0=1N0n0V1 0H2L0.0c2r0e3/0e09013=3=0z0K0G1T0v0G0d0P0G0Y0+0d1Z0P1/0m1/0E2E1V3Y3!1;1T4c0-3%0.3d0H090K0L0L0R0U2+0u0e0R0$2r3.3:0J2A2v0F0B0C0h0i0k0)0r0B0x0e0j0l2g3Z0l0j0K1N0e0n0+0v0$4P0!0.1 0+4Q2v0W0%0!2x0+0e2V0l4!4z3/0k0d0!0K0(4;0M0e2U0l1S4x4;3:3@3?3?573/0$5e3L250(3P3I3T1y013V3X3Z1:3$3(0e3*4v3,4_0e1/4}4 522V1S4Y4!4$0n5v0V4k4u0R0.3L0v0K0R410f3D0d0E0!0E2a2u3i0t2_2{0e4u0s0t0q5+0e3n0t0Q3q0e0Q0t365:3y3d0A180$0o2r2n2A1!2m0R0E0n5q3#0!3%3)3+5^60300o4k055;3 0o3L2A0f5A5W5Y5!5m0p0M0K0@0y0(0K2s0+5o0e276w0n5x5c4O3W5z3W6f5u3+3-6O3:6R5B4;535F4Z4#4Q5J1 5L5:5O4y6O0f2n5X3d0b5y6Y5G2/5i3g2^343s2 384(3e6~2?0b3l3p0N342|3t750A2}4(6`3:6|3f780Q3n7a1 7c3p7h3p0s7t394)4!7n3h0$3j353m3o1 3r741 3y7i0a7k3/7m777D3p3o7z762;78303p0U7L3q330N7j6X7l6(7C2^7W757/7T0b7*7X3o7,6Y2)6O0-0^0e0V0Y3)854v0Y0e420e6=2A0E6W6Y6Y0m4+2-6c4f3%870H870R0Y3a7-3/1_0v3d1/4i84862L8t7Q2m4a3O2g0M690n8j2g0P0e8x6m6o0P0o2T3=8m3$0#840$0@415Y6M0,1 0#8q8%0l8)6e0.8,1z8s0,4k2-0#8O8^8x1M270j1z8x0,3=5Q0l5Y5W3F3H3R3J5m999b3Q3S299h1 0:0V0f0G0K3V0j1I0b0*9o1_9r9t0;0y1G4/4T6x0e9x9z9q9s9u0y0O0H9I9K1J1B9G1@41699w011B0y9Y5!9y9U0%0v0Y0y0H0g0?1H1y2i0G0G9o1/5V410D0?1I1$9o9:9=9%0Y5Y9w9*016A6C6E0+1I3p01ae0y482y0vag9o0^3V0_42ak2O0Kan1y7F012A0I6D6F3K9oaB0y3}2=1I0-0M0G2A9o4S0-0Y3~aF1J1S272d5Z9%3W9m0e0N9oac0l9%0l0m0y658J1I0!6E0d9o5h0_1/2R9E2n0O1Iaz0g2n240g1M0O0y0R0!af1ya@0Ka_1Jb40E3H5ibabcaLaNaPbib51/1LaNbnbd52bqbh01bj3H6F3Ea?a^9oa70y1L1!bpaObB0D0M0V0y0Y3Va6439I0qah9 1@bV0dbX5X1I0q9o3V6t442Aa:0!aY0va!1V0y3N5jbWaMaT4~9?200=1O3L3V0M1=0S1Sb)5Y4P6B0y810_6s5A9IbfbBa}0l1La:8I1!1?bk5Yc90Oa@c9c3aMbPaG2x0H0y1V0G1Ca;cub{3O2O2Xch0^0yck4|9IcDbraA0(5Vbj0g2a0X0A1d0o0M0N0f0s0Xc;0q0U1g0j0Q0N0N0o0U0X0o0o1u0s0-0s0Q0f0-0U0o0A0jc 0-0A3n0R600L36dkd90d0d0Q0o1hc.0s0M0A6r0!0j9P0d0%aV010!0Ha,25aObOcZ8x2fdKbBce2y0!24cg0l1l1I0Q4pa`cg0-do0j0RcybHbg0,0,.'
 </script><script src="../../../js-per-pages/0-generic-python-snippets-pyodide.js" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" type="module"></script>
 
 <script src="../../../js-per-pages/1-error_logs-pyodide.js" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" type="module"></script>
@@ -6039,6 +6144,8 @@ globalThis.PAGE_IDES_CONFIG = '.\x1e5bcZ+Dy@0-*TEs4lk{zw)rtU8qRf[9_eVnvO}2]71CPI
 
 
                 
+
+
               </article>
             </div>
           
@@ -6095,6 +6202,8 @@ globalThis.PAGE_IDES_CONFIG = '.\x1e5bcZ+Dy@0-*TEs4lk{zw)rtU8qRf[9_eVnvO}2]71CPI
       <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tracking", "navigation.top", "navigation.indexes", "toc.follow", "search.highlight", "search.suggest", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
+
+
       <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
         <script src="../../../javascripts/mathjax.js"></script>
@@ -6102,5 +6211,11 @@ globalThis.PAGE_IDES_CONFIG = '.\x1e5bcZ+Dy@0-*TEs4lk{zw)rtU8qRf[9_eVnvO}2]71CPI
         <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
+<script src="../../../js-scripts/overlord.js" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" type="module"></script>
+
+<script src="../../../js-scripts/subscriptions.js" crossorigin="anonymous" referrerpolicy="no-referrer" charset="utf-8" type="module"></script>
+
+
+
   </body>
 </html>
