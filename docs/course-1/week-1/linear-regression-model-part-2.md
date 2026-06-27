@@ -34,10 +34,6 @@ Its job: take a new input $x$ and output a **prediction**, written $\hat{y}$
   correct. (When helping your client, the *true* sale price is unknown until the
   house sells; $\hat{y}$ is the model's best guess.) `[02:02]`
 
-
-![Representing the model: a training set feeds a learning algorithm that outputs f, with f(x)=wx+b](representing-f.png){ .slide }
-_Andrew Ng's representing the model f slide (Stanford / DeepLearning.AI)._
-{ .slide-cap }
 ## What is $f$? `[02:23]`
 
 Designing the algorithm means choosing how to represent $f$ — the formula it

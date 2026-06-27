@@ -1,1 +1,2 @@
 pyodide-mkdocs-theme
+pillow

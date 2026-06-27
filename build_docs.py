@@ -112,10 +112,33 @@ def note_path(c, w, slug):
     return NOTES / f"C{c}" / f"W{w}" / f"{slug}.md"
 
 
+def check_slides():
+    # QA gate: deck section-divider/title pages have a saturated colored left sidebar
+    # (blue in C1, red in C2-C3); content whiteboards have a near-white left margin.
+    # Warn (non-fatal) so a future slide swap can't silently reintroduce a divider.
+    from PIL import Image
+
+    for png in sorted(IMAGES.glob("C*/*.png")):
+        im = Image.open(png).convert("RGB")
+        w, h = im.size
+        band = im.crop((0, 0, int(w * 0.18), h)).resize((16, 32))
+        raw = band.tobytes()  # flat RGB
+        n = len(raw) // 3
+        r = sum(raw[0::3]) / n
+        g = sum(raw[1::3]) / n
+        b = sum(raw[2::3]) / n
+        near_white = r > 195 and g > 195 and b > 195
+        saturated = (max(r, g, b) - min(r, g, b)) > 40
+        if (not near_white) and saturated:
+            print(f"  WARNING: divider-like slide (colored sidebar): {png.parent.name}/{png.name}")
+
+
 def main():
     if OUT.exists():
         shutil.rmtree(OUT)
     OUT.mkdir(parents=True)
+
+    check_slides()
 
     spec = yaml.safe_load(TOPICS_YML.read_text(encoding="utf-8"))
 
@@ -247,6 +270,7 @@ def main():
     write_index(spec)
     write_about()
     write_extra_css()
+    write_mathjax()
     write_config(spec, "\n".join(nav))
     print(f"Built {sum(1 for _ in OUT.rglob('*.md'))} pages into {OUT}")
 
@@ -322,6 +346,25 @@ def write_extra_css():
     )
 
 
+def write_mathjax():
+    # arithmatex(generic) only emits <span class="arithmatex">\(...\)</span>; we must load
+    # + configure MathJax ourselves. document$.subscribe re-typesets after instant-nav.
+    js = (
+        "window.MathJax = {\n"
+        '  tex: { inlineMath: [["\\\\(", "\\\\)"]], displayMath: [["\\\\[", "\\\\]"]],\n'
+        "         processEscapes: true, processEnvironments: true },\n"
+        '  options: { ignoreHtmlClass: ".*|", processHtmlClass: "arithmatex" }\n'
+        "};\n"
+        "document$.subscribe(() => {\n"
+        "  MathJax.startup.output.clearCache(); MathJax.typesetClear();\n"
+        "  MathJax.texReset(); MathJax.typesetPromise();\n"
+        "});\n"
+    )
+    js_dir = OUT / "javascripts"
+    js_dir.mkdir(parents=True, exist_ok=True)
+    (js_dir / "mathjax.js").write_text(js, encoding="utf-8")
+
+
 def write_config(spec, nav):
     cfg = (
         f'site_name: "{spec["title"]} — Study Companion"\n'
@@ -358,6 +401,9 @@ def write_config(spec, nav):
         "    - content.code.copy\n\n"
         "extra_css:\n"
         "  - extra.css\n\n"
+        "extra_javascript:\n"
+        "  - javascripts/mathjax.js\n"
+        "  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js\n\n"
         "plugins:\n"
         "  - search\n"
         "  - pyodide_macros:\n"
