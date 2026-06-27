@@ -27,7 +27,7 @@
   {% if page.meta and page.meta.summary %}
     <div class="toc-summary">
       <span class="toc-summary__label">In a nutshell</span>
-      <p>{{ page.meta.summary }}</p>
+      {{ page.meta.summary | safe }}
     </div>
   {% endif %}
 </nav>

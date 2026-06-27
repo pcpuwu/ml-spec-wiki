@@ -1,5 +1,5 @@
 ---
-summary: "When the ratio of positive to negative examples is very far from 50/50, plain accuracy stops being a useful metric."
+summary: '<p>When the ratio of positive to negative examples is very far from 50/50, plain accuracy stops being a useful metric.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">very far from 50/50 · rare disease · 1% error · 99.5% accuracy · Predicted 1 · Predicted 0</p><span class="toc-summary__sub">Key formula</span><div class="toc-summary__math"><span class="arithmatex">\(\text{Precision} = \frac{\text{TP}}{\text{TP}+\text{FP}} = \frac{15}{15+5} = 0.75, \qquad \text{Recall} = \frac{\text{TP}}{\text{TP}+\text{FN}} = \frac{15}{15+10} = 0.60\)</span></div>'
 ---
 # Error Metrics for Skewed Datasets (Optional)
 

@@ -1,5 +1,5 @@
 ---
-summary: "We want a systematic way to find the w, b that minimize J(w,b), instead of eyeballing a contour plot. The algorithm is gradient descent, and it's used everywhere in machine learning — from linear regression to training the largest deep n…"
+summary: '<p>We want a systematic way to find the w, b that minimize J(w,b), instead of eyeballing a contour plot.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">gradient descent · hilly park · direction of steepest descent · local minimum · local minima</p>'
 ---
 # Gradient Descent
 

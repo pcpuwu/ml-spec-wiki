@@ -1,5 +1,5 @@
 ---
-summary: "Three concrete ways to actually rescale features so they take comparable ranges."
+summary: '<p>Three concrete ways to actually rescale features so they take comparable ranges.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">maximum · standard deviation · never any harm · Validate · check</p><span class="toc-summary__sub">Key formulas</span><div class="toc-summary__math"><span class="arithmatex">\(x_{j,\text{norm}} = \frac{x_j - \mu_j}{\max_j - \min_j}\)</span><span class="arithmatex">\(x_{j,\text{z}} = \frac{x_j - \mu_j}{\sigma_j}\)</span></div>'
 ---
 # Feature Scaling, Part 2
 

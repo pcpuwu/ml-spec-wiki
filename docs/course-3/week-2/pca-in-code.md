@@ -1,5 +1,5 @@
 ---
-summary: "PCA is a few lines with scikit-learn: optionally scale, fit to find the principal components, check how much variance they explain, then transform (project)."
+summary: '<p>PCA is a few lines with scikit-learn: optionally scale, fit to find the principal components, check how much variance they explain, then transform (project).</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">scikit-learn · 99.2% · n_components=2 · exact · projection · reconstruction</p>'
 ---
 # PCA in Code
 

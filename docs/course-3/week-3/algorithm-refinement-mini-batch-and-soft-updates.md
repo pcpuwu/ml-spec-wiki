@@ -1,5 +1,5 @@
 ---
-summary: "Mini-batching applies to supervised learning too."
+summary: '<p>Mini-batching applies to supervised learning too.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">mini-batches · soft updates · 100 million · every · Mini-batch · noisier</p><span class="toc-summary__sub">Key formulas</span><div class="toc-summary__math"><span class="arithmatex">\(\text{each step uses}\quad \frac{1}{2m&#x27;}\sum_{i \in \text{batch}}(f(x^{(i)}) - y^{(i)})^2\)</span><span class="arithmatex">\(W \leftarrow 0.01\,W_{\text{new}} + 0.99\,W, \qquad B \leftarrow 0.01\,B_{\text{new}} + 0.99\,B\)</span></div>'
 ---
 # Algorithm Refinement: Mini-Batch and Soft Updates
 

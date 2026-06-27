@@ -1,5 +1,5 @@
 ---
-summary: "The demand-prediction idea scales straight to computer vision, and it reveals what the hidden layers are really doing."
+summary: '<p>The demand-prediction idea scales straight to computer vision, and it reveals what the hidden layers are really doing.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">computer vision · picture · million pixel-brightness numbers · learns it on its own · edges · parts of faces</p>'
 ---
 # Example: Recognizing Images
 

@@ -1,5 +1,5 @@
 ---
-summary: "The Mars rover had a discrete state (one of 6 positions). Most real robots live in continuous state spaces — the state is a vector of real numbers."
+summary: '<p>The Mars rover had a discrete state (one of 6 positions). Most real robots live in continuous state spaces — the state is a vector of real numbers.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">discrete · continuous · vector of real numbers · anywhere · pitch · continuous-state MDP</p><span class="toc-summary__sub">Key formulas</span><div class="toc-summary__math"><span class="arithmatex">\(s = \big[\,x,\; y,\; \theta,\; \dot{x},\; \dot{y},\; \dot{\theta}\,\big]\)</span><span class="arithmatex">\(s = \big[\,x, y, z,\; \phi, \theta, \omega,\; \dot{x}, \dot{y}, \dot{z},\; \dot{\phi}, \dot{\theta}, \dot{\omega}\,\big]\)</span></div>'
 ---
 # Example of Continuous State-Space Applications
 

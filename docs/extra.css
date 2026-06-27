@@ -17,5 +17,18 @@
 .toc-summary__label { display:block; font-size:.62rem;
                text-transform:uppercase; letter-spacing:.08em;
                font-weight:700; opacity:.6; margin-bottom:.25rem; }
-.toc-summary p { margin:0; font-size:.72rem; line-height:1.45;
+.toc-summary p { margin:0 0 .5rem; font-size:.72rem; line-height:1.45;
                opacity:.85; }
+.toc-summary p:last-child { margin-bottom:0; }
+.toc-summary__sub { display:block; font-size:.6rem; font-weight:700;
+               text-transform:uppercase; letter-spacing:.06em; opacity:.55;
+               margin:.2rem 0 .15rem; }
+.toc-summary__chips { opacity:.95 !important; }
+.toc-summary__math { font-size:.78rem; overflow-x:auto; margin-bottom:.1rem; }
+.toc-summary__math .arithmatex { display:block; margin:.15rem 0; }
+[data-md-color-scheme="slate"] { --md-code-bg-color: hsla(232,12%,16%,1); }
+.md-typeset .highlight { background:var(--md-code-bg-color);
+         border:1px solid var(--md-default-fg-color--lightest);
+         border-radius:6px; margin:1rem 0; }
+.md-typeset .highlight > pre { margin:0; }
+.md-typeset .highlight > pre > code { background:transparent; }

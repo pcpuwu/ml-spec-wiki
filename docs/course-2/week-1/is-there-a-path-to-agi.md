@@ -1,5 +1,5 @@
 ---
-summary: "A fun, speculative aside on a much-hyped topic: are neural networks a path to human-level intelligence?"
+summary: '<p>A fun, speculative aside on a much-hyped topic: are neural networks a path to human-level intelligence?</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">tremendous · incorrectly · nothing like · learns to see · plasticity · tongue</p>'
 ---
 # Is There a Path to AGI?
 

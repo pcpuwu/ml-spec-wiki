@@ -1,5 +1,5 @@
 ---
-summary: "Extend the single-feature Gaussian to a full anomaly detector over n features."
+summary: '<p>Extend the single-feature Gaussian to a full anomaly detector over n features.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">product · statistically independent · Why multiply? · develop and evaluate</p><span class="toc-summary__sub">Key formula</span><div class="toc-summary__math"><span class="arithmatex">\(p(\vec{x}) = p(x_1;\mu_1,\sigma_1^2)\cdot p(x_2;\mu_2,\sigma_2^2)\cdots p(x_n;\mu_n,\sigma_n^2) = \prod_{j=1}^{n} p(x_j;\mu_j,\sigma_j^2)\)</span></div>'
 ---
 # Anomaly Detection Algorithm
 

@@ -1,5 +1,5 @@
 ---
-summary: "A consolidation of the RL formalism — states, actions, rewards, discount factor, return, policy — and how the same framework describes very different problems."
+summary: '<p>A consolidation of the RL formalism — states, actions, rewards, discount factor, return, policy — and how the same framework describes very different problems.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">States · Actions · Rewards · Discount · Return · Policy</p>'
 ---
 # Review of Key Concepts
 

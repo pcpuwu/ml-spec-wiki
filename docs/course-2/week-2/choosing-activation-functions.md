@@ -1,5 +1,5 @@
 ---
-summary: "You can pick a different activation function for different neurons. There's good guidance for both the output layer and the hidden layers."
+summary: '<p>You can pick a different activation function for different neurons. There&#x27;s good guidance for both the output layer and the hidden layers.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">different · output · hidden · sigmoid · linear · learn faster</p>'
 ---
 # Choosing Activation Functions
 

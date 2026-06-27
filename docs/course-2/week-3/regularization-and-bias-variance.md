@@ -1,5 +1,5 @@
 ---
-summary: "How the regularization parameter lambda shifts bias and variance — and how to choose it."
+summary: '<p>How the regularization parameter lambda shifts bias and variance — and how to choose it.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">high bias / underfit · high variance · left-right flip · baseline</p>'
 ---
 # Regularization and Bias/Variance
 

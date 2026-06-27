@@ -1,5 +1,5 @@
 ---
-summary: "So far every neuron has used the sigmoid activation — a hangover from building networks out of logistic-regression units. But swapping in other activation functions makes a network much more powerful."
+summary: '<p>So far every neuron has used the sigmoid activation — a hangover from building networks out of logistic-regression units.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">sigmoid · demand-prediction · completely viral · any non-negative value · linear · softmax</p><span class="toc-summary__sub">Key formula</span><div class="toc-summary__math"><span class="arithmatex">\(g(z) = \max(0, z)\)</span></div>'
 ---
 # Alternatives to the Sigmoid Activation
 

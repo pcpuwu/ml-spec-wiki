@@ -1,5 +1,5 @@
 ---
-summary: "A big reason deep learning scaled over the last decade: neural networks can be vectorized — implemented with matrix multiplications, which parallel hardware (GPUs, and some CPU paths) does extremely fast."
+summary: '<p>A big reason deep learning scaled over the last decade: neural networks can be vectorized — implemented with matrix multiplications, which parallel hardware (GPUs, and…</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">vectorized · matrix multiplications · matrix multiplication · everything · 2-D array (matrix) · element-wise</p>'
 ---
 # How Neural Networks are Implemented Efficiently
 

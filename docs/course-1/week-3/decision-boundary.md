@@ -1,5 +1,5 @@
 ---
-summary: "The decision boundary is the line (or curve) where logistic regression flips between predicting 0 and 1 — the cleanest way to see how the model decides."
+summary: '<p>The decision boundary is the line (or curve) where logistic regression flips between predicting 0 and 1 — the cleanest way to see how the model decides.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">decision boundary · threshold · polynomial features · circle · ellipses · always a straight line</p><span class="toc-summary__sub">Key formulas</span><div class="toc-summary__math"><span class="arithmatex">\(\hat{y} = 1 \ \text{if } f(\vec{x}) \ge 0.5, \qquad \hat{y} = 0 \ \text{if } f(\vec{x}) &lt; 0.5\)</span><span class="arithmatex">\(x_1 + x_2 - 3 = 0 \;\Longrightarrow\; x_1 + x_2 = 3\)</span></div>'
 ---
 # Decision Boundary
 

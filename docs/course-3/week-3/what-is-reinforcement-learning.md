@@ -1,5 +1,5 @@
 ---
-summary: "This final week covers reinforcement learning (RL) — not yet as commercially common as supervised learning, but a pillar of ML with active research. The core idea: tell the algorithm what to do (via rewards), not how."
+summary: '<p>This final week covers reinforcement learning (RL) — not yet as commercially common as supervised learning, but a pillar of ML with active research.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">reinforcement learning (RL) · state · action · upside down · ambiguous · reward function</p>'
 ---
 # What is Reinforcement Learning?
 

@@ -1,5 +1,5 @@
 ---
-summary: "Recommenders are hugely profitable — and some uses have left people and society worse off. This lecture is a call to build them responsibly."
+summary: '<p>Recommenders are hugely profitable — and some uses have left people and society worse off. This lecture is a call to build them responsibly.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">what to recommend · rated 5 stars · purchased · clicked · largest profit · watch time / engagement</p>'
 ---
 # Ethical Use of Recommender Systems
 

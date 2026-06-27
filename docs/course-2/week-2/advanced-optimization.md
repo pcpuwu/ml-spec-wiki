@@ -1,5 +1,5 @@
 ---
-summary: "Gradient descent underpins linear/logistic regression and early neural nets — but there are now better optimizers. Meet Adam, which trains networks much faster."
+summary: '<p>Gradient descent underpins linear/logistic regression and early neural nets — but there are now better optimizers. Meet Adam, which trains networks much faster.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">better · roughly the same direction · bigger · oscillate · smaller · automatically</p>'
 ---
 # Advanced Optimization
 

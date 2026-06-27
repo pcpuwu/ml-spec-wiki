@@ -1,5 +1,5 @@
 ---
-summary: "This week is about training a neural network — taking your own data and fitting the parameters. We continue the running example of handwritten-digit recognition (is this image a 0 or a 1?), using last week's architecture: input vecx (the…"
+summary: '<p>This week is about training a neural network — taking your own data and fitting the parameters.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">training · handwritten-digit recognition · loss function · binary cross-entropy · epochs · conceptual mental model</p>'
 ---
 # TensorFlow Implementation
 

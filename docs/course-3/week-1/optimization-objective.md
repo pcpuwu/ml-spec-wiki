@@ -1,5 +1,5 @@
 ---
-summary: "Like supervised learning, K-means is optimizing a cost function — it just uses its own algorithm (the two steps) instead of gradient descent."
+summary: '<p>Like supervised learning, K-means is optimizing a cost function — it just uses its own algorithm (the two steps) instead of gradient descent.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">optimizing a cost function · average squared distance · distortion function · minimize · closest · go down every iteration</p><span class="toc-summary__sub">Key formula</span><div class="toc-summary__math"><span class="arithmatex">\(J(c^{(1)},\dots,c^{(m)}, \mu_1,\dots,\mu_K) = \frac{1}{m}\sum_{i=1}^{m}\big\|x^{(i)} - \mu_{c^{(i)}}\big\|^2\)</span></div>'
 ---
 # Optimization Objective
 

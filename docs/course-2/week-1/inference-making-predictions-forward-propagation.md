@@ -1,5 +1,5 @@
 ---
-summary: "Put the layers together into the algorithm a neural network uses to make predictions — forward propagation."
+summary: '<p>Put the layers together into the algorithm a neural network uses to make predictions — forward propagation.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">forward propagation · 0 from a 1 · 8×8 image · left to right · back-propagation · TensorFlow</p><span class="toc-summary__sub">Key formulas</span><div class="toc-summary__math"><span class="arithmatex">\(\vec{a}^{[1]} = g\big(W^{[1]}\!\cdot\vec{a}^{[0]} + \vec{b}^{[1]}\big) \;\;(\text{25 numbers})\)</span><span class="arithmatex">\(\vec{a}^{[2]} = g\big(W^{[2]}\!\cdot\vec{a}^{[1]} + \vec{b}^{[2]}\big) \;\;(\text{15 numbers})\)</span></div>'
 ---
 # Inference: Making Predictions (Forward Propagation)
 

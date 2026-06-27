@@ -1,5 +1,5 @@
 ---
-summary: "How to run gradient descent on the regularized linear-regression cost."
+summary: '<p>How to run gradient descent on the regularized linear-regression cost.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">regularized · identical in form · unchanged · simultaneously · ordinary · multiplier</p><span class="toc-summary__sub">Key formulas</span><div class="toc-summary__math"><span class="arithmatex">\(w_j := w_j - \alpha\left[\frac{1}{m}\sum_{i=1}^{m}\big(f(\vec{x}^{(i)}) - y^{(i)}\big)x_j^{(i)} \;+\; \frac{\lambda}{m}\,w_j\right]\)</span><span class="arithmatex">\(w_j := w_j\left(1 - \alpha\frac{\lambda}{m}\right) - \alpha\,\frac{1}{m}\sum_{i=1}^{m}\big(f(\vec{x}^{(i)}) - y^{(i)}\big)x_j^{(i)}\)</span></div>'
 ---
 # Regularized Linear Regression
 

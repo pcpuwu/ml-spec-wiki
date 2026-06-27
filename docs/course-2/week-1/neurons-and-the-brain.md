@@ -1,5 +1,5 @@
 ---
-summary: "Welcome to Course 2. This week builds neural networks — the algorithm behind many of the recent breakthroughs in AI. We start with where they came from and the (loose) biological analogy."
+summary: '<p>Welcome to Course 2. This week builds neural networks — the algorithm behind many of the recent breakthroughs in AI.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">neural networks · 1980s–early 1990s · biological neuron · inputs · outputs · simplified mathematical model</p>'
 ---
 # Neurons and the Brain
 

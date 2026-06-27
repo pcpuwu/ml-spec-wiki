@@ -1,5 +1,5 @@
 ---
-summary: "To understand these ideas deeply you should see code run — and the tool for that is the Jupyter notebook, the most widely used environment among machine-learning and data-science practitioners."
+summary: '<p>To understand these ideas deeply you should see code run — and the tool for that is the Jupyter notebook, the most widely used environment among machine-learning and d…</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">Jupyter notebook · cells · Shift+Enter</p>'
 ---
 # Jupyter Notebooks
 

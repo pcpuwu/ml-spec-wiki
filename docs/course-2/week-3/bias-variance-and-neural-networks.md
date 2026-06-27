@@ -1,5 +1,5 @@
 ---
-summary: "Neural networks + big data give a way to sidestep the classic bias-variance trade-off."
+summary: '<p>Neural networks + big data give a way to sidestep the classic bias-variance trade-off.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">sidestep · bias-variance trade-off · low-bias machines · separately · bigger network · get more data</p><span class="toc-summary__sub">Key formula</span><div class="toc-summary__math"><span class="arithmatex">\(J = \frac{1}{m}\sum L + \frac{\lambda}{2m}\sum_{\text{all } w} w^2\)</span></div>'
 ---
 # Bias, Variance, and Neural Networks
 

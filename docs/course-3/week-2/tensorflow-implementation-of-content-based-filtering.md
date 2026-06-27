@@ -1,5 +1,5 @@
 ---
-summary: "The content-based recommender is just two Sequential networks joined by a dot product — implemented in Keras with the same dense layers you already know."
+summary: '<p>The content-based recommender is just two Sequential networks joined by a dot product — implemented in Keras with the same dense layers you already know.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">L2-normalize · mean-squared-error</p>'
 ---
 # TensorFlow Implementation of Content-Based Filtering
 

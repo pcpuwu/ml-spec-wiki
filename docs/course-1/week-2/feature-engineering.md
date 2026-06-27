@@ -1,5 +1,5 @@
 ---
-summary: "The choice of features can have a huge impact on how well a learning algorithm performs. For many real applications, designing the right features is a critical step."
+summary: '<p>The choice of features can have a huge impact on how well a learning algorithm performs. For many real applications, designing the right features is a critical step.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">choice of features · frontage · depth · intuition · new feature · Feature engineering</p><span class="toc-summary__sub">Key formula</span><div class="toc-summary__math"><span class="arithmatex">\(x_3 = x_1 \times x_2 \quad(\text{area})\)</span></div>'
 ---
 # Feature Engineering
 

@@ -1,5 +1,5 @@
 ---
-summary: "Recommender systems drive a large fraction of sales at companies like Amazon and Netflix — arguably more commercially impactful than the academic attention they get."
+summary: '<p>Recommender systems drive a large fraction of sales at companies like Amazon and Netflix — arguably more commercially impactful than the academic attention they get.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">Recommender systems · 0–5 stars · users · movies/items · rated · rating</p>'
 ---
 # Making Recommendations
 

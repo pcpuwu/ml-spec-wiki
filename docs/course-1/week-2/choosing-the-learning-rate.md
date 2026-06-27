@@ -1,5 +1,5 @@
 ---
-summary: "The learning rate alpha makes a big difference: too small and gradient descent crawls; too large and it may never converge. Here's how to pick a good one."
+summary: '<p>The learning rate alpha makes a big difference: too small and gradient descent crawls; too large and it may never converge. Here&#x27;s how to pick a good one.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">too small · too large · bounces up and down · consistently increases · overshoots · always rises</p><span class="toc-summary__sub">Key formula</span><div class="toc-summary__math"><span class="arithmatex">\(0.001 \;\to\; 0.003 \;\to\; 0.01 \;\to\; 0.03 \;\to\; 0.1 \;\to\; \dots\)</span></div>'
 ---
 # Choosing the Learning Rate
 

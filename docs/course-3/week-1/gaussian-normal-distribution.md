@@ -1,5 +1,5 @@
 ---
-summary: "To model p(x) we use the Gaussian distribution — also called the normal or bell-shaped distribution (all the same thing)."
+summary: '<p>To model p(x) we use the Gaussian distribution — also called the normal or bell-shaped distribution (all the same thing).</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">Gaussian · normal · bell-shaped · variance · standard deviation · thinner and taller</p><span class="toc-summary__sub">Key formulas</span><div class="toc-summary__math"><span class="arithmatex">\(p(x) = \frac{1}{\sqrt{2\pi}\,\sigma}\, e^{-\frac{(x-\mu)^2}{2\sigma^2}}\)</span><span class="arithmatex">\(\mu = \frac{1}{m}\sum_{i=1}^{m} x^{(i)}, \qquad \sigma^2 = \frac{1}{m}\sum_{i=1}^{m}\big(x^{(i)} - \mu\big)^2\)</span></div>'
 ---
 # Gaussian (Normal) Distribution
 

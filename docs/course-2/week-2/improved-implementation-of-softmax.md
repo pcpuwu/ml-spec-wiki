@@ -1,5 +1,5 @@
 ---
-summary: "The previous softmax code works, but there's a numerically more accurate way to write it — and it's the version you should use."
+summary: '<p>The previous softmax code works, but there&#x27;s a numerically more accurate way to write it — and it&#x27;s the version you should use.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">numerically more accurate · round-off error · fold the activation into the loss · &#x27;linear&#x27; · inside · from_logits=True</p>'
 ---
 # Improved Implementation of Softmax
 

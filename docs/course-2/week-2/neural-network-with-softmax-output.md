@@ -1,5 +1,5 @@
 ---
-summary: "To do multiclass classification with a neural network, put the softmax model in the output layer."
+summary: '<p>To do multiclass classification with a neural network, put the softmax model in the output layer.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">10 output units · softmax layer · element-wise · every · SparseCategoricalCrossentropy · exactly one</p><span class="toc-summary__sub">Key formula</span><div class="toc-summary__math"><span class="arithmatex">\(z^{[3]}_j = \vec{w}^{[3]}_j\cdot\vec{a}^{[2]} + b^{[3]}_j,\qquad a^{[3]}_j = \frac{e^{z^{[3]}_j}}{e^{z^{[3]}_1}+\cdots+e^{z^{[3]}_{10}}}\)</span></div>'
 ---
 # Neural Network with Softmax Output
 

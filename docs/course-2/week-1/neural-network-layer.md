@@ -1,5 +1,5 @@
 ---
-summary: "The layer of neurons is the fundamental building block of modern neural networks. Get this down and you can stack layers into a full network."
+summary: '<p>The layer of neurons is the fundamental building block of modern neural networks. Get this down and you can stack layers into a full network.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">layer of neurons · activation vector · layer 0 · layer 1 · layer 2 · output of layer 1</p><span class="toc-summary__sub">Key formulas</span><div class="toc-summary__math"><span class="arithmatex">\(a_1 = g(\vec{w}_1 \cdot \vec{x} + b_1)\)</span><span class="arithmatex">\(a_1^{[2]} = g\big(\vec{w}_1^{[2]} \cdot \vec{a}^{[1]} + b_1^{[2]}\big) \approx 0.84\)</span></div>'
 ---
 # Neural Network Layer
 

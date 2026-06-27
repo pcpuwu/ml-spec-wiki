@@ -1,5 +1,5 @@
 ---
-summary: "The final piece: regularizing logistic regression — which, like everything this week, looks almost identical to the linear-regression version."
+summary: '<p>The final piece: regularizing logistic regression — which, like everything this week, looks almost identical to the linear-regression version.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">almost identical · same penalty term · same shape · exact same equation · sigmoid · linear regression</p><span class="toc-summary__sub">Key formulas</span><div class="toc-summary__math"><span class="arithmatex">\(J(\vec{w},b) = -\frac{1}{m}\sum_{i=1}^{m}\Big[ y^{(i)}\log\big(f(\vec{x}^{(i)})\big) + \big(1-y^{(i)}\big)\log\big(1-f(\vec{x}^{(i)})\big)\Big] \;+\; \frac{\lambda}{2m}\sum_{j=1}^{n} w_j^2\)</span><span class="arithmatex">\(w_j := w_j - \alpha\left[\frac{1}{m}\sum_{i=1}^{m}\big(f(\vec{x}^{(i)}) - y^{(i)}\big)x_j^{(i)} \;+\; \frac{\lambda}{m}\,w_j\right]\)</span></div>'
 ---
 # Regularized Logistic Regression
 

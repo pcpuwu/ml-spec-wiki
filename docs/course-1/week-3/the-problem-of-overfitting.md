@@ -1,5 +1,5 @@
 ---
-summary: "Linear and logistic regression work well for many tasks, but they can hit a problem called overfitting that makes them perform poorly."
+summary: '<p>Linear and logistic regression work well for many tasks, but they can hit a problem called overfitting that makes them perform poorly.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">overfitting · underfitting · regularization · underfits · high bias · quadratic</p>'
 ---
 # The Problem of Overfitting
 

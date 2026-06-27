@@ -1,5 +1,5 @@
 ---
-summary: "A second family of recommenders — content-based filtering — addresses collaborative filtering's blind spot: it explicitly uses features of users and items to find good matches."
+summary: '<p>A second family of recommenders — content-based filtering — addresses collaborative filtering&#x27;s blind spot: it explicitly uses features of users and items to find good…</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">content-based filtering · features of users and items · ratings of users similar to you · from the user&#x27;s own ratings · can be different sizes · movie</p><span class="toc-summary__sub">Key formula</span><div class="toc-summary__math"><span class="arithmatex">\(\text{prediction} = \vec{v}_u^{(j)} \cdot \vec{v}_m^{(i)}\)</span></div>'
 ---
 # Collaborative Filtering vs. Content-Based Filtering
 

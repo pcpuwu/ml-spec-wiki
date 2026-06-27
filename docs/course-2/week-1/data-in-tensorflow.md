@@ -1,5 +1,5 @@
 ---
-summary: "A consistent mental model for how data is represented in NumPy and TensorFlow — because, due to history, the two libraries don't always agree, and getting the shapes right matters."
+summary: '<p>A consistent mental model for how data is represented in NumPy and TensorFlow — because, due to history, the two libraries don&#x27;t always agree, and getting the shapes r…</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">NumPy · TensorFlow · matrix · rows × columns · 1×2 matrix · row vector</p>'
 ---
 # Data in TensorFlow
 

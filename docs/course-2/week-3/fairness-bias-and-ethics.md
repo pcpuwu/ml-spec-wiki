@@ -1,5 +1,5 @@
 ---
-summary: "ML systems affect billions of people. If you build a system that affects people, give real thought to making it fair, free from bias, and ethical."
+summary: '<p>ML systems affect billions of people. If you build a system that affects people, give real thought to making it fair, free from bias, and ethical.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">fair, free from bias, and ethical · discriminated against women · dark-skinned · negative stereotypes · Deepfakes · amplifying toxic speech</p>'
 ---
 # Fairness, Bias, and Ethics
 

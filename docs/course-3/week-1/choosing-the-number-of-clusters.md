@@ -1,5 +1,5 @@
 ---
-summary: "K-means needs K as an input — but how many clusters should you use?"
+summary: '<p>K-means needs K as an input — but how many clusters should you use?</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">unsupervised · elbow · What does not work · later use · trade-off · image compression</p>'
 ---
 # Choosing the Number of Clusters
 

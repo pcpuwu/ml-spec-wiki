@@ -1,5 +1,5 @@
 ---
-summary: "While still learning Q, you must take actions to gather experience. How do you pick them when your Q estimate is still poor? The standard answer: an ε-greedy policy."
+summary: '<p>While still learning Q, you must take actions to gather experience. How do you pick them when your Q estimate is still poor? The standard answer: an ε-greedy policy.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">ε-greedy policy · random · never try it · exploration step · exploitation · exploration</p>'
 ---
 # Algorithm Refinement: ε-Greedy Policy
 

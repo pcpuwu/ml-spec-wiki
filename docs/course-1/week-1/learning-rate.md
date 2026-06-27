@@ -1,5 +1,5 @@
 ---
-summary: "The learning rate alpha has a huge impact on gradient descent — choose it badly and the algorithm may be painfully slow, or may not work at all."
+summary: '<p>The learning rate alpha has a huge impact on gradient descent — choose it badly and the algorithm may be painfully slow, or may not work at all.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">very small baby step · overshoot · unchanged · constant</p>'
 ---
 # Learning Rate
 

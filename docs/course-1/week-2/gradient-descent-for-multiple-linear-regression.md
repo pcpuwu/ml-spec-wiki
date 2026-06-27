@@ -1,5 +1,5 @@
 ---
-summary: "Now we put it all together — gradient descent, multiple linear regression, and vectorization — into the algorithm that's probably the single most widely used learning algorithm in the world today."
+summary: '<p>Now we put it all together — gradient descent, multiple linear regression, and vectorization — into the algorithm that&#x27;s probably the single most widely used learning…</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">put it all together · vector · error term · — the · only for linear regression · multiple linear regression</p><span class="toc-summary__sub">Key formulas</span><div class="toc-summary__math"><span class="arithmatex">\(w_j := w_j - \alpha \,\frac{\partial}{\partial w_j} J(\vec{w}, b), \qquad b := b - \alpha \,\frac{\partial}{\partial b} J(\vec{w}, b)\)</span><span class="arithmatex">\(w_j := w_j - \alpha \,\frac{1}{m}\sum_{i=1}^{m} \big(f_{\vec{w},b}(\vec{x}^{(i)}) - y^{(i)}\big)\,x_j^{(i)}\)</span></div>'
 ---
 # Gradient Descent for Multiple Linear Regression
 

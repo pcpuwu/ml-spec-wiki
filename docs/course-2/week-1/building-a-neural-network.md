@@ -1,5 +1,5 @@
 ---
-summary: "A simpler way to build a network in TensorFlow — let the framework string the layers together for you with Sequential."
+summary: '<p>A simpler way to build a network in TensorFlow — let the framework string the layers together for you with Sequential.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">Sequential · chain · debugging</p>'
 ---
 # Building a Neural Network
 

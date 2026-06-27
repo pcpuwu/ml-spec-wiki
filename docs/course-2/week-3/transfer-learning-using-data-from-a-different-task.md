@@ -1,5 +1,5 @@
 ---
-summary: "When you don't have much data, transfer learning lets you borrow from a different task — one of the most useful techniques in practice."
+summary: '<p>When you don&#x27;t have much data, transfer learning lets you borrow from a different task — one of the most useful techniques in practice.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">don&#x27;t have much data · different · except the last · 10-unit · initialize · supervised pre-training</p>'
 ---
 # Transfer Learning
 

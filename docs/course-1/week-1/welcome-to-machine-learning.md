@@ -1,5 +1,5 @@
 ---
-summary: "You almost certainly use machine learning many times a day without noticing it."
+summary: '<p>You almost certainly use machine learning many times a day without noticing it.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">computer-vision inspection</p>'
 ---
 # Welcome to Machine Learning
 

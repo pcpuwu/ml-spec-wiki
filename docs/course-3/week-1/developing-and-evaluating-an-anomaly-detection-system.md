@@ -1,5 +1,5 @@
 ---
-summary: "Practical tip: having a real-number evaluation makes it far faster to decide whether a change (a feature, or epsilon) helped."
+summary: '<p>Practical tip: having a real-number evaluation makes it far faster to decide whether a change (a feature, or epsilon) helped.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">real-number evaluation · test set · very few · highly skewed · precision/recall · supervised learning</p>'
 ---
 # Developing and Evaluating an Anomaly Detection System
 

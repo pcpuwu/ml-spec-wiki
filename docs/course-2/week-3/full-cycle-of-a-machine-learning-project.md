@@ -1,5 +1,5 @@
 ---
-summary: "Training a model is just one piece. Here's the full cycle of building a valuable ML system, using speech recognition as the example."
+summary: '<p>Training a model is just one piece. Here&#x27;s the full cycle of building a valuable ML system, using speech recognition as the example.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">full cycle · car noise · monitor and maintain · inference server · API call · scaling</p>'
 ---
 # Full Cycle of a Machine Learning Project
 

@@ -1,5 +1,5 @@
 ---
-summary: "If Q(s,a) lets you pick good actions, how do you compute it? The Bellman equation — the single most important equation in RL — gives the answer."
+summary: '<p>If Q(s,a) lets you pick good actions, how do you compute it? The Bellman equation — the single most important equation in RL — gives the answer.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">Bellman equation · immediate reward · terminal state · Bellman optimality equation · stochastic</p><span class="toc-summary__sub">Key formulas</span><div class="toc-summary__math"><span class="arithmatex">\(Q(s, a) = R(s) + \gamma \max_{a&#x27;} Q(s&#x27;, a&#x27;)\)</span><span class="arithmatex">\(\underbrace{R_1 + \gamma R_2 + \gamma^2 R_3 + \cdots}_{\text{return from } s} \;=\; \underbrace{R_1}_{R(s)} + \gamma\underbrace{(R_2 + \gamma R_3 + \cdots)}_{\text{best return from } s&#x27;}\)</span></div>'
 ---
 # Bellman Equation
 

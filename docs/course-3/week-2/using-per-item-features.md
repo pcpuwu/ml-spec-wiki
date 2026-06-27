@@ -1,5 +1,5 @@
 ---
-summary: "If we have features for each movie, recommending becomes a per-user linear regression."
+summary: '<p>If we have features for each movie, recommending becomes a per-user linear regression.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">features · linear regression · don&#x27;t · collaborative filtering</p><span class="toc-summary__sub">Key formulas</span><div class="toc-summary__math"><span class="arithmatex">\(\text{prediction} = \vec{w}^{(j)}\cdot \vec{x}^{(i)} + b^{(j)}\)</span><span class="arithmatex">\(J(\vec{w}^{(j)}, b^{(j)}) = \frac{1}{2}\!\!\sum_{i:\,r(i,j)=1}\!\!\big(\vec{w}^{(j)}\!\cdot\vec{x}^{(i)} + b^{(j)} - y(i,j)\big)^2 + \frac{\lambda}{2}\sum_{k=1}^{n}\big(w^{(j)}_k\big)^2\)</span></div>'
 ---
 # Using Per-Item Features
 

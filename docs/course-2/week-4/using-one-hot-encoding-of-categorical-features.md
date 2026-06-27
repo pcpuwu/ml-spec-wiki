@@ -1,5 +1,5 @@
 ---
-summary: "So far every feature had two values. What about a categorical feature with more than two? Use one-hot encoding."
+summary: '<p>So far every feature had two values. What about a categorical feature with more than two? Use one-hot encoding.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">? Use · pointy, floppy, or oval · three · three binary features · exactly one · unchanged</p>'
 ---
 # One-Hot Encoding of Categorical Features
 

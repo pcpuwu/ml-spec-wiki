@@ -1,5 +1,5 @@
 ---
-summary: "The key quantity RL algorithms compute is the state-action value function, written Q(s, a) — often just the Q-function."
+summary: '<p>The key quantity RL algorithms compute is the state-action value function, written Q(s, a) — often just the Q-function.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">state-action value function · Q-function · circularity · best possible return · best action · optimal</p><span class="toc-summary__sub">Key formulas</span><div class="toc-summary__math"><span class="arithmatex">\(Q(s, a) = \text{the return if you start in state } s,\ \text{take action } a \text{ once},\ \text{then behave \textbf{optimally} afterward.}\)</span><span class="arithmatex">\(\pi(s) = \arg\max_a Q(s, a), \qquad \text{best return} = \max_a Q(s, a)\)</span></div>'
 ---
 # State-Action Value Function (Definition)
 

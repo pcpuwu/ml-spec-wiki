@@ -1,5 +1,5 @@
 ---
-summary: "Now put the three pieces together — the linear model, the squared-error cost, and gradient descent — to get your first complete learning algorithm."
+summary: '<p>Now put the three pieces together — the linear model, the squared-error cost, and gradient descent — to get your first complete learning algorithm.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">simultaneously · descent path · local · convex</p><span class="toc-summary__sub">Key formulas</span><div class="toc-summary__math"><span class="arithmatex">\(\frac{\partial}{\partial w} J(w,b) = \frac{1}{m} \sum_{i=1}^{m} \left( f_{w,b}(x^{(i)}) - y^{(i)} \right) x^{(i)}\)</span><span class="arithmatex">\(w := w - \alpha \frac{1}{m} \sum_{i=1}^{m} \left( f_{w,b}(x^{(i)}) - y^{(i)} \right) x^{(i)}, \qquad b := b - \alpha \frac{1}{m} \sum_{i=1}^{m} \left( f_{w,b}(x^{(i)}) - y^{(i)} \right)\)</span></div>'
 ---
 # Gradient Descent for Linear Regression
 

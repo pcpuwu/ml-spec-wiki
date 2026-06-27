@@ -1,5 +1,5 @@
 ---
-summary: "Many important recommender applications give you binary labels (the user did or didn't engage) rather than 0–5 star ratings. Collaborative filtering generalizes to this the same way linear regression generalized to logistic regression."
+summary: '<p>Many important recommender applications give you binary labels (the user did or didn&#x27;t engage) rather than 0–5 star ratings.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">binary · generalizes · probability · binary cross-entropy · mean normalization</p><span class="toc-summary__sub">Key formulas</span><div class="toc-summary__math"><span class="arithmatex">\(P\big(y(i,j)=1\big) = g\!\left(\vec{w}^{(j)}\cdot\vec{x}^{(i)} + b^{(j)}\right)\)</span><span class="arithmatex">\(L\big(f, y(i,j)\big) = -y(i,j)\log(f) - \big(1 - y(i,j)\big)\log(1 - f)\)</span></div>'
 ---
 # Binary Labels: Favs, Likes and Clicks
 

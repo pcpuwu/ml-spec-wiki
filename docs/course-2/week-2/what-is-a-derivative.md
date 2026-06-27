@@ -1,5 +1,5 @@
 ---
-summary: "TensorFlow trains a network by using back-propagation to compute the derivatives of the cost with respect to every parameter, then feeding them to gradient descent or Adam."
+summary: '<p>TensorFlow trains a network by using back-propagation to compute the derivatives of the cost with respect to every parameter, then feeding them to gradient descent or…</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">back-propagation · Informal definition · small · slope · computation graph</p><span class="toc-summary__sub">Key formulas</span><div class="toc-summary__math"><span class="arithmatex">\(J(3.001) = 3.001^2 = 9.006001\)</span><span class="arithmatex">\(\frac{\partial}{\partial w}J(w) \Big|_{w=3} = 6\)</span></div>'
 ---
 # What is a Derivative? (Optional)
 

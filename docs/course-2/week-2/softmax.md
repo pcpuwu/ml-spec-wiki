@@ -1,5 +1,5 @@
 ---
-summary: "Softmax regression generalises logistic regression from binary to multiclass classification."
+summary: '<p>Softmax regression generalises logistic regression from binary to multiclass classification.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">Softmax regression · multiclass · generalisation · output layer · Validate</p><span class="toc-summary__sub">Key formulas</span><div class="toc-summary__math"><span class="arithmatex">\(a_j = \frac{e^{z_j}}{e^{z_1}+e^{z_2}+e^{z_3}+e^{z_4}} = P(y=j\mid\vec{x})\)</span><span class="arithmatex">\(z_j = \vec{w}_j\cdot\vec{x}+b_j,\qquad a_j = \frac{e^{z_j}}{\sum_{k=1}^{N} e^{z_k}}\)</span></div>'
 ---
 # Softmax Regression
 

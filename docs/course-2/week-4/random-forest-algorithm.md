@@ -1,5 +1,5 @@
 ---
-summary: "Combine sampling with replacement and ensemble voting to get the random forest — far better than a single tree."
+summary: '<p>Combine sampling with replacement and ensemble voting to get the random forest — far better than a single tree.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">random forest · diminishing returns · bagged decision tree · same root split · each node · explores many small data changes</p>'
 ---
 # Random Forest Algorithm
 

@@ -1,5 +1,5 @@
 ---
-summary: "The first model of the course is linear regression — fitting a straight line to your data. It's probably the most widely used learning algorithm in the world, and many concepts you meet here carry over to the more advanced models later."
+summary: '<p>The first model of the course is linear regression — fitting a straight line to your data. It&#x27;s probably the most widely used learning algorithm in the world, and many…</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">linear regression · price of a house from its size · Portland · 1,250 sq ft · supervised learning · number</p>'
 ---
 # Linear Regression Model, Part 1
 

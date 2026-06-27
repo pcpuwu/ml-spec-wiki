@@ -1,5 +1,5 @@
 ---
-summary: "A refinement of the train/test idea that lets you automatically choose a model — e.g. which degree of polynomial to use."
+summary: '<p>A refinement of the train/test idea that lets you automatically choose a model — e.g. which degree of polynomial to use.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">automatically choose · chose a parameter · optimistic · three · validation · choose</p>'
 ---
 # Model Selection: Train / Cross-Validation / Test Sets
 

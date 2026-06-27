@@ -1,5 +1,5 @@
 ---
-summary: "An optional lab lets you modify the Mars rover and watch Q(s,a), the optimal return, and the optimal policy change. This lesson walks through that intuition."
+summary: '<p>An optional lab lets you modify the Mars rover and watch Q(s,a), the optimal return, and the optimal policy change. This lesson walks through that intuition.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">optional lab · terminal rewards · misstep probability · go left from every state · more patient · very impatient</p>'
 ---
 # State-Action Value Function (Example)
 

@@ -1,5 +1,5 @@
 ---
-summary: "Putting it together: the vectorized implementation of a neural-network layer, and why matmul makes forward prop both short and fast."
+summary: '<p>Putting it together: the vectorized implementation of a neural-network layer, and why matmul makes forward prop both short and fast.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">vectorized implementation · individual examples in rows · a few lines of code · Week 1 · inference (forward propagation) · train</p>'
 ---
 # Matrix Multiplication Code
 

@@ -1,5 +1,5 @@
 ---
-summary: "A systematic way to evaluate a model's performance also points the way to improving it."
+summary: '<p>A systematic way to evaluate a model&#x27;s performance also points the way to improving it.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">systematic · wiggly · numerical · without · misclassification fraction · automatically choose</p><span class="toc-summary__sub">Key formula</span><div class="toc-summary__math"><span class="arithmatex">\(J_\text{test} = \frac{1}{2m_\text{test}}\sum_{i=1}^{m_\text{test}}\big(f(\vec{x}^{(i)}_\text{test}) - y^{(i)}_\text{test}\big)^2, \qquad J_\text{train} = \frac{1}{2m_\text{train}}\sum_{i=1}^{m_\text{train}}\big(f(\vec{x}^{(i)}) - y^{(i)}\big)^2\)</span></div>'
 ---
 # Evaluating a Model
 

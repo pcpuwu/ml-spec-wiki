@@ -1,5 +1,5 @@
 ---
-summary: "'Customers who looked at this also liked…' — when a shopping or streaming site shows you items similar to the one you're viewing, collaborative filtering gives a clean way to do it, reusing the features it already learned."
+summary: '<p>&quot;Customers who looked at this also liked…&quot; — when a shopping or streaming site shows you items similar to the one you&#x27;re viewing, collaborative filtering gives a clean…</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">similar to the one you&#x27;re viewing · hard to interpret · closest · squared distance · content-based filtering</p><span class="toc-summary__sub">Key formula</span><div class="toc-summary__math"><span class="arithmatex">\(\big\lVert \vec{x}^{(k)} - \vec{x}^{(i)} \big\rVert^2 = \sum_{l=1}^{n}\big(x^{(k)}_l - x^{(i)}_l\big)^2\)</span></div>'
 ---
 # Finding Related Items
 

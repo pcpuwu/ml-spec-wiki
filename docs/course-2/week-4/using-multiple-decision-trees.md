@@ -1,5 +1,5 @@
 ---
-summary: "A single decision tree has a weakness: it's highly sensitive to small changes in the data. The fix is a tree ensemble — many trees that vote."
+summary: '<p>A single decision tree has a weakness: it&#x27;s highly sensitive to small changes in the data. The fix is a tree ensemble — many trees that vote.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">highly sensitive to small changes · tree ensemble · majority vote · robust · sampling with replacement</p>'
 ---
 # Using Multiple Decision Trees
 

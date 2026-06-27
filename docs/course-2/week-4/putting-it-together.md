@@ -1,5 +1,5 @@
 ---
-summary: "Information gain chooses one split; applying it everywhere builds the whole tree."
+summary: '<p>Information gain chooses one split; applying it everywhere builds the whole tree.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">everywhere · information gain · highest · stopping criterion · maximum depth · same algorithm</p>'
 ---
 # Putting It Together
 

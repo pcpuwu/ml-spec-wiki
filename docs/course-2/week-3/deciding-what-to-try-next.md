@@ -1,5 +1,5 @@
 ---
-summary: "You now have powerful tools — linear regression, logistic regression, neural networks. This week is about using them effectively: making good decisions about what to do next, which is what separates a 2-week project from a 6-month one."
+summary: '<p>You now have powerful tools — linear regression, logistic regression, neural networks. This week is about using them effectively: making good decisions about what to d…</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">effectively · unacceptably large errors · more training examples · smaller · additional · polynomial</p>'
 ---
 # Deciding What to Try Next
 

@@ -1,5 +1,5 @@
 ---
-summary: "What developing a machine learning system actually feels like — a loop you go around several times."
+summary: '<p>What developing a machine learning system actually feels like — a loop you go around several times.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">error analysis · change · multiple iterations · honeypot · email-routing · email body</p>'
 ---
 # The Iterative Loop of ML Development
 

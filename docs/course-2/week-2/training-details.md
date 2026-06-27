@@ -1,5 +1,5 @@
 ---
-summary: "What is that TensorFlow code actually doing? The same three steps that trained logistic regression in Course 1 are exactly the three steps that train a neural network — just with more parameters."
+summary: '<p>What is that TensorFlow code actually doing? The same three steps that trained logistic regression in Course 1 are exactly the three steps that train a neural network…</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">three steps · average · cross-entropy · regression · Keras · back-propagation</p>'
 ---
 # Training Details
 

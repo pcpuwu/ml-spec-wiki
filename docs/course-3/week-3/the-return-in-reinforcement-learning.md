@@ -1,5 +1,5 @@
 ---
-summary: "How do you tell whether one set of rewards is better than another? The return captures that — and encodes the idea that rewards you get sooner are worth more."
+summary: '<p>How do you tell whether one set of rewards is better than another? The return captures that — and encodes the idea that rewards you get sooner are worth more.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">return · sooner · discount factor · impatient · Always-left · always-right</p><span class="toc-summary__sub">Key formula</span><div class="toc-summary__math"><span class="arithmatex">\(G = R_1 + \gamma R_2 + \gamma^2 R_3 + \gamma^3 R_4 + \cdots\)</span></div>'
 ---
 # The Return in Reinforcement Learning
 

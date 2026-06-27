@@ -37,53 +37,93 @@ def h1_title(md_path, default):
 
 
 def page_summary(body):
-    """A one-line 'nutshell' summary for the right-panel, from the note's lead
-    paragraph (or an explicit `summary:` if the note carries front-matter).
+    """A glance 'nutshell' for the right panel: a short descriptor + the page's
+    key concepts (its bolded terms) + its major display formula(s).
 
-    Strips the `[mm:ss]` timestamps, markdown emphasis/code/links and inline
-    LaTeX, collapses whitespace, and keeps the first ~2 sentences (≤240 chars).
+    Returns an HTML fragment (one line). Formulas are wrapped in
+    <span class="arithmatex">\\(…\\)</span> so MathJax typesets them in the
+    sidebar. An explicit front-matter `summary:` overrides the descriptor only.
     """
-    import re
+    import re, html
+
+    def clean(s):
+        s = re.sub(r"`\[[0-9:]+\]`", "", s)              # `[mm:ss]` timestamps
+        s = re.sub(r"`([^`]*)`", r"\1", s)               # inline code
+        s = re.sub(r"\*\*([^*]+)\*\*", r"\1", s)         # bold
+        s = re.sub(r"\*([^*]+)\*", r"\1", s)             # italic
+        s = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", s)  # links -> text
+        s = re.sub(r"\$([^$]*)\$", r"\1", s)             # inline math -> raw
+        s = re.sub(r"[\\${}]", "", s)                     # stray tex chars
+        return re.sub(r"\s+", " ", s).strip()
 
     text = body
-    # explicit override: a leading YAML front-matter block with `summary:`
+    override = None
     if text.startswith("---"):
         end = text.find("\n---", 3)
         if end != -1:
             fm = text[3:end]
             m = re.search(r"(?m)^summary:\s*(.+)$", fm)
             if m:
-                return m.group(1).strip().strip("\"'")
+                override = m.group(1).strip().strip("\"'")
             text = text[end + 4 :]
 
-    # drop the H1, then take the first non-empty paragraph
-    lines = text.splitlines()
-    lines = [ln for ln in lines if not ln.startswith("# ")]
-    para = ""
-    for ln in lines:
-        if ln.strip() == "":
-            if para:
-                break
-            continue
-        if ln.lstrip().startswith(("#", "!", "$$", "```", ">", "|", "{", "_", "-")):
-            if para:
-                break
-            continue
-        para += " " + ln.strip()
+    # 1) descriptor — explicit override, else the first real paragraph (≤170 chars)
+    if override is not None:
+        desc = override
+    else:
+        lines = [ln for ln in text.splitlines() if not ln.startswith("# ")]
+        para = ""
+        for ln in lines:
+            if ln.strip() == "":
+                if para:
+                    break
+                continue
+            if ln.lstrip().startswith(("#", "!", "$$", "```", ">", "|", "{", "_", "-")):
+                if para:
+                    break
+                continue
+            para += " " + ln.strip()
+        desc = clean(para)
+        if len(desc) > 170:
+            cut = desc.rfind(". ", 0, 170)
+            desc = desc[: cut + 1] if cut > 90 else desc[:167].rstrip() + "…"
 
-    s = para.strip()
-    s = re.sub(r"`\[[0-9:]+\]`", "", s)          # `[mm:ss]` timestamps
-    s = re.sub(r"`([^`]*)`", r"\1", s)            # inline code
-    s = re.sub(r"\*\*([^*]+)\*\*", r"\1", s)      # bold
-    s = re.sub(r"\*([^*]+)\*", r"\1", s)          # italic
-    s = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", s)  # links -> text
-    s = re.sub(r"\$([^$]*)\$", r"\1", s)          # inline math -> raw
-    s = re.sub(r"[\\${}]", "", s)                 # stray tex chars
-    s = re.sub(r"\s+", " ", s).strip()
-    if len(s) > 240:                              # trim to a sentence boundary
-        cut = s.rfind(". ", 0, 240)
-        s = (s[: cut + 1] if cut > 120 else s[:237].rstrip() + "…")
-    return s.replace('"', "'")
+    # 2) key concepts — deliberately bolded terms, minus list-step labels
+    #    (the bold that *opens* a "1. **Square it.**"-style list item) & emphasis words
+    seen, concepts = set(), []
+    for line in body.splitlines():
+        lab = re.match(r"\s*(?:\d+\.|[-*])\s+\*\*(.+?)\*\*", line)
+        skip = lab.group(1) if lab else None
+        for raw in re.findall(r"\*\*(.+?)\*\*", line):
+            if raw == skip or "$" in raw:
+                continue
+            t = clean(raw).rstrip(" .,:;")
+            k = t.lower()
+            if t and (len(t) >= 5 or " " in t) and len(t) <= 34 and k not in seen:
+                seen.add(k)
+                concepts.append(t)
+    concepts = concepts[:6]
+
+    # 3) major formulae — display $$…$$ blocks. Rank by substance (length is a fair
+    #    proxy for "the central result"), keep up to 2, show in document order.
+    all_disp = [re.sub(r"\s+", " ", f).strip().rstrip(" .,") for f in re.findall(r"\$\$(.+?)\$\$", body, re.S)]
+    ranked = sorted(all_disp, key=len, reverse=True)[:2]
+    formulas = [f for f in all_disp if f in ranked]
+
+    parts = []
+    if desc:
+        parts.append("<p>" + html.escape(desc) + "</p>")
+    if concepts:
+        chips = " · ".join(html.escape(c) for c in concepts)
+        parts.append('<span class="toc-summary__sub">Key ideas</span>'
+                     '<p class="toc-summary__chips">' + chips + "</p>")
+    if formulas:
+        spans = "".join('<span class="arithmatex">\\(' + html.escape(f) + '\\)</span>'
+                        for f in formulas)
+        label = "Key formula" + ("s" if len(formulas) > 1 else "")
+        parts.append('<span class="toc-summary__sub">' + label + "</span>"
+                     '<div class="toc-summary__math">' + spans + "</div>")
+    return "".join(parts)
 
 
 def youtube_embed(vid, start=None):
@@ -240,7 +280,9 @@ def main():
                     f"{bar}\n\n{embed}\n\n{tlink}"
                 )
                 summary = page_summary(body)
-                fm = f'---\nsummary: "{summary}"\n---\n' if summary else ""
+                # single-quoted YAML scalar: preserves the formulas' backslashes
+                # (\\( … \\)) literally; only '' needs escaping.
+                fm = f"---\nsummary: '{summary.replace(chr(39), chr(39) * 2)}'\n---\n" if summary else ""
                 first, _, rest = body.partition("\n")  # first == "# Title"
                 page = f"{fm}{first}\n\n{header}{rest.lstrip(chr(10))}\n\n{bar}\n"
 
@@ -340,8 +382,23 @@ def write_extra_css():
         ".toc-summary__label { display:block; font-size:.62rem;\n"
         "               text-transform:uppercase; letter-spacing:.08em;\n"
         "               font-weight:700; opacity:.6; margin-bottom:.25rem; }\n"
-        ".toc-summary p { margin:0; font-size:.72rem; line-height:1.45;\n"
-        "               opacity:.85; }\n",
+        ".toc-summary p { margin:0 0 .5rem; font-size:.72rem; line-height:1.45;\n"
+        "               opacity:.85; }\n"
+        ".toc-summary p:last-child { margin-bottom:0; }\n"
+        ".toc-summary__sub { display:block; font-size:.6rem; font-weight:700;\n"
+        "               text-transform:uppercase; letter-spacing:.06em; opacity:.55;\n"
+        "               margin:.2rem 0 .15rem; }\n"
+        ".toc-summary__chips { opacity:.95 !important; }\n"
+        ".toc-summary__math { font-size:.78rem; overflow-x:auto; margin-bottom:.1rem; }\n"
+        ".toc-summary__math .arithmatex { display:block; margin:.15rem 0; }\n"
+        # PMT leaves static fenced code blocks transparent (no box). Give them a clear\n
+        # boundary; keep --md-code-bg-color dark in slate (PMT left it the light default).\n
+        '[data-md-color-scheme="slate"] { --md-code-bg-color: hsla(232,12%,16%,1); }\n'
+        ".md-typeset .highlight { background:var(--md-code-bg-color);\n"
+        "         border:1px solid var(--md-default-fg-color--lightest);\n"
+        "         border-radius:6px; margin:1rem 0; }\n"
+        ".md-typeset .highlight > pre { margin:0; }\n"
+        ".md-typeset .highlight > pre > code { background:transparent; }\n",
         encoding="utf-8",
     )
 

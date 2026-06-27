@@ -1,5 +1,5 @@
 ---
-summary: "Back to the six options from the start of the week. Each one fixes either high bias or high variance — and now you can tell which."
+summary: '<p>Back to the six options from the start of the week. Each one fixes either high bias or high variance — and now you can tell which.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">either · more training examples · variance · smaller · additional · polynomial</p>'
 ---
 # Deciding What to Try Next (Revisited)
 

@@ -1,5 +1,5 @@
 ---
-summary: "course. This generalizes RL to stochastic environments."
+summary: '<p>course. This generalizes RL to stochastic environments.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">stochastic · right · random · average over many runs · expected return · expectation</p><span class="toc-summary__sub">Key formulas</span><div class="toc-summary__math"><span class="arithmatex">\(\text{maximize}\quad \mathbb{E}\big[R_1 + \gamma R_2 + \gamma^2 R_3 + \cdots\big]\)</span><span class="arithmatex">\(Q(s, a) = R(s) + \gamma\, \mathbb{E}\!\left[\max_{a&#x27;} Q(s&#x27;, a&#x27;)\right]\)</span></div>'
 ---
 # Random (Stochastic) Environment
 

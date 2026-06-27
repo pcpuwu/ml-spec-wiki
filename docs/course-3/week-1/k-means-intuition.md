@@ -1,5 +1,5 @@
 ---
-summary: "K-means repeatedly does two things: assign points to cluster centroids, and move the centroids."
+summary: '<p>K-means repeatedly does two things: assign points to cluster centroids, and move the centroids.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">two things · randomly guesses · cluster centroids · average · converged · assign</p>'
 ---
 # K-means Intuition
 

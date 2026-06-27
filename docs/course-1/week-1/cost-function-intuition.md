@@ -1,5 +1,5 @@
 ---
-summary: "We have the cost function's formula; now let's build intuition for what it's actually doing by working through one example end to end."
+summary: '<p>We have the cost function&#x27;s formula; now let&#x27;s build intuition for what it&#x27;s actually doing by working through one example end to end.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">U-shaped curve</p><span class="toc-summary__sub">Key formula</span><div class="toc-summary__math"><span class="arithmatex">\(\min_{w,b} J(w,b)\)</span></div>'
 ---
 # Cost Function Intuition
 

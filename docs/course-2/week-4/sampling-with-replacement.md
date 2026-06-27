@@ -1,5 +1,5 @@
 ---
-summary: "The technique that lets you build many different training sets — and hence many different trees."
+summary: '<p>The technique that lets you build many different training sets — and hence many different trees.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">green, yellow, blue, blue · varied · with replacement · twice · missing · similar to but different from</p>'
 ---
 # Sampling with Replacement
 

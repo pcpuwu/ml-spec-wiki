@@ -1,5 +1,5 @@
 ---
-summary: "The week's practice application: land a simulated vehicle on the moon — a classic RL benchmark and a continuous-state problem."
+summary: '<p>The week&#x27;s practice application: land a simulated vehicle on the moon — a classic RL benchmark and a continuous-state problem.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">continuous-state · binary · left/right leg · moderately complex · reward shaping</p><span class="toc-summary__sub">Key formula</span><div class="toc-summary__math"><span class="arithmatex">\(s = \big[\,x,\; y,\; \dot{x},\; \dot{y},\; \theta,\; \dot{\theta},\; l,\; r\,\big]\)</span></div>'
 ---
 # Lunar Lander
 

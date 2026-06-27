@@ -1,5 +1,5 @@
 ---
-summary: "The computation graph is the key idea behind how frameworks like TensorFlow automatically compute the derivatives of a neural network."
+summary: '<p>The computation graph is the key idea behind how frameworks like TensorFlow automatically compute the derivatives of a neural network.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">computation graph · Forward prop · right-to-left · chain rule</p><span class="toc-summary__sub">Key formula</span><div class="toc-summary__math"><span class="arithmatex">\(c = wx = -4,\qquad a = c + b = 4,\qquad d = a - y = 2,\qquad J = \tfrac12 d^2 = 2\)</span></div>'
 ---
 # Computation Graph (Optional)
 

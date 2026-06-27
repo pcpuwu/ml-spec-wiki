@@ -1,5 +1,5 @@
 ---
-summary: "Why is machine learning so widely used today? The short answer: for a huge class of useful problems, learning from data is the only approach we know that works."
+summary: '<p>Why is machine learning so widely used today? The short answer: for a huge class of useful problems, learning from data is the only approach we know that works.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">Google Brain · Baidu · Landing AI, AI Fund, and Stanford · learning algorithms</p>'
 ---
 # Applications of Machine Learning
 

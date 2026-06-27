@@ -1,5 +1,5 @@
 ---
-summary: "Week 2 makes linear regression faster and far more powerful. The first upgrade: predict from many features, not just one."
+summary: '<p>Week 2 makes linear regression faster and far more powerful. The first upgrade: predict from many features, not just one.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">faster and far more powerful · many features · number of features · vector · base price · dot product</p><span class="toc-summary__sub">Key formulas</span><div class="toc-summary__math"><span class="arithmatex">\(f_{w,b}(\vec{x}) = w_1 x_1 + w_2 x_2 + \dots + w_n x_n + b\)</span><span class="arithmatex">\(f_{w,b}(\vec{x}) = \vec{w} \cdot \vec{x} + b\)</span></div>'
 ---
 # Multiple Features
 

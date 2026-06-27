@@ -1,5 +1,5 @@
 ---
-summary: "Building a decision tree from a training set comes down to two key decisions, made over and over."
+summary: '<p>Building a decision tree from a training set comes down to two key decisions, made over and over.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">ear shape · split · face shape · leaf: cat · maximizes purity · all cats</p>'
 ---
 # The Learning Process
 

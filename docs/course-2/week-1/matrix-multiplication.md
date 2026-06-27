@@ -1,5 +1,5 @@
 ---
-summary: "What it actually means to multiply two matrices — built up from the dot product."
+summary: '<p>What it actually means to multiply two matrices — built up from the dot product.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">transpose · column by column · columns stacked side by side · laid on their sides as rows · general rules</p><span class="toc-summary__sub">Key formula</span><div class="toc-summary__math"><span class="arithmatex">\(z = \vec{a}^T \vec{w} = \vec{a}\cdot\vec{w}\)</span></div>'
 ---
 # Matrix Multiplication
 

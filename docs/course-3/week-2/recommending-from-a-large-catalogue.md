@@ -1,5 +1,5 @@
 ---
-summary: "Real systems must pick a few items from catalogues of millions — movies, ads, songs, products. Running the neural network over every item each time a user shows up is computationally infeasible."
+summary: '<p>Real systems must pick a few items from catalogues of millions — movies, ads, songs, products.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">millions · two-step retrieval + ranking · large candidate list · pre-computed · broad coverage · learned model</p>'
 ---
 # Recommending from a Large Catalogue
 

@@ -1,5 +1,5 @@
 ---
-summary: "The way most state-of-the-art content-based recommenders are built today: compute vecv_u and vecv_m with neural networks — a user network and a movie network — then dot-product their outputs."
+summary: '<p>The way most state-of-the-art content-based recommenders are built today: compute vecv_u and vecv_m with neural networks — a user network and a movie network — then do…</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">neural networks · user network · 32-number · movie network · binary · no separate training</p><span class="toc-summary__sub">Key formula</span><div class="toc-summary__math"><span class="arithmatex">\(J = \sum_{(i,j):\,r(i,j)=1}\big(\vec{v}_u^{(j)} \cdot \vec{v}_m^{(i)} - y^{(i,j)}\big)^2 + \text{(NN regularization)}\)</span></div>'
 ---
 # Deep Learning for Content-Based Filtering
 

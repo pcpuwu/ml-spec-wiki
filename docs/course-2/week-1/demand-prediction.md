@@ -1,5 +1,5 @@
 ---
-summary: "A worked example that introduces all the core neural-network vocabulary in one picture: layers, neurons, activations."
+summary: '<p>A worked example that introduces all the core neural-network vocabulary in one picture: layers, neurons, activations.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">top seller · price · one neuron · activation · layer · affordability</p>'
 ---
 # Demand Prediction
 

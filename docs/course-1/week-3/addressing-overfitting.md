@@ -1,5 +1,5 @@
 ---
-summary: "Three practical ways to fix an overfit (high-variance) model."
+summary: '<p>Three practical ways to fix an overfit (high-variance) model.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">number-one tool · less wiggly · feature selection · throw away information · large · deleting</p>'
 ---
 # Addressing Overfitting
 

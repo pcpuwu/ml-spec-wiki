@@ -1,5 +1,5 @@
 ---
-summary: "The rest of this week is a set of optional videos on Principal Components Analysis (PCA) — an unsupervised algorithm that takes data with many features (50, 1000, more) and reduces it to 2 or 3 so you can plot and visualize it."
+summary: '<p>The rest of this week is a set of optional videos on Principal Components Analysis (PCA) — an unsupervised algorithm that takes data with many features (50, 1000, more…</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">optional · reduces it to 2 or 3</p>'
 ---
 # Reducing the Number of Features (PCA)
 

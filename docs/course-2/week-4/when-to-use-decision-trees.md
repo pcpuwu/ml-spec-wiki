@@ -1,5 +1,5 @@
 ---
-summary: "Both decision trees (and ensembles) and neural networks are powerful — here's how to choose."
+summary: '<p>Both decision trees (and ensembles) and neural networks are powerful — here&#x27;s how to choose.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">use XGBoost · preferred · slower · transfer learning · chain multiple models · unsupervised learning</p>'
 ---
 # When to Use Decision Trees
 

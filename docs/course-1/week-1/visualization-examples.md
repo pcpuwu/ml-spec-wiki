@@ -1,5 +1,5 @@
 ---
-summary: "A few concrete (w, b) choices, each shown as a line f(x) on the left and a single point on the cost contour on the right — to cement how the two views connect."
+summary: '<p>A few concrete (w, b) choices, each shown as a line f(x) on the left and a single point on the cost contour on the right — to cement how the two views connect.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">far from the minimum · very close to the centre · efficient algorithm</p>'
 ---
 # Visualization Examples
 

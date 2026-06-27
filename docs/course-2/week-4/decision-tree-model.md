@@ -1,5 +1,5 @@
 ---
-summary: "The final week: decision trees and tree ensembles — powerful, widely used, and a frequent winner of ML competitions, even if they get less academic attention than neural networks."
+summary: '<p>The final week: decision trees and tree ensembles — powerful, widely used, and a frequent winner of ML competitions, even if they get less academic attention than neur…</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">decision trees · tree ensembles · categorical · ear shape · face shape · whiskers</p>'
 ---
 # Decision Tree Model
 

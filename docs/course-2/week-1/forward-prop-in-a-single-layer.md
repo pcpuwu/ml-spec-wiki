@@ -1,5 +1,5 @@
 ---
-summary: "How to implement forward propagation from scratch in Python — no TensorFlow — so you understand what the libraries do under the hood."
+summary: '<p>How to implement forward propagation from scratch in Python — no TensorFlow — so you understand what the libraries do under the hood.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">from scratch in Python · 1-D arrays · hard-codes every neuron · general</p>'
 ---
 # Forward Prop in a Single Layer
 

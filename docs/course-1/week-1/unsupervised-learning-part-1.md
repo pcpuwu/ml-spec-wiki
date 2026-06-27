@@ -1,5 +1,5 @@
 ---
-summary: "After supervised learning, the most widely used form of machine learning is unsupervised learning — and despite the name, Ng insists it's 'just as super.'"
+summary: '<p>After supervised learning, the most widely used form of machine learning is unsupervised learning — and despite the name, Ng insists it&#x27;s &quot;just as super.&quot;</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">unsupervised learning · clustering</p>'
 ---
 # Unsupervised Learning, Part 1
 

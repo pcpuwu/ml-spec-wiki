@@ -1,5 +1,5 @@
 ---
-summary: "Let's watch gradient descent actually fit the line."
+summary: '<p>Let&#x27;s watch gradient descent actually fit the line.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">down and to the right · trajectory · global minimum · 1,250 sq ft · batch gradient descent · first machine-learning model</p>'
 ---
 # Running Gradient Descent
 

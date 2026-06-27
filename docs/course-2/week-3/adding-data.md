@@ -1,5 +1,5 @@
 ---
-summary: "A grab-bag of techniques for getting more data when that's what your diagnostics call for. Not every one applies to every problem, but many are broadly useful."
+summary: '<p>A grab-bag of techniques for getting more data when that&#x27;s what your diagnostics call for. Not every one applies to every problem, but many are broadly useful.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">getting more data · types error analysis flagged · unlabeled · distort the input · grid warping · speech</p>'
 ---
 # Adding Data
 

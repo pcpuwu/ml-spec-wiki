@@ -1,5 +1,5 @@
 ---
-summary: "Every layer so far has been a dense layer. There are other useful layer types — here's one: the convolutional layer."
+summary: '<p>Every layer so far has been a dense layer. There are other useful layer types — here&#x27;s one: the convolutional layer.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">dense · convolutional · every · limited region · less prone to overfitting · convolutional neural network (CNN)</p><span class="toc-summary__sub">Key formula</span><div class="toc-summary__math"><span class="arithmatex">\(a^{[2]}_j = g\big(\vec{w}^{[2]}_j \cdot \vec{a}^{[1]} + b^{[2]}_j\big)\)</span></div>'
 ---
 # Additional Layer Types
 

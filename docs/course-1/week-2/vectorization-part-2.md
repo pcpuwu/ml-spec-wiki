@@ -1,5 +1,5 @@
 ---
-summary: "Ng recalls being amazed, when first learning this, that the same algorithm vectorized ran so much faster — 'almost like a magic trick.' Here's how the trick works."
+summary: '<p>Ng recalls being amazed, when first learning this, that the same algorithm vectorized ran so much faster — &quot;almost like a magic trick.&quot; Here&#x27;s how the trick works.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">for loop · one operation after another · vectorized · parallel hardware · in parallel, at once</p>'
 ---
 # Vectorization, Part 2
 

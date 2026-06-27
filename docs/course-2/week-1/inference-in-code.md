@@ -1,5 +1,5 @@
 ---
-summary: "TensorFlow is one of the leading deep-learning frameworks (PyTorch is the other big one); this specialization uses TensorFlow. Here's how to run inference in code."
+summary: '<p>TensorFlow is one of the leading deep-learning frameworks (PyTorch is the other big one); this specialization uses TensorFlow. Here&#x27;s how to run inference in code.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">TensorFlow · same algorithm · temperature · duration · triangle · callable</p>'
 ---
 # Inference in Code (TensorFlow)
 

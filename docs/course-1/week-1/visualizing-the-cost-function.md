@@ -1,5 +1,5 @@
 ---
-summary: "The previous topic visualized J with b temporarily set to 0. Now restore both parameters and build a richer picture of J(w,b)."
+summary: '<p>The previous topic visualized J with b temporarily set to 0. Now restore both parameters and build a richer picture of J(w,b).</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">U-shaped curve · three dimensions · contour plot · Mount Fuji · same height · ellipse</p>'
 ---
 # Visualizing the Cost Function
 

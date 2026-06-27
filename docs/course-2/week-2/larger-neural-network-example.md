@@ -1,5 +1,5 @@
 ---
-summary: "The final back-prop intuition video: the same computation graph on a network with a hidden layer."
+summary: '<p>The final back-prop intuition video: the same computation graph on a network with a hidden layer.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">right-to-left · by hand · automatic differentiation · dropped</p><span class="toc-summary__sub">Key formulas</span><div class="toc-summary__math"><span class="arithmatex">\(a^{[1]} = g(w_1 x + b_1) = 2,\qquad a^{[2]} = g(w_2 a^{[1]} + b_2) = 3\cdot 2 + 1 = 7\)</span><span class="arithmatex">\(J = \tfrac12\big(a^{[2]} - y\big)^2 = \tfrac12(7-5)^2 = 2\)</span></div>'
 ---
 # Larger Neural Network Example (Optional)
 

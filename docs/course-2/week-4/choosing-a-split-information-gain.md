@@ -1,5 +1,5 @@
 ---
-summary: "The reduction in entropy from a split is called information gain. You split on the feature with the highest information gain."
+summary: '<p>The reduction in entropy from a split is called information gain. You split on the feature with the highest information gain.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">information gain · highest · weighted · fraction of examples · stopping criterion · split on the largest</p><span class="toc-summary__sub">Key formula</span><div class="toc-summary__math"><span class="arithmatex">\(\text{Information gain} = H(p_1^{\text{root}}) - \Big(w^{\text{left}}H(p_1^{\text{left}}) + w^{\text{right}}H(p_1^{\text{right}})\Big)\)</span></div>'
 ---
 # Choosing a Split: Information Gain
 

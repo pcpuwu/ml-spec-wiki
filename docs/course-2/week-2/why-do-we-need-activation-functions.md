@@ -1,5 +1,5 @@
 ---
-summary: "Why not just use the linear activation g(z)=z everywhere — i.e. no activation at all? It turns out that breaks the network completely: it collapses into plain linear regression."
+summary: '<p>Why not just use the linear activation g(z)=z everywhere — i.e. no activation at all? It turns out that breaks the network completely: it collapses into plain linear r…</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">linear · linear regression · sigmoid · universal-approximation · non-linear · more than two</p><span class="toc-summary__sub">Key formulas</span><div class="toc-summary__math"><span class="arithmatex">\(a^{[1]} = w_1 x + b_1,\qquad a^{[2]} = w_2 a^{[1]} + b_2\)</span><span class="arithmatex">\(a^{[2]} = w_2(w_1 x + b_1) + b_2 = (w_2 w_1)\,x + (w_2 b_1 + b_2)\)</span></div>'
 ---
 # Why Do We Need Activation Functions?
 

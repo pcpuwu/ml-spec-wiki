@@ -1,5 +1,5 @@
 ---
-summary: "How does PCA actually pick the new axis z? It chooses the direction that, when you project the data onto it, preserves the most variance (spread) — and therefore the most information."
+summary: '<p>How does PCA actually pick the new axis z? It chooses the direction that, when you project the data onto it, preserves the most variance (spread) — and therefore the m…</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">project · preserves the most variance · normalize features to zero mean · feature scaling · squishes · principal component</p><span class="toc-summary__sub">Key formula</span><div class="toc-summary__math"><span class="arithmatex">\(z = \vec{x}\cdot\vec{u} = 2(0.71) + 3(0.71) = 3.55\)</span></div>'
 ---
 # PCA Algorithm
 

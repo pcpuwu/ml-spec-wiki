@@ -1,5 +1,5 @@
 ---
-summary: "With a few positives (y=1) and many negatives (y=0), when do you use anomaly detection vs. supervised learning? The choice is subtle."
+summary: '<p>With a few positives (y=1) and many negatives (y=0), when do you use anomaly detection vs. supervised learning? The choice is subtle.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">very small · many different types · brand-new · normal · enough positives · resemble</p>'
 ---
 # Anomaly Detection vs. Supervised Learning
 

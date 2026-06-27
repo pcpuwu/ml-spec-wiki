@@ -1,5 +1,5 @@
 ---
-summary: "After bias/variance, error analysis is the second-most-important diagnostic for deciding what to try next."
+summary: '<p>After bias/variance, error analysis is the second-most-important diagnostic for deciding what to try next.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">error analysis · manually looking through · pharma · phishing · misspellings · 3 of 100</p>'
 ---
 # Error Analysis
 

@@ -1,5 +1,5 @@
 ---
-summary: "To train a model you need two things: a way to measure how well it's currently doing, and therefore a target to improve against."
+summary: '<p>To train a model you need two things: a way to measure how well it&#x27;s currently doing, and therefore a target to improve against.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">parameters · coefficients · weights · y-intercept · slope · error</p><span class="toc-summary__sub">Key formulas</span><div class="toc-summary__math"><span class="arithmatex">\(\hat{y}^{(i)} = f_{w,b}(x^{(i)}) = w x^{(i)} + b\)</span><span class="arithmatex">\(J(w,b) = \frac{1}{2m} \sum_{i=1}^{m} \left( f_{w,b}(x^{(i)}) - y^{(i)} \right)^2\)</span></div>'
 ---
 # The Cost Function
 

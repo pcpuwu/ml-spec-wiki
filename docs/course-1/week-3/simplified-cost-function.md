@@ -1,5 +1,5 @@
 ---
-summary: "The two-case loss from the last topic can be written as a single line — which makes the gradient-descent implementation simpler."
+summary: '<p>The two-case loss from the last topic can be written as a single line — which makes the gradient-descent implementation simpler.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">single line · only ever 0 or 1 · maximum likelihood estimation · convex · Validate · gradient descent</p><span class="toc-summary__sub">Key formulas</span><div class="toc-summary__math"><span class="arithmatex">\(L\big(f(\vec{x}), y\big) = -y\,\log\big(f(\vec{x})\big) - (1-y)\,\log\big(1 - f(\vec{x})\big)\)</span><span class="arithmatex">\(J(\vec{w}, b) = -\frac{1}{m}\sum_{i=1}^{m} \Big[\, y^{(i)}\log\big(f(\vec{x}^{(i)})\big) + \big(1 - y^{(i)}\big)\log\big(1 - f(\vec{x}^{(i)})\big) \,\Big]\)</span></div>'
 ---
 # Simplified Cost Function for Logistic Regression
 

@@ -1,5 +1,5 @@
 ---
-summary: "How does supervised learning actually work? You feed a training set to a learning algorithm, and it produces a function."
+summary: '<p>How does supervised learning actually work? You feed a training set to a learning algorithm, and it produces a function.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">function · model · prediction · target · estimate · linear</p><span class="toc-summary__sub">Key formula</span><div class="toc-summary__math"><span class="arithmatex">\(f_{w,b}(x) = w x + b\)</span></div>'
 ---
 # Linear Regression Model, Part 2
 

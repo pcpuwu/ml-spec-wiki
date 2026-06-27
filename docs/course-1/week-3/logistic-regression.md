@@ -1,5 +1,5 @@
 ---
-summary: "Logistic regression is probably the single most widely used classification algorithm in the world. Instead of a straight line, it fits an S-shaped curve to the data."
+summary: '<p>Logistic regression is probably the single most widely used classification algorithm in the world. Instead of a straight line, it fits an S-shaped curve to the data.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">Logistic regression · S-shaped curve · sigmoid · logistic · between 0 and 1 · 70% chance</p><span class="toc-summary__sub">Key formulas</span><div class="toc-summary__math"><span class="arithmatex">\(g(z) = \frac{1}{1 + e^{-z}}\)</span><span class="arithmatex">\(f_{\vec{w},b}(\vec{x}) = g(\vec{w}\cdot\vec{x} + b) = \frac{1}{1 + e^{-(\vec{w}\cdot\vec{x} + b)}}\)</span></div>'
 ---
 # Logistic Regression
 

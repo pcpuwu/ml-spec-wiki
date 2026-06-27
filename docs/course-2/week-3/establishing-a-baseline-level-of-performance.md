@@ -1,5 +1,5 @@
 ---
-summary: "Is J_texttrain = 10.8% 'high'? It depends on what's achievable. The fix: compare to a baseline."
+summary: '<p>Is J_texttrain = 10.8% &quot;high&quot;? It depends on what&#x27;s achievable. The fix: compare to a baseline.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">achievable · baseline · human-level performance · 10.6% · high variance · two gaps</p>'
 ---
 # Establishing a Baseline Level of Performance
 

@@ -1,5 +1,5 @@
 ---
-summary: "A different problem, easily confused with multiclass: multi-label classification, where a single input can carry several labels at once."
+summary: '<p>A different problem, easily confused with multiclass: multi-label classification, where a single input can carry several labels at once.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">multi-label classification · several labels at once · three · vector · multiclass · single</p><span class="toc-summary__sub">Key formula</span><div class="toc-summary__math"><span class="arithmatex">\(\vec{a}^{[3]} = \big(a^{[3]}_1,\ a^{[3]}_2,\ a^{[3]}_3\big),\quad a^{[3]}_i = \text{sigmoid}(z^{[3]}_i) = P(\text{label } i \text{ present})\)</span></div>'
 ---
 # Classification with Multiple Outputs (Multi-label)
 

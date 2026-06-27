@@ -1,5 +1,5 @@
 ---
-summary: "Multiclass classification is a classification problem with more than two possible output labels — not just 0 or 1."
+summary: '<p>Multiclass classification is a classification problem with more than two possible output labels — not just 0 or 1.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">Multiclass classification · more than two · softmax regression</p><span class="toc-summary__sub">Key formula</span><div class="toc-summary__math"><span class="arithmatex">\(P(y=1\mid\vec{x}),\; P(y=2\mid\vec{x}),\; P(y=3\mid\vec{x}),\; P(y=4\mid\vec{x})\)</span></div>'
 ---
 # Multiclass Classification
 

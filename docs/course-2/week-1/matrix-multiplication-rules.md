@@ -1,5 +1,5 @@
 ---
-summary: "The general rule for multiplying two matrices — then we apply it to vectorized neural networks."
+summary: '<p>The general rule for multiplying two matrices — then we apply it to vectorized neural networks.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">same length · vectorized neural network</p><span class="toc-summary__sub">Key formula</span><div class="toc-summary__math"><span class="arithmatex">\(Z_{ij} = \vec{a}_i^T \vec{w}_j\)</span></div>'
 ---
 # Matrix Multiplication Rules
 

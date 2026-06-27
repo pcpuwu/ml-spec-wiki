@@ -1,5 +1,5 @@
 ---
-summary: "The definition most people start with comes from Arthur Samuel: machine learning is the field of study that gives computers the ability to learn without being explicitly programmed."
+summary: '<p>The definition most people start with comes from Arthur Samuel: machine learning is the field of study that gives computers the ability to learn without being explicit…</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">Arthur Samuel · 1950s · six months · best practices</p>'
 ---
 # What is Machine Learning?
 

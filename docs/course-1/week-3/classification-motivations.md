@@ -1,5 +1,5 @@
 ---
-summary: "Week 3 — the last of Course 1 — moves from regression (predict a number) to classification, where the output y takes only one of a small handful of values."
+summary: '<p>Week 3 — the last of Course 1 — moves from regression (predict a number) to classification, where the output y takes only one of a small handful of values.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">regression · classification · logistic regression · no/yes · fraudulent · malignant</p>'
 ---
 # Motivations
 

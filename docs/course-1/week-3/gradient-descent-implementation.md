@@ -1,5 +1,5 @@
 ---
-summary: "To fit logistic regression, find the vecw, b that minimize the cost J(vecw, b) — using the same gradient descent you already know."
+summary: '<p>To fit logistic regression, find the vecw, b that minimize the cost J(vecw, b) — using the same gradient descent you already know.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">gradient descent · exactly · sigmoid · two genuinely different algorithms · overfitting</p><span class="toc-summary__sub">Key formulas</span><div class="toc-summary__math"><span class="arithmatex">\(w_j := w_j - \alpha\,\frac{\partial}{\partial w_j} J(\vec{w}, b), \qquad b := b - \alpha\,\frac{\partial}{\partial b} J(\vec{w}, b)\)</span><span class="arithmatex">\(\frac{\partial J}{\partial w_j} = \frac{1}{m}\sum_{i=1}^{m} \big(f(\vec{x}^{(i)}) - y^{(i)}\big)\,x_j^{(i)}, \qquad \frac{\partial J}{\partial b} = \frac{1}{m}\sum_{i=1}^{m} \big(f(\vec{x}^{(i)}) - y^{(i)}\big)\)</span></div>'
 ---
 # Gradient Descent Implementation
 

@@ -1,5 +1,5 @@
 ---
-summary: "Here is the gradient descent update for one parameter:"
+summary: '<p>Here is the gradient descent update for one parameter:</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">assignment operator · truth assertion · learning rate · how big a step · derivative · you won&#x27;t need calculus</p><span class="toc-summary__sub">Key formulas</span><div class="toc-summary__math"><span class="arithmatex">\(w := w - \alpha \frac{\partial}{\partial w} J(w,b)\)</span><span class="arithmatex">\(b := b - \alpha \frac{\partial}{\partial b} J(w,b)\)</span></div>'
 ---
 # Implementing Gradient Descent
 

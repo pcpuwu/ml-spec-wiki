@@ -1,5 +1,5 @@
 ---
-summary: "Vectorization makes your learning-algorithm code both shorter and much faster — and it lets you tap modern numerical-linear-algebra libraries and even GPU hardware. It's one of the most useful techniques in all of ML implementation."
+summary: '<p>Vectorization makes your learning-algorithm code both shorter and much faster — and it lets you tap modern numerical-linear-algebra libraries and even GPU hardware.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">Vectorization · shorter · linear algebra counts from 1 · Python/NumPy count from 0 · NumPy · one line</p>'
 ---
 # Vectorization, Part 1
 

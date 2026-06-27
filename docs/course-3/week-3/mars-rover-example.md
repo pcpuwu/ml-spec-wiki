@@ -1,5 +1,5 @@
 ---
-summary: "To formalize RL without the complexity of a helicopter, Ng uses a simplified Mars rover on a line of six positions (states 1–6)."
+summary: '<p>To formalize RL without the complexity of a helicopter, Ng uses a simplified Mars rover on a line of six positions (states 1–6).</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">Mars rover · six positions · state · reward 100 · ; states 2–5 give · terminal states</p>'
 ---
 # Mars Rover Example
 

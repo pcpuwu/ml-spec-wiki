@@ -1,5 +1,5 @@
 ---
-summary: "TensorFlow isn't only for neural networks — it's a great tool for the collaborative-filtering algorithm too, mainly because of one feature: it can compute the derivatives of your cost function automatically."
+summary: '<p>TensorFlow isn&#x27;t only for neural networks — it&#x27;s a great tool for the collaborative-filtering algorithm too, mainly because of one feature: it can compute the derivati…</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">tf.GradientTape · automatic differentiation · PyTorch · Course 2, Week 2 · finding related items</p>'
 ---
 # TensorFlow Implementation of Collaborative Filtering
 

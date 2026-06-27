@@ -1,5 +1,5 @@
 ---
-summary: "Combine multiple linear regression with feature engineering and you get polynomial regression — fitting curves, not just straight lines, to your data."
+summary: '<p>Combine multiple linear regression with feature engineering and you get polynomial regression — fitting curves, not just straight lines, to your data.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">— fitting · quadratic · comes back down · cubic · explode · feature scaling is important</p><span class="toc-summary__sub">Key formulas</span><div class="toc-summary__math"><span class="arithmatex">\(f_{\vec{w},b}(x) = w_1 x + w_2 x^2 + w_3 x^3 + b\)</span><span class="arithmatex">\(f_{\vec{w},b}(x) = w_1 x + w_2 \sqrt{x} + b\)</span></div>'
 ---
 # Polynomial Regression
 

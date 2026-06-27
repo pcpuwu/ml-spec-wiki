@@ -1,5 +1,5 @@
 ---
-summary: "A model almost never works well the first time. Looking at its bias and variance is the single best guide to what to try next."
+summary: '<p>A model almost never works well the first time. Looking at its bias and variance is the single best guide to what to try next.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">variance · underfits · high bias · overfits · high variance · just right</p>'
 ---
 # Diagnosing Bias and Variance
 

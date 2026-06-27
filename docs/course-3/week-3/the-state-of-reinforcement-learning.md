@@ -1,5 +1,5 @@
 ---
-summary: "A candid, practical close: RL is exciting (it was Ng's own PhD thesis topic) but over-hyped. Here's where it actually stands."
+summary: '<p>A candid, practical close: RL is exciting (it was Ng&#x27;s own PhD thesis topic) but over-hyped. Here&#x27;s where it actually stands.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">over-hyped · simulations / video games · surprisingly hard · supervised or unsupervised · major pillars of machine learning</p>'
 ---
 # The State of Reinforcement Learning
 

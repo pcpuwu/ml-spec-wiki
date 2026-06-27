@@ -1,5 +1,5 @@
 ---
-summary: "Supervised learning still means learning an X to Y mapping from the right answers. Part 1 covered regression — predicting a number from infinitely many."
+summary: '<p>Supervised learning still means learning an X to Y mapping from the right answers. Part 1 covered regression — predicting a number from infinitely many.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">regression · classification · category · malignant · benign · benign = 0</p>'
 ---
 # Supervised Learning, Part 2
 

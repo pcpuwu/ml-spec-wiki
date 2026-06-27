@@ -1,5 +1,5 @@
 ---
-summary: "Why does the update w := w - alpha fracpartialpartial w J(w,b) actually move you toward the minimum? The key is what that derivative term is doing."
+summary: '<p>Why does the update w := w - alpha fracpartialpartial w J(w,b) actually move you toward the minimum? The key is what that derivative term is doing.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">derivative term · slope of the tangent line · up to the right · positive · smaller · down to the right</p>'
 ---
 # Gradient Descent Intuition
 

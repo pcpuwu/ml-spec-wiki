@@ -1,5 +1,5 @@
 ---
-summary: "How to let a decision tree split on a feature that can be any number — like the animal's weight."
+summary: '<p>How to let a decision tree split on a feature that can be any number — like the animal&#x27;s weight.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">any number · weight · best threshold · midpoints · try several thresholds · numbers</p>'
 ---
 # Continuous-Valued Features
 

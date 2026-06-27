@@ -1,5 +1,5 @@
 ---
-summary: "Take the single-layer building block and stack it into a deeper network — and nail down the general notation along the way."
+summary: '<p>Take the single-layer building block and stack it into a deeper network — and nail down the general notation along the way.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">4 layers · layer 3 · of layer 3 · of layer 2 · previous · activation function</p><span class="toc-summary__sub">Key formulas</span><div class="toc-summary__math"><span class="arithmatex">\(a_j^{[3]} = g\big(\vec{w}_j^{[3]} \cdot \vec{a}^{[2]} + b_j^{[3]}\big), \quad j = 1,2,3\)</span><span class="arithmatex">\(\boxed{\,a_j^{[\ell]} = g\big(\vec{w}_j^{[\ell]} \cdot \vec{a}^{[\ell-1]} + b_j^{[\ell]}\big)\,}\)</span></div>'
 ---
 # More Complex Neural Networks
 

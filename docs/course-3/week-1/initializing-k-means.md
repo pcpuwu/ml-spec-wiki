@@ -1,5 +1,5 @@
 ---
-summary: "How to take the random initial guess for the centroids — and how multiple attempts find a better clustering."
+summary: '<p>How to take the random initial guess for the centroids — and how multiple attempts find a better clustering.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">on top of training examples · different · stuck in a local minimum · run K-means many times</p>'
 ---
 # Initializing K-means
 

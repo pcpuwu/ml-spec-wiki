@@ -1,5 +1,5 @@
 ---
-summary: "A short lesson that names the central object RL is trying to find: the policy."
+summary: '<p>A short lesson that names the central object RL is trying to find: the policy.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">policy · maximize the return · controller · review</p>'
 ---
 # Making Decisions: Policies in Reinforcement Learning
 

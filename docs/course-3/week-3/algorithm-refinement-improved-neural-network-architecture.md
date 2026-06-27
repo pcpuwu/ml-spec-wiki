@@ -1,5 +1,5 @@
 ---
-summary: "A small architecture change makes DQN much more efficient — most real implementations use it."
+summary: '<p>A small architecture change makes DQN much more efficient — most real implementations use it.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">much more efficient · single · inference 4 times · 8 state numbers · Bellman target · ε-greedy</p><span class="toc-summary__sub">Key formula</span><div class="toc-summary__math"><span class="arithmatex">\(\text{outputs} = \big[\,Q(s, \text{nothing}),\; Q(s, \text{left}),\; Q(s, \text{main}),\; Q(s, \text{right})\,\big]\)</span></div>'
 ---
 # Algorithm Refinement: Improved Neural Network Architecture
 

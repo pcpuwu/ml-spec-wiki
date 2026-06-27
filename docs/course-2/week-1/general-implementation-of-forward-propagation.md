@@ -1,5 +1,5 @@
 ---
-summary: "A general dense function that works for any layer size, instead of hard-coding each neuron."
+summary: '<p>A general dense function that works for any layer size, instead of hard-coding each neuron.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">general · columns · debugger</p>'
 ---
 # General Implementation of Forward Propagation
 

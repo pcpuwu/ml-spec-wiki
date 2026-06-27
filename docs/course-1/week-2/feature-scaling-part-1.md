@@ -1,5 +1,5 @@
 ---
-summary: "A simple technique — feature scaling — can make gradient descent run much faster. The idea starts with the relationship between the size of a feature and the size of its parameter."
+summary: '<p>A simple technique — feature scaling — can make gradient descent run much faster. The idea starts with the relationship between the size of a feature and the size of i…</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">feature scaling · 300 to 2,000 · 0 to 5 · Bad fit · exactly right · large range</p>'
 ---
 # Feature Scaling, Part 1
 

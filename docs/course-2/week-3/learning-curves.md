@@ -1,5 +1,5 @@
 ---
-summary: "Learning curves show how the algorithm does as a function of experience — i.e. the training-set size m_texttrain."
+summary: '<p>Learning curves show how the algorithm does as a function of experience — i.e. the training-set size m_texttrain.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">experience · training-set size · above · flatten out · far above</p>'
 ---
 # Learning Curves
 

@@ -1,5 +1,5 @@
 ---
-summary: "The second unsupervised algorithm: anomaly detection learns from an unlabeled dataset of normal events and raises a flag for unusual ones."
+summary: '<p>The second unsupervised algorithm: anomaly detection learns from an unlabeled dataset of normal events and raises a flag for unusual ones.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">anomaly detection · normal · unusual · very different · density estimation · high-probability</p><span class="toc-summary__sub">Key formula</span><div class="toc-summary__math"><span class="arithmatex">\(\text{if } p(\vec{x}_\text{test}) &lt; \epsilon \;\Rightarrow\; \textbf{anomaly}; \qquad \text{if } p(\vec{x}_\text{test}) \ge \epsilon \;\Rightarrow\; \text{OK}\)</span></div>'
 ---
 # Finding Unusual Events (Anomaly Detection)
 

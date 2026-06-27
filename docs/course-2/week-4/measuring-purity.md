@@ -1,5 +1,5 @@
 ---
-summary: "To choose splits by purity, you need to quantify it. The tool is entropy — a measure of impurity."
+summary: '<p>To choose splits by purity, you need to quantify it. The tool is entropy — a measure of impurity.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">quantify · entropy · impurity · 50/50 · Validate</p><span class="toc-summary__sub">Key formula</span><div class="toc-summary__math"><span class="arithmatex">\(H(p_1) = -p_1 \log_2(p_1) - p_0 \log_2(p_0) = -p_1\log_2 p_1 - (1-p_1)\log_2(1-p_1)\)</span></div>'
 ---
 # Measuring Purity
 

@@ -1,5 +1,5 @@
 ---
-summary: "How do you tell whether gradient descent is actually converging — finding parameters close to the minimum of J? The trick is a single, very useful plot."
+summary: '<p>How do you tell whether gradient descent is actually converging — finding parameters close to the minimum of J? The trick is a single, very useful plot.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">converging · number of iterations · learning curve · iterations, not a parameter · goes up · too large</p>'
 ---
 # Checking Gradient Descent for Convergence
 

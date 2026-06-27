@@ -1,5 +1,5 @@
 ---
-summary: "The core deep-RL idea: train a neural network to approximate Q(s,a), then pick actions by maximizing it. This is the DQN (Deep Q-Network) algorithm."
+summary: '<p>The core deep-RL idea: train a neural network to approximate Q(s,a), then pick actions by maximizing it. This is the DQN (Deep Q-Network) algorithm.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">DQN (Deep Q-Network) · one-hot · 12 inputs · 1 output · tuples · current network</p><span class="toc-summary__sub">Key formula</span><div class="toc-summary__math"><span class="arithmatex">\(x = (s, a), \qquad y = R(s) + \gamma \max_{a&#x27;} Q(s&#x27;, a&#x27;)\)</span></div>'
 ---
 # Learning the State-Value Function
 

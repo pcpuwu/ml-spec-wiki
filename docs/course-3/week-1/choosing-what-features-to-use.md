@@ -1,5 +1,5 @@
 ---
-summary: "Feature choice matters even more for anomaly detection than for supervised learning. With labels, a supervised algorithm can learn to ignore irrelevant features; anomaly detection learns from unlabeled data, so it can't — you have to cho…"
+summary: '<p>Feature choice matters even more for anomaly detection than for supervised learning. With labels, a supervised algorithm can learn to ignore irrelevant features; anoma…</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">even more · unlabeled · transform · most Gaussian · comparable · distinguish</p>'
 ---
 # Choosing What Features to Use
 

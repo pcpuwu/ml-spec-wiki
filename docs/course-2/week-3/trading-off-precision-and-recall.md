@@ -1,5 +1,5 @@
 ---
-summary: "Ideally you want high precision and high recall — but in practice there's a trade-off, and you pick a point on it."
+summary: '<p>Ideally you want high precision and high recall — but in practice there&#x27;s a trade-off, and you pick a point on it.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">high precision and high recall · trade-off · threshold · lower precision, higher recall · manually · automatically</p><span class="toc-summary__sub">Key formula</span><div class="toc-summary__math"><span class="arithmatex">\(F_1 = \frac{1}{\frac{1}{2}\left(\frac{1}{P}+\frac{1}{R}\right)} = 2\,\frac{P\,R}{P+R}\)</span></div>'
 ---
 # Trading Off Precision and Recall (Optional)
 

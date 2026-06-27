@@ -1,5 +1,5 @@
 ---
-summary: "By far the most common decision-tree-ensemble implementation today — fast, easy to use, and a frequent winner of ML competitions."
+summary: '<p>By far the most common decision-tree-ensemble implementation today — fast, easy to use, and a frequent winner of ML competitions.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">after the first · deliberate practice · XGBoost · default · regularization · Kaggle</p>'
 ---
 # XGBoost
 

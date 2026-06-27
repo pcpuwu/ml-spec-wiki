@@ -1,5 +1,5 @@
 ---
-summary: "Welcome to Course 3. A clustering algorithm looks at data points and automatically finds groups of points that are similar to each other — an unsupervised learning method."
+summary: '<p>Welcome to Course 3. A clustering algorithm looks at data points and automatically finds groups of points that are similar to each other — an unsupervised learning met…</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">clustering · similar · unsupervised · interesting structure · clusters · news articles</p>'
 ---
 # What is Clustering?
 

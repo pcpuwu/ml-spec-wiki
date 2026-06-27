@@ -1,5 +1,5 @@
 ---
-summary: "By Ng's estimate, about 99% of the economic value created by machine learning today comes from a single type: supervised learning. So it's worth understanding it precisely."
+summary: '<p>By Ng&#x27;s estimate, about 99% of the economic value created by machine learning today comes from a single type: supervised learning.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">99% of the economic value · supervised learning · right answers · train · housing prices · 750 sq ft</p>'
 ---
 # Supervised Learning, Part 1
 

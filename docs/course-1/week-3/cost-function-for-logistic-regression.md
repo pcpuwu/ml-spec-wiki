@@ -1,5 +1,5 @@
 ---
-summary: "The cost function measures how well a set of parameters fits the data, so you can choose better ones. The squared-error cost — great for linear regression — turns out to be a bad fit for logistic regression."
+summary: '<p>The cost function measures how well a set of parameters fits the data, so you can choose better ones.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">bad fit for logistic regression · convex · non-convex · many local minima · Why this makes sense · single line</p><span class="toc-summary__sub">Key formulas</span><div class="toc-summary__math"><span class="arithmatex">\(L\big(f(\vec{x}), y\big) = \begin{cases} -\log\big(f(\vec{x})\big) &amp; \text{if } y = 1,\\[4pt] -\log\big(1 - f(\vec{x})\big) &amp; \text{if } y = 0. \end{cases}\)</span><span class="arithmatex">\(J(\vec{w}, b) = \frac{1}{m}\sum_{i=1}^{m} L\big(f(\vec{x}^{(i)}), y^{(i)}\big)\)</span></div>'
 ---
 # Cost Function for Logistic Regression
 
