@@ -1,6 +1,10 @@
-{% extends "base.html" %}
+{#- Must extend PMT's base_pmt.html (NOT base.html): base_pmt's {% block libs %}
+    injects pyodide_libs(page) — the ES-module import map the IDEs need. Extending
+    base.html directly skips it and silently breaks every {{ IDE() }}. -#}
+{% extends "base_pmt.html" %}
 
 {#- Personal study companion: keep it out of search-engine indexes. -#}
 {% block extrahead %}
+  {{ super() }}
   <meta name="robots" content="noindex, nofollow">
 {% endblock %}
