@@ -1,0 +1,247 @@
+site_name: "Machine Learning Specialization — Study Companion"
+site_url: "http://127.0.0.1:8000/"
+docs_dir: docs
+use_directory_urls: true
+
+# exercise sources + REM files are not standalone pages
+exclude_docs: |
+  **/*.py
+  **/*_REM.md
+# transcript pages are linked from their topic, not shown in the nav
+not_in_nav: |
+  **/*-transcript.md
+
+theme:
+  name: pyodide-mkdocs-theme
+  custom_dir: overrides
+  language: en
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle: { icon: material/weather-night, name: Light mode }
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle: { icon: material/weather-sunny, name: Dark mode }
+  features:
+    - navigation.tracking
+    - navigation.top
+    - navigation.indexes
+    - toc.follow
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+
+extra_css:
+  - extra.css
+
+plugins:
+  - search
+  - pyodide_macros:
+      on_error_fail: true
+      build:
+        ides_id_hash_mode: relative
+      project:
+        id: ml-spec
+      # suppress PMT's auto-injected demo 'Playground' page (ships in French)
+      playground:
+        include: none
+
+markdown_extensions:
+  - md_in_html
+  - admonition
+  - attr_list
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.striphtml:
+      strip_js_on_attributes: false
+      strip_attributes: ""
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - About: about.md
+  - "Course 1: Supervised ML: Regression & Classification":
+      - "Week 1: Introduction to Machine Learning":
+        - "Welcome to Machine Learning": course-1/week-1/welcome-to-machine-learning.md
+        - "Applications of Machine Learning": course-1/week-1/applications-of-machine-learning.md
+        - "What is Machine Learning?": course-1/week-1/what-is-machine-learning.md
+        - "Supervised Learning, Part 1": course-1/week-1/supervised-learning-part-1.md
+        - "Supervised Learning, Part 2": course-1/week-1/supervised-learning-part-2.md
+        - "Unsupervised Learning, Part 1": course-1/week-1/unsupervised-learning-part-1.md
+        - "Unsupervised Learning, Part 2": course-1/week-1/unsupervised-learning-part-2.md
+        - "Jupyter Notebooks": course-1/week-1/jupyter-notebooks.md
+        - "Linear Regression Model, Part 1": course-1/week-1/linear-regression-model-part-1.md
+        - "Linear Regression Model, Part 2": course-1/week-1/linear-regression-model-part-2.md
+        - "The Cost Function": course-1/week-1/cost-function.md
+        - "Cost Function Intuition": course-1/week-1/cost-function-intuition.md
+        - "Visualizing the Cost Function": course-1/week-1/visualizing-the-cost-function.md
+        - "Visualization Examples": course-1/week-1/visualization-examples.md
+        - "Gradient Descent": course-1/week-1/gradient-descent.md
+        - "Implementing Gradient Descent": course-1/week-1/implementing-gradient-descent.md
+        - "Gradient Descent Intuition": course-1/week-1/gradient-descent-intuition.md
+        - "Learning Rate": course-1/week-1/learning-rate.md
+        - "Gradient Descent for Linear Regression": course-1/week-1/gradient-descent-for-linear-regression.md
+        - "Running Gradient Descent": course-1/week-1/running-gradient-descent.md
+        - "Test Yourself": course-1/week-1/test-yourself.md
+      - "Week 2: Regression with Multiple Variables":
+        - "Multiple Features": course-1/week-2/multiple-features.md
+        - "Vectorization, Part 1": course-1/week-2/vectorization-part-1.md
+        - "Vectorization, Part 2": course-1/week-2/vectorization-part-2.md
+        - "Gradient Descent for Multiple Linear Regression": course-1/week-2/gradient-descent-for-multiple-linear-regression.md
+        - "Feature Scaling, Part 1": course-1/week-2/feature-scaling-part-1.md
+        - "Feature Scaling, Part 2": course-1/week-2/feature-scaling-part-2.md
+        - "Checking Gradient Descent for Convergence": course-1/week-2/checking-gradient-descent-for-convergence.md
+        - "Choosing the Learning Rate": course-1/week-2/choosing-the-learning-rate.md
+        - "Feature Engineering": course-1/week-2/feature-engineering.md
+        - "Polynomial Regression": course-1/week-2/polynomial-regression.md
+        - "Practice Assignment": course-1/week-2/assignment.md
+        - "Test Yourself": course-1/week-2/test-yourself.md
+      - "Week 3: Classification":
+        - "Motivations": course-1/week-3/classification-motivations.md
+        - "Logistic Regression": course-1/week-3/logistic-regression.md
+        - "Decision Boundary": course-1/week-3/decision-boundary.md
+        - "Cost Function for Logistic Regression": course-1/week-3/cost-function-for-logistic-regression.md
+        - "Simplified Cost Function for Logistic Regression": course-1/week-3/simplified-cost-function.md
+        - "Gradient Descent Implementation": course-1/week-3/gradient-descent-implementation.md
+        - "The Problem of Overfitting": course-1/week-3/the-problem-of-overfitting.md
+        - "Addressing Overfitting": course-1/week-3/addressing-overfitting.md
+        - "Cost Function with Regularization": course-1/week-3/cost-function-with-regularization.md
+        - "Regularized Linear Regression": course-1/week-3/regularized-linear-regression.md
+        - "Regularized Logistic Regression": course-1/week-3/regularized-logistic-regression.md
+        - "Practice Assignment": course-1/week-3/assignment.md
+        - "Test Yourself": course-1/week-3/test-yourself.md
+  - "Course 2: Advanced Learning Algorithms":
+      - "Week 1: Neural Networks":
+        - "Neurons and the Brain": course-2/week-1/neurons-and-the-brain.md
+        - "Demand Prediction": course-2/week-1/demand-prediction.md
+        - "Example: Recognizing Images": course-2/week-1/example-recognizing-images.md
+        - "Neural Network Layer": course-2/week-1/neural-network-layer.md
+        - "More Complex Neural Networks": course-2/week-1/more-complex-neural-networks.md
+        - "Inference: Making Predictions (Forward Propagation)": course-2/week-1/inference-making-predictions-forward-propagation.md
+        - "Inference in Code (TensorFlow)": course-2/week-1/inference-in-code.md
+        - "Data in TensorFlow": course-2/week-1/data-in-tensorflow.md
+        - "Building a Neural Network": course-2/week-1/building-a-neural-network.md
+        - "Forward Prop in a Single Layer": course-2/week-1/forward-prop-in-a-single-layer.md
+        - "General Implementation of Forward Propagation": course-2/week-1/general-implementation-of-forward-propagation.md
+        - "Is There a Path to AGI?": course-2/week-1/is-there-a-path-to-agi.md
+        - "How Neural Networks are Implemented Efficiently": course-2/week-1/how-neural-networks-are-implemented-efficiently.md
+        - "Matrix Multiplication": course-2/week-1/matrix-multiplication.md
+        - "Matrix Multiplication Rules": course-2/week-1/matrix-multiplication-rules.md
+        - "Matrix Multiplication Code": course-2/week-1/matrix-multiplication-code.md
+        - "Test Yourself": course-2/week-1/test-yourself.md
+      - "Week 2: Neural Network Training":
+        - "TensorFlow Implementation": course-2/week-2/tensorflow-implementation.md
+        - "Training Details": course-2/week-2/training-details.md
+        - "Alternatives to the Sigmoid Activation": course-2/week-2/alternatives-to-the-sigmoid-activation.md
+        - "Choosing Activation Functions": course-2/week-2/choosing-activation-functions.md
+        - "Why Do We Need Activation Functions?": course-2/week-2/why-do-we-need-activation-functions.md
+        - "Multiclass Classification": course-2/week-2/multiclass.md
+        - "Softmax Regression": course-2/week-2/softmax.md
+        - "Neural Network with Softmax Output": course-2/week-2/neural-network-with-softmax-output.md
+        - "Improved Implementation of Softmax": course-2/week-2/improved-implementation-of-softmax.md
+        - "Classification with Multiple Outputs (Multi-label)": course-2/week-2/classification-with-multiple-outputs.md
+        - "Advanced Optimization": course-2/week-2/advanced-optimization.md
+        - "Additional Layer Types": course-2/week-2/additional-layer-types.md
+        - "What is a Derivative? (Optional)": course-2/week-2/what-is-a-derivative.md
+        - "Computation Graph (Optional)": course-2/week-2/computation-graph.md
+        - "Larger Neural Network Example (Optional)": course-2/week-2/larger-neural-network-example.md
+        - "Test Yourself": course-2/week-2/test-yourself.md
+      - "Week 3: Advice for Applying Machine Learning":
+        - "Deciding What to Try Next": course-2/week-3/deciding-what-to-try-next.md
+        - "Evaluating a Model": course-2/week-3/evaluating-a-model.md
+        - "Model Selection: Train / Cross-Validation / Test Sets": course-2/week-3/model-selection-and-training-cross-validation-test-sets.md
+        - "Diagnosing Bias and Variance": course-2/week-3/diagnosing-bias-and-variance.md
+        - "Regularization and Bias/Variance": course-2/week-3/regularization-and-bias-variance.md
+        - "Establishing a Baseline Level of Performance": course-2/week-3/establishing-a-baseline-level-of-performance.md
+        - "Learning Curves": course-2/week-3/learning-curves.md
+        - "Deciding What to Try Next (Revisited)": course-2/week-3/deciding-what-to-try-next-revisited.md
+        - "Bias, Variance, and Neural Networks": course-2/week-3/bias-variance-and-neural-networks.md
+        - "The Iterative Loop of ML Development": course-2/week-3/iterative-loop-of-ml-development.md
+        - "Error Analysis": course-2/week-3/error-analysis.md
+        - "Adding Data": course-2/week-3/adding-data.md
+        - "Transfer Learning": course-2/week-3/transfer-learning-using-data-from-a-different-task.md
+        - "Full Cycle of a Machine Learning Project": course-2/week-3/full-cycle-of-a-machine-learning-project.md
+        - "Fairness, Bias, and Ethics": course-2/week-3/fairness-bias-and-ethics.md
+        - "Error Metrics for Skewed Datasets (Optional)": course-2/week-3/error-metrics-for-skewed-datasets.md
+        - "Trading Off Precision and Recall (Optional)": course-2/week-3/trading-off-precision-and-recall.md
+        - "Test Yourself": course-2/week-3/test-yourself.md
+      - "Week 4: Decision Trees":
+        - "Decision Tree Model": course-2/week-4/decision-tree-model.md
+        - "The Learning Process": course-2/week-4/learning-process.md
+        - "Measuring Purity": course-2/week-4/measuring-purity.md
+        - "Choosing a Split: Information Gain": course-2/week-4/choosing-a-split-information-gain.md
+        - "Putting It Together": course-2/week-4/putting-it-together.md
+        - "One-Hot Encoding of Categorical Features": course-2/week-4/using-one-hot-encoding-of-categorical-features.md
+        - "Continuous-Valued Features": course-2/week-4/continuous-valued-features.md
+        - "Regression Trees (Optional)": course-2/week-4/regression-trees.md
+        - "Using Multiple Decision Trees": course-2/week-4/using-multiple-decision-trees.md
+        - "Sampling with Replacement": course-2/week-4/sampling-with-replacement.md
+        - "Random Forest Algorithm": course-2/week-4/random-forest-algorithm.md
+        - "XGBoost": course-2/week-4/xgboost.md
+        - "When to Use Decision Trees": course-2/week-4/when-to-use-decision-trees.md
+        - "Test Yourself": course-2/week-4/test-yourself.md
+  - "Course 3: Unsupervised Learning, Recommenders, Reinforcement Learning":
+      - "Week 1: Unsupervised Learning":
+        - "What is Clustering?": course-3/week-1/what-is-clustering.md
+        - "K-means Intuition": course-3/week-1/k-means-intuition.md
+        - "K-means Algorithm": course-3/week-1/k-means-algorithm.md
+        - "Optimization Objective": course-3/week-1/optimization-objective.md
+        - "Initializing K-means": course-3/week-1/initializing-k-means.md
+        - "Choosing the Number of Clusters": course-3/week-1/choosing-the-number-of-clusters.md
+        - "Finding Unusual Events (Anomaly Detection)": course-3/week-1/finding-unusual-events.md
+        - "Gaussian (Normal) Distribution": course-3/week-1/gaussian-normal-distribution.md
+        - "Anomaly Detection Algorithm": course-3/week-1/anomaly-detection-algorithm.md
+        - "Developing and Evaluating an Anomaly Detection System": course-3/week-1/developing-and-evaluating-an-anomaly-detection-system.md
+        - "Anomaly Detection vs. Supervised Learning": course-3/week-1/anomaly-detection-vs-supervised-learning.md
+        - "Choosing What Features to Use": course-3/week-1/choosing-what-features-to-use.md
+        - "Test Yourself": course-3/week-1/test-yourself.md
+      - "Week 2: Recommender Systems":
+        - "Making Recommendations": course-3/week-2/making-recommendations.md
+        - "Using Per-Item Features": course-3/week-2/using-per-item-features.md
+        - "Collaborative Filtering Algorithm": course-3/week-2/collaborative-filtering-algorithm.md
+        - "Binary Labels: Favs, Likes and Clicks": course-3/week-2/binary-labels-favs-likes-and-clicks.md
+        - "Mean Normalization": course-3/week-2/mean-normalization.md
+        - "TensorFlow Implementation of Collaborative Filtering": course-3/week-2/tensorflow-implementation-of-collaborative-filtering.md
+        - "Finding Related Items": course-3/week-2/finding-related-items.md
+        - "Collaborative Filtering vs. Content-Based Filtering": course-3/week-2/collaborative-filtering-vs-content-based-filtering.md
+        - "Deep Learning for Content-Based Filtering": course-3/week-2/deep-learning-for-content-based-filtering.md
+        - "Recommending from a Large Catalogue": course-3/week-2/recommending-from-a-large-catalogue.md
+        - "Ethical Use of Recommender Systems": course-3/week-2/ethical-use-of-recommender-systems.md
+        - "TensorFlow Implementation of Content-Based Filtering": course-3/week-2/tensorflow-implementation-of-content-based-filtering.md
+        - "Reducing the Number of Features (PCA)": course-3/week-2/reducing-the-number-of-features.md
+        - "PCA Algorithm": course-3/week-2/pca-algorithm.md
+        - "PCA in Code": course-3/week-2/pca-in-code.md
+        - "Test Yourself": course-3/week-2/test-yourself.md
+      - "Week 3: Reinforcement Learning":
+        - "What is Reinforcement Learning?": course-3/week-3/what-is-reinforcement-learning.md
+        - "Mars Rover Example": course-3/week-3/mars-rover-example.md
+        - "The Return in Reinforcement Learning": course-3/week-3/the-return-in-reinforcement-learning.md
+        - "Making Decisions: Policies in Reinforcement Learning": course-3/week-3/making-decisions-policies-in-reinforcement-learning.md
+        - "Review of Key Concepts": course-3/week-3/review-of-key-concepts.md
+        - "State-Action Value Function (Definition)": course-3/week-3/state-action-value-function-definition.md
+        - "State-Action Value Function (Example)": course-3/week-3/state-action-value-function-example.md
+        - "Bellman Equation": course-3/week-3/bellman-equation.md
+        - "Random (Stochastic) Environment": course-3/week-3/random-stochastic-environment.md
+        - "Example of Continuous State-Space Applications": course-3/week-3/example-of-continuous-state-space-applications.md
+        - "Lunar Lander": course-3/week-3/lunar-lander.md
+        - "Learning the State-Value Function": course-3/week-3/learning-the-state-value-function.md
+        - "Algorithm Refinement: Improved Neural Network Architecture": course-3/week-3/algorithm-refinement-improved-neural-network-architecture.md
+        - "Algorithm Refinement: ε-Greedy Policy": course-3/week-3/algorithm-refinement-epsilon-greedy-policy.md
+        - "Algorithm Refinement: Mini-Batch and Soft Updates": course-3/week-3/algorithm-refinement-mini-batch-and-soft-updates.md
+        - "The State of Reinforcement Learning": course-3/week-3/the-state-of-reinforcement-learning.md
+        - "Test Yourself": course-3/week-3/test-yourself.md
