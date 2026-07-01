@@ -57,6 +57,13 @@ trained by gradient descent. Next week makes linear regression far more powerful
 **many features** instead of one, **non-linear curves**, and practical tips for
 getting it to work on real applications. `[05:19]`
 
+!!! abstract "You might want to try it out in code"
+    You now know everything the first Coding Lab needs — the model, the cost, and gradient
+    descent. The **[C1W1 Coding Lab →](../../coding-labs/C1W1.md)** builds linear regression
+    from scratch (the normal equation, then the gradient-descent loop you just watched) and
+    then the scikit-learn way. Entirely optional, and you can do it whenever you like — but
+    this is the moment it'll click.
+
 
 <div class="ep-nav" markdown>
 

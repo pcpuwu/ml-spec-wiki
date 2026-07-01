@@ -44,6 +44,12 @@ _Official C2 slide — a layer is just a stack of logistic units (DeepLearning.A
 ![Inside a hidden layer: each unit computes a = g(w·x + b); the layer outputs the vector of activations](layer-hidden-computation.png){ .slide }
 _Official C2 slide — hidden-layer computation (DeepLearning.AI / Stanford)._
 { .slide-cap }
+
+<div class="ml-widget" data-widget="neural-net-forward"></div>
+
+_Feed inputs through the little network and watch each neuron compute $g(\vec{w}\cdot\vec{x}+b)$ — the activations flowing layer to layer to the final prediction._
+{ .mlw-caption }
+
 ## Layer numbering and superscript notation
 
 By convention layers are numbered: the input is **layer 0**, the first hidden layer is

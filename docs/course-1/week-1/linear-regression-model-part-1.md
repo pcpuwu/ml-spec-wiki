@@ -41,6 +41,26 @@ regression is one specific regression model; you'll meet others in Course 2.
 ![House sizes vs. prices: fit a straight line and read off the predicted price (~$220k for a 1,250 sq ft house)](housing-problem.png){ .slide }
 _Andrew Ng's house-price regression slide (Stanford / DeepLearning.AI)._
 { .slide-cap }
+
+## Play with it — fit the line yourself
+
+Here's the same idea, live. Each dot is a house (size on the horizontal axis → price
+on the vertical); the gold line is the best fit and re-computes the instant you move
+the data. Drag a dot, click empty space to add one, or press _Drop an outlier_ and
+watch how a single odd house can tilt the whole line — the essence of why one weird
+data point matters. The red bars are the errors the line is trying to make as small
+as possible.
+
+<div class="ml-widget" data-widget="regression"></div>
+
+_The controls: drag any dot to move it, click empty space to add one, right-click a
+dot to delete it, and use the checkbox to show or hide each point's error bar. The
+`Drop an outlier` button adds one deliberately extreme point (bottom-right, marked in
+pink) and draws a dashed grey line — the best fit computed_ without _that point. The
+gap between the dashed grey line and the solid gold line is exactly how much a single
+stray point drags the whole model; click the button again to remove it._
+{ .mlw-caption }
+
 ## Notation you'll use everywhere `[05:49]`
 
 Two views of the same data: the **plot** on the left and a **data table** on the

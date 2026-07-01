@@ -31,6 +31,11 @@ one feature you can see it — but with many features you can't plot $f$, so dia
 _Official C2 slide — the bias/variance triptych (DeepLearning.AI / Stanford)._
 { .slide-cap }
 
+<div class="ml-widget" data-widget="bias-variance"></div>
+
+_Sweep the model complexity and watch $J_\text{train}$ fall while $J_\text{cv}$ traces a U — high-bias on the left, high-variance on the right._
+{ .mlw-caption }
+
 ## Read it off $J_\text{train}$ and $J_\text{cv}$
 
 - **High bias (underfit):** $J_\text{train}$ is **high** — it doesn't even fit the training

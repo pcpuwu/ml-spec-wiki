@@ -47,6 +47,12 @@ That's the end of Course 2. You now know neural networks **and** decision trees,
 practical advice to make them work. Next up: Course 3, **unsupervised learning** — where the
 data has no labels $y$ at all. *May the forest be with you.* `[05:57]`
 
+!!! abstract "You might want to try it out in code"
+    You now know everything this week's Coding Lab needs — what a tree is, how it measures
+    purity, how it picks a split, and the ensembles built on top. The **[C2W4 Coding Lab →](../../coding-labs/C2W4.md)**
+    builds decision trees in code and then random forests and boosting. Entirely optional, and
+    you can do it in any order you like — but this is the moment it'll click.
+
 
 <div class="ep-nav" markdown>
 

@@ -41,6 +41,11 @@ $a_4 = 0.35$.) `[04:58]`
 _Official C2 slide — the softmax model (DeepLearning.AI / Stanford)._
 { .slide-cap }
 
+<div class="ml-widget" data-widget="softmax"></div>
+
+_Drag the raw scores $z_j$ and watch softmax exponentiate and normalise them into class probabilities that always sum to 1._
+{ .mlw-caption }
+
 ## General case
 
 For $N$ classes ($y\in\{1,\dots,N\}$):

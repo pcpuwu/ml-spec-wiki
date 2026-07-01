@@ -33,6 +33,11 @@ non-negative number**, not just $0$–$1$. `[01:08]`
 _Official C2 slide — why a wider-range activation helps (DeepLearning.AI / Stanford)._
 { .slide-cap }
 
+<div class="ml-widget" data-widget="activation-functions"></div>
+
+_Flip between sigmoid, ReLU and linear to compare their shapes and see why ReLU's unbounded non-negative output frees a neuron from the $0$–$1$ straitjacket._
+{ .mlw-caption }
+
 ## ReLU
 
 The fix is the **ReLU** activation (rectified linear unit):

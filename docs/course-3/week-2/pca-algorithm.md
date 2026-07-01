@@ -42,6 +42,11 @@ amounts of spread: `[03:24]`
 - The **principal component** is the axis on which the projected points are **most spread
   out** → maximum variance retained. That's what PCA picks to reduce data to one dimension. `[06:13]`
 
+<div class="ml-widget" data-widget="pca"></div>
+
+_Rotate the candidate axis and watch the projected points' spread — PCA picks the direction that maximises this variance._
+{ .mlw-caption }
+
 ## Computing a projection
 
 The chosen axis is represented by a **length-1 vector**. If PCA's axis is the unit vector

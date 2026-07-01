@@ -36,6 +36,12 @@ $(w,b)$; e.g. above $w=-10,\ b=-15$ the surface height is $J(-10,-15)$. `[03:34]
 ![J(w,b) drawn as a 3-D bowl-shaped surface over the two parameters w and b](cost-3d-surface.png){ .slide }
 _Andrew Ng's the 3-D cost surface slide (Stanford / DeepLearning.AI)._
 { .slide-cap }
+
+<div class="ml-widget" data-widget="cost-surface"></div>
+
+_Drag to orbit the 3-D cost surface and hover the floor — the height you read off at any $(w,b)$ is exactly the cost $J(w,b)$._
+{ .mlw-caption }
+
 ## Contour plots: the bowl seen from above `[03:57]`
 
 Staring at a 3-D bowl is awkward, so there's a flatter way to see the *same*

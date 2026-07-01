@@ -45,6 +45,11 @@ Repeat {
 _Official C3 slide — the K-means algorithm (DeepLearning.AI / Stanford)._
 { .slide-cap }
 
+<div class="ml-widget" data-widget="kmeans"></div>
+
+_Step through K-means — assign each point to its nearest centroid, then move every centroid to its cluster's mean — and watch the clusters settle._
+{ .mlw-caption }
+
 ## Corner case: an empty cluster
 
 If a cluster gets **zero** points assigned, the mean is undefined. Most common fix:

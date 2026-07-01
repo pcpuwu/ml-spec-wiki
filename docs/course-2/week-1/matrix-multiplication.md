@@ -36,6 +36,12 @@ click. `[02:25]`
 ![The dot product z = a·w, viewed as summing element-wise products — the building block of matrix multiply](dot-products.png){ .slide }
 _Official C2 slide — the dot product (DeepLearning.AI / Stanford)._
 { .slide-cap }
+
+<div class="ml-widget" data-widget="matrix-transform"></div>
+
+_Change the matrix entries and watch how it transforms a vector (or the unit grid) — a geometric feel for what matrix multiplication actually does._
+{ .mlw-caption }
+
 ## Vector × matrix
 
 Take $\vec{a}^T = [1, 2]$ and a $2\times2$ matrix $W = \begin{bmatrix}3 & 5\\ 4 & 6\end{bmatrix}$.

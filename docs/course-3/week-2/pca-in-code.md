@@ -72,6 +72,12 @@ Try it yourself — implement PCA's **projection** (dot product) and **reconstru
 
 That closes Course 3, Week 2. Next week: **reinforcement learning**. `[10:30]`
 
+!!! abstract "You might want to try it out in code"
+    You now know everything this week's Coding Lab needs — projecting data onto principal
+    components and learning recommendations from a sparse ratings table. The **[C3W2 Coding Lab
+    →](../../coding-labs/C3W2.md)** implements PCA and collaborative filtering in code. Entirely
+    optional, and you can do it in any order you like — but this is the moment it'll click.
+
 
 <div class="ep-nav" markdown>
 

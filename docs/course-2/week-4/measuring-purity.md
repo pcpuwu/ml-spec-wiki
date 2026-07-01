@@ -35,6 +35,11 @@ impure): `[01:01]`
 _Official C2 slide — entropy as a measure of impurity (DeepLearning.AI / Stanford)._
 { .slide-cap }
 
+<div class="ml-widget" data-widget="decision-tree-entropy"></div>
+
+_Drag the class mix and watch entropy rise to 1 at a 50/50 split and drop to 0 when the node is pure._
+{ .mlw-caption }
+
 ## The formula
 
 With $p_0 = 1 - p_1$ (fraction of non-cats):

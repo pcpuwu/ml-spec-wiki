@@ -37,6 +37,12 @@ small as possible. The recipe:
 ![Gradient-descent outline: start at some (w,b) and keep stepping downhill to reduce J until you settle at a minimum](gd-outline.png){ .slide }
 _Andrew Ng's the gradient-descent outline slide (Stanford / DeepLearning.AI)._
 { .slide-cap }
+
+<div class="ml-widget" data-widget="gradient-descent"></div>
+
+_Click a starting point and step the algorithm — watch the parameters trace a path downhill to a minimum, and try changing the learning rate to see it overshoot or crawl._
+{ .mlw-caption }
+
 ## The hill-walking picture `[03:13]`
 
 Picture the surface $J(w,b)$ as a **hilly park** — high points are hills, low points

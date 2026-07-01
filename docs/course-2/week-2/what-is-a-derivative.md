@@ -37,6 +37,11 @@ $$\frac{\partial}{\partial w}J(w) \Big|_{w=3} = 6.$$
 The smaller $\epsilon$ is, the more exact the $6{:}1$ ratio becomes. **Informal definition:**
 if bumping $w$ by $\epsilon$ changes $J$ by $k\epsilon$, then the derivative is $k$. `[05:17]`
 
+<div class="ml-widget" data-widget="derivative-tangent"></div>
+
+_Slide the point along the curve and watch the tangent line's slope — that slope is the derivative at that $w$._
+{ .mlw-caption }
+
 ## Why gradient descent uses it
 
 The update $w_j := w_j - \alpha\,\frac{\partial}{\partial w_j}J$ makes a **small** step when

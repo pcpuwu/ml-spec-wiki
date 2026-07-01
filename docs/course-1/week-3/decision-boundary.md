@@ -32,6 +32,12 @@ $$\hat{y} = 1 \ \text{if } f(\vec{x}) \ge 0.5, \qquad \hat{y} = 0 \ \text{if } f
 ![Turning probability into a prediction: predict 1 when f ≥ 0.5, i.e. when z = w·x+b ≥ 0](decision-boundary-z0.png){ .slide }
 _Andrew Ng's the decision threshold slide (Stanford / DeepLearning.AI)._
 { .slide-cap }
+
+<div class="ml-widget" data-widget="decision-boundary"></div>
+
+_Move the weights and bias to swing the decision boundary across the plane and see which points get classified as 0 versus 1._
+{ .mlw-caption }
+
 ## When does it predict 1? `[02:15]`
 
 Chase the threshold back through the model:

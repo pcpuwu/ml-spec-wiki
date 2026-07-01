@@ -40,6 +40,12 @@ model gives it a **small parameter** (0.1); when a feature has a **small range**
 ![How feature and parameter sizes relate: a large-range feature (house size) pairs with a small parameter, and vice-versa](feature-param-values.png){ .slide }
 _Andrew Ng's feature vs. parameter size slide (Stanford / DeepLearning.AI)._
 { .slide-cap }
+
+<div class="ml-widget" data-widget="feature-scaling"></div>
+
+_Toggle feature scaling on and off to watch the cost contours turn from tall skinny ovals into round bowls — and gradient descent find the minimum far faster._
+{ .mlw-caption }
+
 ## Why this slows gradient descent `[03:32]`
 
 Plot the two features against each other: the size axis spans a huge range, the bedrooms

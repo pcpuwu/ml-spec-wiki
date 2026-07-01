@@ -1,5 +1,5 @@
 ---
-summary: '<p>The final back-prop intuition video: the same computation graph on a network with a hidden layer.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">right-to-left · by hand · automatic differentiation · dropped</p><span class="toc-summary__sub">Key formulas</span><div class="toc-summary__math"><span class="arithmatex">\(a^{[1]} = g(w_1 x + b_1) = 2,\qquad a^{[2]} = g(w_2 a^{[1]} + b_2) = 3\cdot 2 + 1 = 7\)</span><span class="arithmatex">\(J = \tfrac12\big(a^{[2]} - y\big)^2 = \tfrac12(7-5)^2 = 2\)</span></div>'
+summary: '<p>The final back-prop intuition video: the same computation graph on a network with a hidden layer.</p><span class="toc-summary__sub">Key ideas</span><p class="toc-summary__chips">right-to-left · by hand · automatic differentiation · dropped · C2W2 Coding Lab →</p><span class="toc-summary__sub">Key formulas</span><div class="toc-summary__math"><span class="arithmatex">\(a^{[1]} = g(w_1 x + b_1) = 2,\qquad a^{[2]} = g(w_2 a^{[1]} + b_2) = 3\cdot 2 + 1 = 7\)</span><span class="arithmatex">\(J = \tfrac12\big(a^{[2]} - y\big)^2 = \tfrac12(7-5)^2 = 2\)</span></div>'
 ---
 # Larger Neural Network Example (Optional)
 
@@ -58,6 +58,13 @@ of it. `[09:12]`
 
 That wraps up Week 2 — you can now train neural networks, choose activations, do multiclass
 and multi-label classification, use Adam, and you know what's happening under the hood. `[09:42]`
+
+!!! abstract "You might want to try it out in code"
+    You now know everything this week's Coding Lab needs — activation choices, the softmax
+    output, Adam, and the computation graph behind back-prop. The **[C2W2 Coding Lab →](../../coding-labs/C2W2.md)**
+    trains real networks in code: activations, softmax multiclass, and a from-scratch look at
+    backprop. Entirely optional, and you can do it in any order you like — but this is the
+    moment it'll click.
 
 
 <div class="ep-nav" markdown>

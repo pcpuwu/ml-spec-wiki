@@ -36,6 +36,11 @@ $f(\vec{x})\ge 0.5$. Raise or lower that **threshold** to slide along the trade-
 _Official C2 slide — the threshold trades precision against recall (DeepLearning.AI / Stanford)._
 { .slide-cap }
 
+<div class="ml-widget" data-widget="precision-recall"></div>
+
+_Slide the decision threshold and watch precision and recall move in opposite directions as predictions shift across the confusion matrix._
+{ .mlw-caption }
+
 Plotting precision vs. recall across thresholds gives a curve; you **manually** pick the
 point that balances the costs of false positives vs. false negatives. Note the threshold is
 **not** chosen by cross-validation — it's an application judgment call. `[06:33]`
@@ -58,6 +63,13 @@ _Official C2 slide — the F1 score (DeepLearning.AI / Stanford)._
 
 That completes Course 2 Week 3 — diagnostics, the development process, and skewed-data
 metrics. Next week: **decision trees**.
+
+!!! abstract "You might want to try it out in code"
+    You now know everything this week's Coding Lab needs — evaluating a model, train/CV/test
+    splits, reading bias vs. variance, and scoring a skewed classifier. The **[C2W3 Coding Lab
+    →](../../coding-labs/C2W3.md)** puts the diagnostics into code: learning curves, the
+    bias/variance read-off, and precision/recall metrics. Entirely optional, and you can do it
+    in any order you like — but this is the moment it'll click.
 
 
 <div class="ep-nav" markdown>

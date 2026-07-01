@@ -55,6 +55,13 @@ _Official C3 slide — engineering features for anomaly detection (DeepLearning.
 That completes Week 1 of Course 3 — clustering and anomaly detection. Next week:
 **recommender systems**. `[--]`
 
+!!! abstract "You might want to try it out in code"
+    You now know everything this week's Coding Lab needs — the two K-means steps, the
+    distortion cost, and the Gaussian model behind anomaly detection. The **[C3W1 Coding Lab
+    →](../../coding-labs/C3W1.md)** implements K-means clustering and a Gaussian anomaly
+    detector in code. Entirely optional, and you can do it in any order you like — but this is
+    the moment it'll click.
+
 
 <div class="ep-nav" markdown>
 

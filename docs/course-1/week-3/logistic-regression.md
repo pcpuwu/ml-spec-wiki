@@ -41,6 +41,11 @@ That's the S-shape: it starts near 0, passes through 0.5 at $z=0$, and rises tow
 _Andrew Ng's sigmoid slide (Stanford / DeepLearning.AI)._
 { .slide-cap }
 
+<div class="ml-widget" data-widget="sigmoid"></div>
+
+_Drag the input $z$ back and forth to see the sigmoid squash it into a 0-to-1 probability, passing through 0.5 at $z=0$._
+{ .mlw-caption }
+
 ## Building the model `[04:15]`
 
 Two steps. First, compute the familiar linear expression and call it $z$:

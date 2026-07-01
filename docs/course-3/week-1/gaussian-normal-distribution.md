@@ -32,6 +32,11 @@ $$p(x) = \frac{1}{\sqrt{2\pi}\,\sigma}\, e^{-\frac{(x-\mu)^2}{2\sigma^2}}.$$
 _Official C3 slide — the Gaussian (normal) distribution (DeepLearning.AI / Stanford)._
 { .slide-cap }
 
+<div class="ml-widget" data-widget="gaussian-anomaly"></div>
+
+_Drag $\mu$ and $\sigma$ to reshape the bell curve, and move a data point to see its probability drop as it lands in the tails — the basis of anomaly detection._
+{ .mlw-caption }
+
 How $\mu, \sigma$ change it: smaller $\sigma$ → **thinner and taller**; larger $\sigma$ →
 **wider and shorter** (the area under the curve always equals 1); changing $\mu$ slides the
 center left/right. `[06:17]`

@@ -44,6 +44,11 @@ it computes and visualizes the optimal policy and the Q-function. `[00:27]`
 _Official C3 slide — picking actions from Q values (DeepLearning.AI / Stanford)._
 { .slide-cap }
 
+<div class="ml-widget" data-widget="rl-gridworld"></div>
+
+_Change the rewards and the discount factor $\gamma$ and watch $Q(s,a)$ and the optimal policy arrows update across the grid._
+{ .mlw-caption }
+
 Next: the single most important equation in RL — the **Bellman equation** — which is how you
 actually *compute* $Q$. `[05:02]`
 

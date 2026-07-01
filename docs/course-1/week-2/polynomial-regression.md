@@ -39,6 +39,11 @@ Both are polynomial regression: you take a single feature $x$ and raise it to po
 _Andrew Ng's polynomial-regression slide — fitting a curve with a squared feature (Stanford / DeepLearning.AI)._
 { .slide-cap }
 
+<div class="ml-widget" data-widget="polynomial-overfit"></div>
+
+_Slide the polynomial degree up and down to watch the curve go from underfitting to hugging every point — a hands-on feel for overfitting._
+{ .mlw-caption }
+
 ## Feature scaling becomes essential `[01:44]`
 
 When you create power features, their ranges **explode**: if size spans 1–1,000, then
@@ -72,6 +77,13 @@ practice lab** for this week has you implement linear regression end-to-end. `[0
 
 That's the end of Week 2. Next week goes **beyond regression** to the first
 **classification** algorithm — predicting categories, not numbers. `[05:38]`
+
+!!! abstract "You might want to try it out in code"
+    You now know everything this week's Coding Lab needs — many features at once, feature
+    scaling, and bending the line into a curve with polynomial features. The **[C1W2 Coding
+    Lab →](../../coding-labs/C1W2.md)** turns all of it into working code: vectorized multiple
+    linear regression, z-score scaling, and polynomial fits. Entirely optional, and you can do
+    it in any order you like — but this is the moment it'll click.
 
 
 <div class="ep-nav" markdown>

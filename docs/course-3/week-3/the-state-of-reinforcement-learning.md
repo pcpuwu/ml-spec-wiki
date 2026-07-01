@@ -43,6 +43,13 @@ for it less often. `[02:00]`
 That closes the week — and the technical content of the specialization. Enjoy landing the
 lunar lander with code you wrote yourself. `[02:27]`
 
+!!! abstract "You might want to try it out in code"
+    You now know everything this week's Coding Lab needs — the RL setup, the return, the
+    Q-function, the Bellman equation, and the neural-network version. The **[C3W3 Coding Lab
+    →](../../coding-labs/C3W3.md)** builds Q-learning and a DQN in code to land the lunar
+    lander. Entirely optional, and you can do it in any order you like — but this is the moment
+    it'll click.
+
 
 <div class="ep-nav" markdown>
 

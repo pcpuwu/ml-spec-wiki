@@ -309,10 +309,27 @@ def main():
         nav.append(f'  - "Course {c}: {course["title"]}":')
         nav.extend(course_nav)
 
+    # ---- standalone Coding Labs track (a parallel top-level section) ----
+    # Source labs are self-contained tutorials (their own back-links); copied verbatim,
+    # no header injection. index.md is the section landing via navigation.indexes.
+    labs_src = SRC / "coding-labs"
+    lab_files = sorted(labs_src.glob("C*W*.md")) if labs_src.is_dir() else []
+    if lab_files:
+        (OUT / "coding-labs").mkdir(parents=True, exist_ok=True)
+        nav.append('  - "Coding Labs":')
+        idx = labs_src / "index.md"
+        if idx.exists():
+            (OUT / "coding-labs" / "index.md").write_text(idx.read_text(encoding="utf-8"), encoding="utf-8")
+            nav.append("      - coding-labs/index.md")
+        for lf in lab_files:
+            (OUT / "coding-labs" / lf.name).write_text(lf.read_text(encoding="utf-8"), encoding="utf-8")
+            nav.append(f'      - "{h1_title(lf, lf.stem)}": coding-labs/{lf.name}')
+
     write_index(spec)
     write_about()
     write_extra_css()
     write_mathjax()
+    write_widgets_js()
     write_config(spec, "\n".join(nav))
     print(f"Built {sum(1 for _ in OUT.rglob('*.md'))} pages into {OUT}")
 
@@ -360,8 +377,92 @@ def write_about():
     )
 
 
+# ---- inline interactive visualizations (notes: <div class="ml-widget" data-widget="…">) ----
+# The harness hydrates every placeholder in place; instant-nav safe via document$.subscribe
+# (mirrors write_mathjax()). Each widget is its own file SRC/widgets/<name>.js calling
+# MLW.register(name, fn) (+ optional SRC/widgets/<name>.css); write_widgets_js() concatenates
+# the harness first, then every widget module.
+HARNESS_JS = r"""/* ml-widgets harness — hydrates every <div class="ml-widget" data-widget="…"> in place.
+ * Instant-nav safe (document$.subscribe). Widget modules (concatenated after this) call
+ * MLW.register(name, function (root) { ... }). */
+(function () {
+  "use strict";
+  var MLW = window.MLW = { _reg: {}, register: function (name, fn) { this._reg[name] = fn; } };
+  function hydrate() {
+    var nodes = document.querySelectorAll(".ml-widget"), i, root, fn;
+    for (i = 0; i < nodes.length; i++) {
+      root = nodes[i];
+      if (root.dataset.mlwReady) continue;
+      root.dataset.mlwReady = "1";
+      fn = MLW._reg[root.dataset.widget];
+      if (!fn) { root.textContent = "Unknown widget: " + root.dataset.widget; continue; }
+      try { fn(root); } catch (e) { root.textContent = "Widget failed to load."; }
+    }
+  }
+  MLW.hydrate = hydrate;
+  if (typeof document$ !== "undefined" && document$.subscribe) document$.subscribe(hydrate);
+  else document.addEventListener("DOMContentLoaded", hydrate);
+})();
+"""
+
+WIDGET_CSS = (
+    "\n/* ---- inline interactive widgets (ml-widgets.js) ---- */\n"
+    ".ml-widget { --mlw-line:#f5b301; --mlw-drag:#ff5c7c; --mlw-resid:#ff5c7c; margin:1.2rem 0; }\n"
+    ".mlw-stage { display:flex; gap:1.2rem; flex-wrap:wrap; align-items:flex-start; }\n"
+    ".mlw-plot { flex:1 1 340px; min-width:280px; max-width:560px; height:auto;\n"
+    "            background:var(--md-code-bg-color);\n"
+    "            border:1px solid var(--md-default-fg-color--lightest);\n"
+    "            border-radius:8px; touch-action:none; }\n"
+    ".mlw-side { flex:1 1 200px; min-width:200px; }\n"
+    ".mlw-eq { font-size:1.25rem; font-family:var(--md-code-font-family,monospace); margin-bottom:.6rem; }\n"
+    ".mlw-eq b { color:var(--mlw-line); }\n"
+    ".mlw-stats { border:1px solid var(--md-default-fg-color--lightest); border-radius:6px;\n"
+    "             padding:.2rem .6rem; margin-bottom:.6rem; }\n"
+    ".mlw-stats > div { display:flex; justify-content:space-between; gap:1rem; padding:.28rem 0; font-size:.8rem; }\n"
+    ".mlw-stats > div + div { border-top:1px solid var(--md-default-fg-color--lightest); }\n"
+    ".mlw-stats span:last-child { font-family:var(--md-code-font-family,monospace); }\n"
+    ".mlw-tog { display:flex; align-items:center; gap:.4rem; font-size:.8rem; opacity:.85;\n"
+    "           margin-bottom:.6rem; cursor:pointer; }\n"
+    ".mlw-btns { display:flex; flex-wrap:wrap; gap:.4rem; }\n"
+    ".mlw-btns button { font-size:.75rem; padding:.35rem .6rem; cursor:pointer;\n"
+    "                   border:1px solid var(--md-default-fg-color--lightest); border-radius:6px;\n"
+    "                   background:var(--md-code-bg-color); color:var(--md-default-fg-color); }\n"
+    ".mlw-btns button:hover { border-color:var(--md-accent-fg-color); }\n"
+    ".mlw-tip { font-size:.75rem; opacity:.7; margin:.6rem 0 0; line-height:1.45; }\n"
+    ".mlw-grid { stroke:var(--md-default-fg-color--lightest); stroke-width:1; }\n"
+    ".mlw-axis { stroke:var(--md-default-fg-color--light); stroke-width:1.5; }\n"
+    ".mlw-line { stroke:var(--mlw-line); stroke-width:3; }\n"
+    ".mlw-resid-line { stroke:var(--mlw-resid); stroke-width:1.5; stroke-dasharray:3 3; opacity:.8; }\n"
+    ".mlw-dot { fill:var(--md-accent-fg-color); stroke:var(--md-default-bg-color); stroke-width:1.5; cursor:grab; }\n"
+    ".mlw-dot--drag { fill:var(--mlw-drag); }\n"
+    ".mlw-dot--out { fill:var(--mlw-drag); stroke:var(--md-default-bg-color); stroke-width:2; }\n"
+    ".mlw-outlabel { fill:var(--mlw-drag); font-size:13px; font-weight:700;\n"
+    "                font-family:var(--md-text-font-family,sans-serif); }\n"
+    ".mlw-ghost { stroke:var(--md-default-fg-color--light); stroke-width:2;\n"
+    "             stroke-dasharray:6 5; opacity:.55; }\n"
+    ".mlw-ghost-note { font-size:.75rem; opacity:.9; margin:0 0 .6rem; line-height:1.45;\n"
+    "                  border-left:3px solid var(--mlw-drag); padding-left:.55rem; }\n"
+    ".mlw-ghost-note b { color:var(--mlw-drag); }\n"
+    ".md-typeset .mlw-caption { font-size:.78rem; opacity:.75; line-height:1.5;\n"
+    "                           margin:.4rem 0 1.2rem; max-width:640px; }\n"
+    ".md-typeset .mlw-caption code { font-size:.9em; }\n"
+)
+
+
+def write_widgets_js():
+    # harness first, then every widget module (SRC/widgets/*.js), concatenated into one file
+    js_dir = OUT / "javascripts"
+    js_dir.mkdir(parents=True, exist_ok=True)
+    parts = [HARNESS_JS]
+    widgets_src = SRC / "widgets"
+    if widgets_src.is_dir():
+        for wj in sorted(widgets_src.glob("*.js")):
+            parts.append("/* ===== widget: " + wj.name + " ===== */\n" + wj.read_text(encoding="utf-8"))
+    (js_dir / "ml-widgets.js").write_text("\n".join(parts), encoding="utf-8")
+
+
 def write_extra_css():
-    (OUT / "extra.css").write_text(
+    css = (
         ".ep-nav { display:flex; justify-content:space-between; gap:1rem;\n"
         "          align-items:center; margin:1rem 0; }\n"
         ".ep-nav .md-button { margin:0; }\n"
@@ -398,9 +499,15 @@ def write_extra_css():
         "         border:1px solid var(--md-default-fg-color--lightest);\n"
         "         border-radius:6px; margin:1rem 0; }\n"
         ".md-typeset .highlight > pre { margin:0; }\n"
-        ".md-typeset .highlight > pre > code { background:transparent; }\n",
-        encoding="utf-8",
+        ".md-typeset .highlight > pre > code { background:transparent; }\n"
+        + WIDGET_CSS
     )
+    # append each widget's own CSS (SRC/widgets/*.css), so widgets stay self-contained
+    widgets_src = SRC / "widgets"
+    if widgets_src.is_dir():
+        for wc in sorted(widgets_src.glob("*.css")):
+            css += "\n/* widget: " + wc.name + " */\n" + wc.read_text(encoding="utf-8")
+    (OUT / "extra.css").write_text(css, encoding="utf-8")
 
 
 def write_mathjax():
@@ -460,7 +567,8 @@ def write_config(spec, nav):
         "  - extra.css\n\n"
         "extra_javascript:\n"
         "  - javascripts/mathjax.js\n"
-        "  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js\n\n"
+        "  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js\n"
+        "  - javascripts/ml-widgets.js\n\n"
         "plugins:\n"
         "  - search\n"
         "  - pyodide_macros:\n"

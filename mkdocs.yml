@@ -39,6 +39,7 @@ extra_css:
 extra_javascript:
   - javascripts/mathjax.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+  - javascripts/ml-widgets.js
 
 plugins:
   - search
@@ -249,3 +250,15 @@ nav:
         - "Algorithm Refinement: Mini-Batch and Soft Updates": course-3/week-3/algorithm-refinement-mini-batch-and-soft-updates.md
         - "The State of Reinforcement Learning": course-3/week-3/the-state-of-reinforcement-learning.md
         - "Test Yourself": course-3/week-3/test-yourself.md
+  - "Coding Labs":
+      - coding-labs/index.md
+      - "C1 · W1 — Linear Regression, in Code": coding-labs/C1W1.md
+      - "C1 · W2 — Multiple Features, Feature Scaling & Polynomial Regression, in Code": coding-labs/C1W2.md
+      - "C1 · W3 — Logistic Regression, Decision Boundaries & Regularization, in Code": coding-labs/C1W3.md
+      - "C2 · W1 — Neural Networks & Forward Propagation, in Code": coding-labs/C2W1.md
+      - "C2 · W2 — Training Neural Networks: Activations, Softmax & Backprop, in Code": coding-labs/C2W2.md
+      - "C2 · W3 — Diagnosing Bias & Variance, Learning Curves & Metrics, in Code": coding-labs/C2W3.md
+      - "C2 · W4 — Decision Trees, Random Forests & Boosting, in Code": coding-labs/C2W4.md
+      - "C3 · W1 — K-Means Clustering & Anomaly Detection, in Code": coding-labs/C3W1.md
+      - "C3 · W2 — PCA & Collaborative-Filtering Recommenders, in Code": coding-labs/C3W2.md
+      - "C3 · W3 — Reinforcement Learning: Q-Learning & DQN, in Code": coding-labs/C3W3.md

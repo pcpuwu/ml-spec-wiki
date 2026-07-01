@@ -64,6 +64,13 @@ overfitting-management one of the most valuable real-world skills. `[04:34]`
 Course 2 builds on exactly these foundations — **cost functions, gradient descent, and
 the sigmoid** — to construct **neural networks**. `[05:21]`
 
+!!! abstract "You might want to try it out in code"
+    You now know everything this week's Coding Lab needs — the sigmoid model, the decision
+    boundary, the logistic cost, and how regularization tames overfitting. The **[C1W3 Coding
+    Lab →](../../coding-labs/C1W3.md)** builds logistic regression in code end-to-end and adds
+    a regularization term. Entirely optional, and you can do it in any order you like — but
+    this is the moment it'll click.
+
 
 <div class="ep-nav" markdown>
 

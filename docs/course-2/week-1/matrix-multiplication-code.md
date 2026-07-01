@@ -74,6 +74,13 @@ Next week: how to **train** a neural network. `[06:22]`
 
 {{ IDE('dense_forward_exo') }}
 
+!!! abstract "You might want to try it out in code"
+    You now know everything this week's Coding Lab needs — what a layer is, how forward
+    propagation runs, and the vectorized matrix form. The **[C2W1 Coding Lab →](../../coding-labs/C2W1.md)**
+    builds neural-network forward propagation in code, from a hand-rolled layer to the matrix
+    version. Entirely optional, and you can do it in any order you like — but this is the
+    moment it'll click.
+
 
 <div class="ep-nav" markdown>
 
