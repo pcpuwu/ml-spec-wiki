@@ -2,1218 +2,1262 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>http://127.0.0.1:8000/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/about/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
+    </url>
+    <url>
+         <loc>http://127.0.0.1:8000/coding-labs/</loc>
+         <lastmod>2026-07-01</lastmod>
+    </url>
+    <url>
+         <loc>http://127.0.0.1:8000/coding-labs/C1W1/</loc>
+         <lastmod>2026-07-01</lastmod>
+    </url>
+    <url>
+         <loc>http://127.0.0.1:8000/coding-labs/C1W2/</loc>
+         <lastmod>2026-07-01</lastmod>
+    </url>
+    <url>
+         <loc>http://127.0.0.1:8000/coding-labs/C1W3/</loc>
+         <lastmod>2026-07-01</lastmod>
+    </url>
+    <url>
+         <loc>http://127.0.0.1:8000/coding-labs/C2W1/</loc>
+         <lastmod>2026-07-01</lastmod>
+    </url>
+    <url>
+         <loc>http://127.0.0.1:8000/coding-labs/C2W2/</loc>
+         <lastmod>2026-07-01</lastmod>
+    </url>
+    <url>
+         <loc>http://127.0.0.1:8000/coding-labs/C2W3/</loc>
+         <lastmod>2026-07-01</lastmod>
+    </url>
+    <url>
+         <loc>http://127.0.0.1:8000/coding-labs/C2W4/</loc>
+         <lastmod>2026-07-01</lastmod>
+    </url>
+    <url>
+         <loc>http://127.0.0.1:8000/coding-labs/C3W1/</loc>
+         <lastmod>2026-07-01</lastmod>
+    </url>
+    <url>
+         <loc>http://127.0.0.1:8000/coding-labs/C3W2/</loc>
+         <lastmod>2026-07-01</lastmod>
+    </url>
+    <url>
+         <loc>http://127.0.0.1:8000/coding-labs/C3W3/</loc>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-1/applications-of-machine-learning-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-1/applications-of-machine-learning/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-1/cost-function-intuition-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-1/cost-function-intuition/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-1/cost-function-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-1/cost-function/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-1/gradient-descent-for-linear-regression-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-1/gradient-descent-for-linear-regression/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-1/gradient-descent-intuition-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-1/gradient-descent-intuition/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-1/gradient-descent-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-1/gradient-descent/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-1/implementing-gradient-descent-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-1/implementing-gradient-descent/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-1/jupyter-notebooks-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-1/jupyter-notebooks/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-1/learning-rate-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-1/learning-rate/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-1/linear-regression-model-part-1-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-1/linear-regression-model-part-1/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-1/linear-regression-model-part-2-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-1/linear-regression-model-part-2/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-1/running-gradient-descent-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-1/running-gradient-descent/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-1/supervised-learning-part-1-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-1/supervised-learning-part-1/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-1/supervised-learning-part-2-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-1/supervised-learning-part-2/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-1/test-yourself/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-1/unsupervised-learning-part-1-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-1/unsupervised-learning-part-1/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-1/unsupervised-learning-part-2-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-1/unsupervised-learning-part-2/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-1/visualization-examples-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-1/visualization-examples/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-1/visualizing-the-cost-function-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-1/visualizing-the-cost-function/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-1/welcome-to-machine-learning-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-1/welcome-to-machine-learning/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-1/what-is-machine-learning-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-1/what-is-machine-learning/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-2/assignment/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-2/checking-gradient-descent-for-convergence-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-2/checking-gradient-descent-for-convergence/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-2/choosing-the-learning-rate-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-2/choosing-the-learning-rate/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-2/feature-engineering-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-2/feature-engineering/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-2/feature-scaling-part-1-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-2/feature-scaling-part-1/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-2/feature-scaling-part-2-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-2/feature-scaling-part-2/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-2/gradient-descent-for-multiple-linear-regression-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-2/gradient-descent-for-multiple-linear-regression/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-2/multiple-features-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-2/multiple-features/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-2/polynomial-regression-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-2/polynomial-regression/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-2/test-yourself/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-2/vectorization-part-1-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-2/vectorization-part-1/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-2/vectorization-part-2-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-2/vectorization-part-2/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-3/addressing-overfitting-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-3/addressing-overfitting/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-3/assignment/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-3/classification-motivations-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-3/classification-motivations/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-3/cost-function-for-logistic-regression-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-3/cost-function-for-logistic-regression/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-3/cost-function-with-regularization-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-3/cost-function-with-regularization/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-3/decision-boundary-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-3/decision-boundary/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-3/gradient-descent-implementation-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-3/gradient-descent-implementation/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-3/logistic-regression-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-3/logistic-regression/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-3/regularized-linear-regression-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-3/regularized-linear-regression/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-3/regularized-logistic-regression-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-3/regularized-logistic-regression/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-3/simplified-cost-function-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-3/simplified-cost-function/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-3/test-yourself/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-3/the-problem-of-overfitting-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-1/week-3/the-problem-of-overfitting/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-1/building-a-neural-network-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-1/building-a-neural-network/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-1/data-in-tensorflow-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-1/data-in-tensorflow/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-1/demand-prediction-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-1/demand-prediction/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-1/example-recognizing-images-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-1/example-recognizing-images/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-1/forward-prop-in-a-single-layer-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-1/forward-prop-in-a-single-layer/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-1/general-implementation-of-forward-propagation-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-1/general-implementation-of-forward-propagation/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-1/how-neural-networks-are-implemented-efficiently-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-1/how-neural-networks-are-implemented-efficiently/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-1/inference-in-code-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-1/inference-in-code/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-1/inference-making-predictions-forward-propagation-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-1/inference-making-predictions-forward-propagation/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-1/is-there-a-path-to-agi-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-1/is-there-a-path-to-agi/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-1/matrix-multiplication-code-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-1/matrix-multiplication-code/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-1/matrix-multiplication-rules-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-1/matrix-multiplication-rules/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-1/matrix-multiplication-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-1/matrix-multiplication/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-1/more-complex-neural-networks-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-1/more-complex-neural-networks/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-1/neural-network-layer-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-1/neural-network-layer/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-1/neurons-and-the-brain-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-1/neurons-and-the-brain/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-1/test-yourself/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-2/additional-layer-types-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-2/additional-layer-types/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-2/advanced-optimization-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-2/advanced-optimization/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-2/alternatives-to-the-sigmoid-activation-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-2/alternatives-to-the-sigmoid-activation/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-2/choosing-activation-functions-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-2/choosing-activation-functions/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-2/classification-with-multiple-outputs-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-2/classification-with-multiple-outputs/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-2/computation-graph-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-2/computation-graph/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-2/improved-implementation-of-softmax-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-2/improved-implementation-of-softmax/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-2/larger-neural-network-example-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-2/larger-neural-network-example/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-2/multiclass-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-2/multiclass/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-2/neural-network-with-softmax-output-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-2/neural-network-with-softmax-output/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-2/softmax-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-2/softmax/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-2/tensorflow-implementation-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-2/tensorflow-implementation/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-2/test-yourself/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-2/training-details-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-2/training-details/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-2/what-is-a-derivative-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-2/what-is-a-derivative/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-2/why-do-we-need-activation-functions-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-2/why-do-we-need-activation-functions/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-3/adding-data-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-3/adding-data/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-3/bias-variance-and-neural-networks-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-3/bias-variance-and-neural-networks/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-3/deciding-what-to-try-next-revisited-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-3/deciding-what-to-try-next-revisited/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-3/deciding-what-to-try-next-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-3/deciding-what-to-try-next/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-3/diagnosing-bias-and-variance-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-3/diagnosing-bias-and-variance/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-3/error-analysis-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-3/error-analysis/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-3/error-metrics-for-skewed-datasets-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-3/error-metrics-for-skewed-datasets/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-3/establishing-a-baseline-level-of-performance-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-3/establishing-a-baseline-level-of-performance/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-3/evaluating-a-model-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-3/evaluating-a-model/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-3/fairness-bias-and-ethics-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-3/fairness-bias-and-ethics/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-3/full-cycle-of-a-machine-learning-project-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-3/full-cycle-of-a-machine-learning-project/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-3/iterative-loop-of-ml-development-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-3/iterative-loop-of-ml-development/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-3/learning-curves-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-3/learning-curves/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-3/model-selection-and-training-cross-validation-test-sets-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-3/model-selection-and-training-cross-validation-test-sets/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-3/regularization-and-bias-variance-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-3/regularization-and-bias-variance/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-3/test-yourself/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-3/trading-off-precision-and-recall-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-3/trading-off-precision-and-recall/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-3/transfer-learning-using-data-from-a-different-task-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-3/transfer-learning-using-data-from-a-different-task/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-4/choosing-a-split-information-gain-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-4/choosing-a-split-information-gain/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-4/continuous-valued-features-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-4/continuous-valued-features/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-4/decision-tree-model-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-4/decision-tree-model/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-4/learning-process-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-4/learning-process/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-4/measuring-purity-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-4/measuring-purity/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-4/putting-it-together-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-4/putting-it-together/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-4/random-forest-algorithm-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-4/random-forest-algorithm/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-4/regression-trees-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-4/regression-trees/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-4/sampling-with-replacement-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-4/sampling-with-replacement/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-4/test-yourself/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-4/using-multiple-decision-trees-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-4/using-multiple-decision-trees/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-4/using-one-hot-encoding-of-categorical-features-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-4/using-one-hot-encoding-of-categorical-features/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-4/when-to-use-decision-trees-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-4/when-to-use-decision-trees/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-4/xgboost-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-2/week-4/xgboost/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-1/anomaly-detection-algorithm-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-1/anomaly-detection-algorithm/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-1/anomaly-detection-vs-supervised-learning-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-1/anomaly-detection-vs-supervised-learning/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-1/choosing-the-number-of-clusters-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-1/choosing-the-number-of-clusters/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-1/choosing-what-features-to-use-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-1/choosing-what-features-to-use/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-1/developing-and-evaluating-an-anomaly-detection-system-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-1/developing-and-evaluating-an-anomaly-detection-system/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-1/finding-unusual-events-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-1/finding-unusual-events/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-1/gaussian-normal-distribution-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-1/gaussian-normal-distribution/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-1/initializing-k-means-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-1/initializing-k-means/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-1/k-means-algorithm-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-1/k-means-algorithm/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-1/k-means-intuition-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-1/k-means-intuition/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-1/optimization-objective-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-1/optimization-objective/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-1/test-yourself/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-1/what-is-clustering-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-1/what-is-clustering/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-2/binary-labels-favs-likes-and-clicks-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-2/binary-labels-favs-likes-and-clicks/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-2/collaborative-filtering-algorithm-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-2/collaborative-filtering-algorithm/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-2/collaborative-filtering-vs-content-based-filtering-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-2/collaborative-filtering-vs-content-based-filtering/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-2/deep-learning-for-content-based-filtering-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-2/deep-learning-for-content-based-filtering/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-2/ethical-use-of-recommender-systems-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-2/ethical-use-of-recommender-systems/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-2/finding-related-items-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-2/finding-related-items/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-2/making-recommendations-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-2/making-recommendations/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-2/mean-normalization-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-2/mean-normalization/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-2/pca-algorithm-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-2/pca-algorithm/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-2/pca-in-code-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-2/pca-in-code/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-2/recommending-from-a-large-catalogue-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-2/recommending-from-a-large-catalogue/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-2/reducing-the-number-of-features-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-2/reducing-the-number-of-features/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-2/tensorflow-implementation-of-collaborative-filtering-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-2/tensorflow-implementation-of-collaborative-filtering/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-2/tensorflow-implementation-of-content-based-filtering-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-2/tensorflow-implementation-of-content-based-filtering/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-2/test-yourself/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-2/using-per-item-features-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-2/using-per-item-features/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-3/algorithm-refinement-epsilon-greedy-policy-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-3/algorithm-refinement-epsilon-greedy-policy/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-3/algorithm-refinement-improved-neural-network-architecture-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-3/algorithm-refinement-improved-neural-network-architecture/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-3/algorithm-refinement-mini-batch-and-soft-updates-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-3/algorithm-refinement-mini-batch-and-soft-updates/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-3/bellman-equation-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-3/bellman-equation/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-3/example-of-continuous-state-space-applications-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-3/example-of-continuous-state-space-applications/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-3/learning-the-state-value-function-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-3/learning-the-state-value-function/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-3/lunar-lander-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-3/lunar-lander/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-3/making-decisions-policies-in-reinforcement-learning-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-3/making-decisions-policies-in-reinforcement-learning/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-3/mars-rover-example-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-3/mars-rover-example/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-3/random-stochastic-environment-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-3/random-stochastic-environment/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-3/review-of-key-concepts-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-3/review-of-key-concepts/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-3/state-action-value-function-definition-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-3/state-action-value-function-definition/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-3/state-action-value-function-example-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-3/state-action-value-function-example/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-3/test-yourself/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-3/the-return-in-reinforcement-learning-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-3/the-return-in-reinforcement-learning/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-3/the-state-of-reinforcement-learning-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-3/the-state-of-reinforcement-learning/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-3/what-is-reinforcement-learning-transcript/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
     <url>
          <loc>http://127.0.0.1:8000/course-3/week-3/what-is-reinforcement-learning/</loc>
-         <lastmod>2026-06-27</lastmod>
+         <lastmod>2026-07-01</lastmod>
     </url>
 </urlset>

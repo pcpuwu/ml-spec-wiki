@@ -32,3 +32,1094 @@
          border-radius:6px; margin:1rem 0; }
 .md-typeset .highlight > pre { margin:0; }
 .md-typeset .highlight > pre > code { background:transparent; }
+
+/* ---- inline interactive widgets (ml-widgets.js) ---- */
+.ml-widget { --mlw-line:#f5b301; --mlw-drag:#ff5c7c; --mlw-resid:#ff5c7c; margin:1.2rem 0; }
+.mlw-stage { display:flex; gap:1.2rem; flex-wrap:wrap; align-items:flex-start; }
+.mlw-plot { flex:1 1 340px; min-width:280px; max-width:560px; height:auto;
+            background:var(--md-code-bg-color);
+            border:1px solid var(--md-default-fg-color--lightest);
+            border-radius:8px; touch-action:none; }
+.mlw-side { flex:1 1 200px; min-width:200px; }
+.mlw-eq { font-size:1.25rem; font-family:var(--md-code-font-family,monospace); margin-bottom:.6rem; }
+.mlw-eq b { color:var(--mlw-line); }
+.mlw-stats { border:1px solid var(--md-default-fg-color--lightest); border-radius:6px;
+             padding:.2rem .6rem; margin-bottom:.6rem; }
+.mlw-stats > div { display:flex; justify-content:space-between; gap:1rem; padding:.28rem 0; font-size:.8rem; }
+.mlw-stats > div + div { border-top:1px solid var(--md-default-fg-color--lightest); }
+.mlw-stats span:last-child { font-family:var(--md-code-font-family,monospace); }
+.mlw-tog { display:flex; align-items:center; gap:.4rem; font-size:.8rem; opacity:.85;
+           margin-bottom:.6rem; cursor:pointer; }
+.mlw-btns { display:flex; flex-wrap:wrap; gap:.4rem; }
+.mlw-btns button { font-size:.75rem; padding:.35rem .6rem; cursor:pointer;
+                   border:1px solid var(--md-default-fg-color--lightest); border-radius:6px;
+                   background:var(--md-code-bg-color); color:var(--md-default-fg-color); }
+.mlw-btns button:hover { border-color:var(--md-accent-fg-color); }
+.mlw-tip { font-size:.75rem; opacity:.7; margin:.6rem 0 0; line-height:1.45; }
+.mlw-grid { stroke:var(--md-default-fg-color--lightest); stroke-width:1; }
+.mlw-axis { stroke:var(--md-default-fg-color--light); stroke-width:1.5; }
+.mlw-line { stroke:var(--mlw-line); stroke-width:3; }
+.mlw-resid-line { stroke:var(--mlw-resid); stroke-width:1.5; stroke-dasharray:3 3; opacity:.8; }
+.mlw-dot { fill:var(--md-accent-fg-color); stroke:var(--md-default-bg-color); stroke-width:1.5; cursor:grab; }
+.mlw-dot--drag { fill:var(--mlw-drag); }
+.mlw-dot--out { fill:var(--mlw-drag); stroke:var(--md-default-bg-color); stroke-width:2; }
+.mlw-outlabel { fill:var(--mlw-drag); font-size:13px; font-weight:700;
+                font-family:var(--md-text-font-family,sans-serif); }
+.mlw-ghost { stroke:var(--md-default-fg-color--light); stroke-width:2;
+             stroke-dasharray:6 5; opacity:.55; }
+.mlw-ghost-note { font-size:.75rem; opacity:.9; margin:0 0 .6rem; line-height:1.45;
+                  border-left:3px solid var(--mlw-drag); padding-left:.55rem; }
+.mlw-ghost-note b { color:var(--mlw-drag); }
+.md-typeset .mlw-caption { font-size:.78rem; opacity:.75; line-height:1.5;
+                           margin:.4rem 0 1.2rem; max-width:640px; }
+.md-typeset .mlw-caption code { font-size:.9em; }
+
+/* widget: activation-functions.css */
+/* activation-functions widget — theme-aware styles on the shared .mlw-* base classes */
+.act-eq sup { font-size:.7em; }
+
+.act-tabs { margin:.2rem 0 .7rem; }
+.act-tab--on { border-color:var(--md-accent-fg-color); color:var(--md-accent-fg-color);
+  background:color-mix(in srgb, var(--md-accent-fg-color) 12%, transparent); font-weight:600; }
+
+/* curves */
+.act-curve { fill:none; stroke:var(--mlw-line); stroke-width:3; stroke-linejoin:round; stroke-linecap:round; }
+.act-deriv-curve { fill:none; stroke:var(--md-accent-fg-color); stroke-width:2;
+  stroke-dasharray:6 4; stroke-linejoin:round; stroke-linecap:round; opacity:.9; }
+.act-collapse { fill:none; stroke:var(--md-default-fg-color--light); stroke-width:2;
+  stroke-dasharray:5 4; opacity:.8; }
+
+/* query point */
+.act-qline { stroke:var(--mlw-drag); stroke-width:1.2; stroke-dasharray:3 3; opacity:.75; }
+.act-q { fill:var(--mlw-drag); stroke:var(--md-default-bg-color); stroke-width:1.5; cursor:ew-resize; }
+
+.mlw-tick { fill:var(--md-default-fg-color--light); font-size:12px; font-family:var(--md-code-font-family,monospace); }
+
+/* legend */
+.act-legend { list-style:none; margin:.55rem 0 0; padding:0; display:flex; flex-wrap:wrap;
+  gap:.35rem .9rem; font-size:.72rem; opacity:.85; }
+.act-legend li { display:flex; align-items:center; gap:.35rem; }
+.act-sw { width:16px; height:0; border-top-width:3px; border-top-style:solid; display:inline-block; }
+.act-sw--f { border-top-color:var(--mlw-line); }
+.act-sw--d { border-top-color:var(--md-accent-fg-color); border-top-style:dashed; }
+.act-sw--l { border-top-color:var(--md-default-fg-color--light); border-top-style:dashed; }
+.act-sw--q { width:10px; height:10px; border:0; border-radius:50%; background:var(--mlw-drag); }
+
+.act-note { font-size:.75rem; line-height:1.45; margin:.55rem 0 0; padding-left:.55rem;
+  border-left:3px solid var(--md-accent-fg-color); opacity:.9; }
+.act-note b { color:var(--mlw-line); }
+
+/* widget: bias-variance.css */
+/* bias-variance — extra classes (base .mlw-* live in the shared harness stylesheet).
+ * All colors come from Material theme variables so light/dark both read correctly;
+ * the two accent tints (amber = bias, red = variance) match the shared diagnosis badge. */
+
+/* --- slider row + diagnosis badge (self-contained duplicates of the shared pattern) --- */
+.mlw-ctrl { margin: 0.5rem 0; }
+.mlw-ctrl label {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--md-default-fg-color--light);
+  margin-bottom: 0.15rem;
+}
+.mlw-ctrl label b { color: var(--md-default-fg-color); font-variant-numeric: tabular-nums; }
+.mlw-ctrl input[type="range"] { width: 100%; accent-color: var(--md-accent-fg-color); }
+
+.mlw-diag {
+  border-radius: 6px;
+  padding: 0.35rem 0.6rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  background: var(--md-code-bg-color);
+  margin: 0.4rem 0;
+}
+.mlw-diag--bias .mlw-diaglabel { color: #d98a1f; }   /* amber = high bias */
+.mlw-diag--var  .mlw-diaglabel { color: #d1495b; }   /* red = high variance */
+.mlw-diag--good .mlw-diaglabel { color: #2e8b57; }   /* green = just right */
+
+/* --- mode toggle --- */
+.mlw-bv-mode.is-active {
+  background: var(--md-accent-fg-color);
+  color: var(--md-primary-bg-color, #fff);
+  border-color: var(--md-accent-fg-color);
+}
+
+/* --- the two error curves --- */
+.mlw-bv-train {
+  fill: none;
+  stroke: var(--md-default-fg-color--light);
+  stroke-width: 2.5;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+.mlw-bv-cv {
+  fill: none;
+  stroke: var(--md-accent-fg-color);
+  stroke-width: 3;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+.mlw-bv-tdot { fill: var(--md-default-fg-color--light); }
+.mlw-bv-cdot { fill: var(--md-accent-fg-color); }
+
+.mlw-bv-baseline {
+  stroke: var(--md-default-fg-color--lighter);
+  stroke-width: 1.5;
+  stroke-dasharray: 5 4;
+}
+
+/* --- region shading + labels --- */
+.mlw-bv-region-bias { fill: #d98a1f; opacity: 0.07; }
+.mlw-bv-region-var  { fill: #d1495b; opacity: 0.07; }
+.mlw-bv-regionlbl { font-size: 12px; font-weight: 700; letter-spacing: 0.02em; }
+.mlw-bv-regionlbl--bias { fill: #d98a1f; }
+.mlw-bv-regionlbl--var  { fill: #d1495b; }
+
+/* --- sweet spot + chosen-degree markers --- */
+.mlw-bv-sweetline {
+  stroke: var(--md-default-fg-color--light);
+  stroke-width: 1;
+  stroke-dasharray: 4 3;
+  opacity: 0.6;
+}
+.mlw-bv-sweetdot {
+  fill: none;
+  stroke: #2e8b57;
+  stroke-width: 2.5;
+}
+.mlw-bv-sweettxt { fill: #2e8b57; font-size: 12px; font-weight: 700; }
+.mlw-bv-marker {
+  stroke: var(--md-accent-fg-color);
+  stroke-width: 2;
+  opacity: 0.55;
+}
+.mlw-bv-pickdot {
+  fill: var(--md-default-bg-color);
+  stroke: var(--md-accent-fg-color);
+  stroke-width: 2.5;
+}
+
+/* --- learning-curve gap annotation --- */
+.mlw-bv-gapline {
+  stroke: var(--md-default-fg-color);
+  stroke-width: 1.5;
+  stroke-dasharray: 2 2;
+}
+.mlw-bv-gaptxt { fill: var(--md-default-fg-color--light); font-size: 12px; font-weight: 600; }
+
+/* --- axis ticks + titles --- */
+.mlw-bv-tick { fill: var(--md-default-fg-color--light); font-size: 12px; font-variant-numeric: tabular-nums; }
+.mlw-bv-axtitle { fill: var(--md-default-fg-color--light); font-size: 12.5px; font-weight: 600; }
+
+/* --- in-plot legend --- */
+.mlw-bv-legbox {
+  fill: var(--md-default-bg-color);
+  stroke: var(--md-default-fg-color--lightest);
+  stroke-width: 1;
+  opacity: 0.92;
+}
+.mlw-bv-legtxt { fill: var(--md-default-fg-color); font-size: 12px; }
+
+/* --- side-panel legend swatches --- */
+.mlw-bv-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.9rem;
+  font-size: 0.78rem;
+  color: var(--md-default-fg-color--light);
+  margin: 0.35rem 0;
+}
+.mlw-bv-legend span { display: inline-flex; align-items: center; gap: 0.3rem; }
+.mlw-bv-sw { width: 16px; height: 0; border-top-width: 3px; border-top-style: solid; display: inline-block; }
+.mlw-bv-sw--tr   { border-top-color: var(--md-default-fg-color--light); }
+.mlw-bv-sw--cv   { border-top-color: var(--md-accent-fg-color); }
+.mlw-bv-sw--base { border-top-style: dashed; border-top-color: var(--md-default-fg-color--lighter); }
+
+.mlw-bv-clabel b { color: var(--md-accent-fg-color); }
+
+/* widget: cost-surface.css */
+/* cost-surface widget — extra styles (base .mlw-* classes live in extra.css) */
+.mlw-cost-contour { fill:none; stroke:var(--md-default-fg-color--light); stroke-width:1.1; }
+.mlw-cost-min { stroke:var(--mlw-line); stroke-width:2.4; stroke-linecap:round; }
+.mlw-cost-cross { stroke:var(--mlw-drag); stroke-width:1; stroke-dasharray:3 3; opacity:.65; }
+.mlw-axlabel { fill:var(--md-default-fg-color--light);
+               font-size:11px; font-family:var(--md-text-font-family,sans-serif); }
+.mlw-axtitle { fill:var(--md-default-fg-color);
+               font-size:12px; font-weight:600; font-family:var(--md-text-font-family,sans-serif); }
+.mlw-slider { display:flex; align-items:center; gap:.55rem; font-size:.82rem; margin:.3rem 0;
+              font-family:var(--md-code-font-family,monospace); }
+.mlw-slider input[type=range] { flex:1; min-width:0; accent-color:var(--md-accent-fg-color); }
+.mlw-slider .k { width:1rem; color:var(--mlw-line); font-weight:700; font-style:italic; }
+.mlw-slider .v { width:3.2rem; text-align:right; color:var(--md-default-fg-color); }
+
+/* widget: decision-boundary.css */
+/* decision-boundary widget — theme-aware; class colours reuse the shared widget palette
+ * (--mlw-line gold for class 1) and add one distinct blue for class 0. */
+.ml-widget { --mlw-c0: #4c8dff; }
+
+/* shaded prediction half-planes */
+.mlw-db-pos { fill: var(--mlw-line); opacity: .11; stroke: none; }
+.mlw-db-neg { fill: var(--mlw-c0); opacity: .11; stroke: none; }
+
+/* class points (override the base .mlw-dot fill; same specificity, loaded later) */
+.mlw-dot--c0 { fill: var(--mlw-c0); cursor: default; }
+.mlw-dot--c1 { fill: var(--mlw-line); cursor: default; }
+.mlw-dot--miss { stroke: var(--mlw-drag); stroke-width: 3.5; }
+
+/* drag handles on the boundary */
+.mlw-handle { fill: var(--md-default-bg-color); stroke: var(--md-default-fg-color--light);
+              stroke-width: 2; cursor: grab; }
+.mlw-handle--rot { stroke: var(--mlw-line); }
+
+/* sliders */
+.mlw-db-sliders { margin-bottom: .6rem; }
+.mlw-db-sliders label { display: flex; align-items: center; gap: .5rem; font-size: .8rem;
+                        font-family: var(--md-code-font-family, monospace); padding: .18rem 0; }
+.mlw-db-sliders input[type="range"] { flex: 1; accent-color: var(--md-accent-fg-color); }
+.mlw-db-sliders output { width: 3ch; text-align: right; opacity: .85; }
+
+/* legend */
+.mlw-db-legend { display: flex; flex-direction: column; gap: .28rem; font-size: .75rem;
+                 opacity: .85; margin-bottom: .6rem; }
+.mlw-db-legend span { display: flex; align-items: center; gap: .45rem; }
+.mlw-sw { width: .8rem; height: .8rem; border-radius: 50%; display: inline-block; flex: none; }
+.mlw-sw--c1 { background: var(--mlw-line); }
+.mlw-sw--c0 { background: var(--mlw-c0); }
+.mlw-sw--miss { background: transparent; border: 2.5px solid var(--mlw-drag); }
+
+/* widget: decision-tree-entropy.css */
+/* decision-tree-entropy widget — theme-aware styles on the shared .mlw-* base classes */
+.mlw-dt-plot { cursor: ew-resize; }
+.mlw-dt-unit { font-size: .7em; opacity: .6; }
+
+.mlw-dt-metric { display:flex; gap:1rem; font-size:.8rem; margin:-.2rem 0 .6rem; }
+.mlw-dt-metric label { display:flex; align-items:center; gap:.3rem; cursor:pointer; }
+.mlw-dt-metric input { accent-color:var(--md-accent-fg-color); }
+
+.mlw-dt-slabel { display:block; font-size:.8rem; margin:.1rem 0 .6rem; }
+.mlw-dt-slider { width:100%; margin-top:.3rem; accent-color:var(--mlw-drag); cursor:pointer; }
+
+/* points, coloured by class; class 1 uses the theme accent, class 0 a neutral foreground */
+.mlw-dt-pt { stroke:var(--md-default-bg-color); stroke-width:1.5; }
+.mlw-dt-pt--c0 { fill:var(--md-default-fg-color--light); }
+.mlw-dt-pt--c1 { fill:var(--md-accent-fg-color); }
+.mlw-dt-pt--err { stroke:var(--mlw-drag); stroke-width:2.5; }
+
+/* child-region shading, tinted by the side's majority class */
+.mlw-dt-reg { opacity:.10; }
+.mlw-dt-reg--c0 { fill:var(--md-default-fg-color--light); }
+.mlw-dt-reg--c1 { fill:var(--md-accent-fg-color); }
+
+/* threshold + best-split guides */
+.mlw-dt-thresh { stroke:var(--mlw-drag); stroke-width:2.5; }
+.mlw-dt-thumb { fill:var(--mlw-drag); }
+.mlw-dt-bestline { stroke:var(--mlw-line); stroke-width:1.5; stroke-dasharray:6 5; opacity:.55; }
+
+/* information-gain staircase + candidate/current markers */
+.mlw-dt-step { fill:none; stroke:var(--md-default-fg-color--light); stroke-width:1.6; opacity:.7; stroke-linejoin:round; }
+.mlw-dt-cand { fill:var(--md-default-fg-color--light); }
+.mlw-dt-cand--best { fill:var(--mlw-line); stroke:var(--md-default-bg-color); stroke-width:1.5; }
+.mlw-dt-cur { fill:var(--mlw-drag); stroke:var(--md-default-bg-color); stroke-width:1.5; }
+.mlw-dt-bestlbl { fill:var(--mlw-line); font-size:12px; font-weight:700;
+                  font-family:var(--md-text-font-family,sans-serif); }
+.mlw-dt-tick { fill:var(--md-default-fg-color--light); font-size:12px;
+               font-family:var(--md-code-font-family,monospace); }
+
+/* legend swatches */
+.mlw-dt-legend { display:flex; flex-wrap:wrap; gap:.3rem 1rem; font-size:.72rem; opacity:.85; margin:.2rem 0 .7rem; }
+.mlw-dt-legend span { display:flex; align-items:center; gap:.35rem; }
+.mlw-sw { width:12px; height:12px; border-radius:50%; display:inline-block;
+          border:1.5px solid var(--md-default-bg-color); }
+.mlw-sw--c0 { background:var(--md-default-fg-color--light); }
+.mlw-sw--c1 { background:var(--md-accent-fg-color); }
+.mlw-sw--err { background:transparent; border:2.5px solid var(--mlw-drag); }
+
+/* implied 1-level tree */
+.mlw-dt-tree { border:1px solid var(--md-default-fg-color--lightest); border-radius:6px;
+               padding:.5rem; margin-bottom:.7rem; text-align:center; }
+.mlw-dt-node { font-size:.8rem; font-family:var(--md-code-font-family,monospace);
+               padding:.25rem .4rem; border:1px solid var(--md-default-fg-color--lightest);
+               border-radius:5px; display:inline-block; background:var(--md-code-bg-color); }
+.mlw-dt-leaves { display:flex; gap:.5rem; margin-top:.5rem; }
+.mlw-dt-leaf { flex:1 1 0; border:1px solid var(--md-default-fg-color--lightest); border-radius:5px;
+               padding:.4rem .3rem; font-size:.72rem; line-height:1.5;
+               background:var(--md-code-bg-color); }
+.mlw-dt-lp { opacity:.6; text-transform:uppercase; letter-spacing:.04em; font-size:.66rem; }
+.mlw-dt-pred--c0 { color:var(--md-default-fg-color); }
+.mlw-dt-pred--c1 { color:var(--md-accent-fg-color); }
+
+/* widget: derivative-tangent.css */
+/* derivative-tangent widget — theme-aware styles on the shared .mlw-* base.
+ * All colours come from Material CSS variables so light/dark both read; the one
+ * "overshoot" warning colour falls back to a mid orange-red that works on either. */
+
+.dt-dir {
+  font-size: .82rem;
+  color: var(--md-default-fg-color--light);
+  margin: .1rem 0 .5rem;
+}
+.dt-dir b { color: var(--md-accent-fg-color); }
+.dt-dir--min { color: var(--md-accent-fg-color); }
+
+.dt-lr {
+  display: block;
+  font-size: .85rem;
+  margin: .3rem 0 .4rem;
+}
+.dt-lr .dt-a { font-variant-numeric: tabular-nums; color: var(--md-accent-fg-color); }
+.dt-slider { width: 100%; margin: .35rem 0 .1rem; accent-color: var(--md-accent-fg-color); }
+
+.dt-slope { font-variant-numeric: tabular-nums; color: var(--md-accent-fg-color); }
+
+.dt-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem .9rem;
+  font-size: .74rem;
+  color: var(--md-default-fg-color--light);
+  margin: .55rem 0;
+}
+.dt-legend span { display: inline-flex; align-items: center; gap: .35rem; }
+.dt-key { width: 14px; height: 0; display: inline-block; }
+.dt-key-curve { border-top: 2.5px solid var(--md-default-fg-color--light); }
+.dt-key-tan { border-top: 2.5px solid var(--md-accent-fg-color); }
+.dt-key-min {
+  width: 10px; height: 10px; border: 0;
+  color: var(--md-accent-fg-color);
+  background:
+    linear-gradient(var(--md-default-fg-color--lighter), var(--md-default-fg-color--lighter)) center/2px 12px no-repeat;
+}
+
+/* ---- SVG elements ---- */
+.dt-axlab { font-size: 12px; fill: var(--md-default-fg-color--light); }
+
+.dt-curve {
+  fill: none;
+  stroke: var(--md-default-fg-color--light);
+  stroke-width: 2.4;
+  stroke-linejoin: round;
+}
+
+.dt-tangent {
+  fill: none;
+  stroke: var(--md-accent-fg-color);
+  stroke-width: 2.4;
+  stroke-linecap: round;
+}
+
+/* slope (rise/run) triangle */
+.dt-tri-leg {
+  stroke: var(--md-accent-fg-color);
+  stroke-width: 1.3;
+  stroke-dasharray: 4 3;
+  opacity: .8;
+}
+.dt-tri-lab {
+  font-size: 11px;
+  fill: var(--md-default-fg-color--light);
+  font-variant-numeric: tabular-nums;
+}
+
+/* minimum marker */
+.dt-min-line {
+  stroke: var(--md-default-fg-color--lighter);
+  stroke-width: 1.2;
+  stroke-dasharray: 5 4;
+}
+.dt-star { font-size: 16px; fill: var(--md-accent-fg-color); }
+
+/* gradient-descent path */
+.dt-gd-path {
+  fill: none;
+  stroke: var(--md-default-fg-color);
+  stroke-width: 1.6;
+  stroke-linejoin: round;
+  opacity: .55;
+}
+.dt-gd-path--bad { stroke: var(--mlw-warn, #e0603a); stroke-dasharray: 5 3; opacity: .85; }
+.dt-gd-dot { fill: var(--md-default-fg-color); stroke: var(--md-default-bg-color); stroke-width: 1; }
+
+/* draggable point */
+.dt-point {
+  fill: var(--md-default-bg-color);
+  stroke: var(--md-accent-fg-color);
+  stroke-width: 3;
+  cursor: grab;
+}
+
+/* widget: feature-scaling.css */
+/* feature-scaling widget — theme-aware styles on the shared .mlw-* base. All colours come
+ * from Material CSS variables so light/dark both work; the "diverging" red falls back to a
+ * mid orange-red that reads on either theme. */
+
+.fs-square { aspect-ratio: 1 / 1; }              /* keep the (w1,w2) map isotropic */
+
+.fs-toggle { display: block; font-size: .9rem; margin-bottom: .55rem; font-weight: 600; }
+
+.fs-lr { display: block; font-size: .85rem; margin-bottom: .55rem; }
+.fs-lr .fs-frac { font-variant-numeric: tabular-nums; color: var(--md-accent-fg-color); }
+.fs-slider { width: 100%; margin: .35rem 0 .1rem; accent-color: var(--md-accent-fg-color); }
+.fs-abs { display: block; font-size: .72rem; color: var(--md-default-fg-color--light); font-variant-numeric: tabular-nums; }
+
+.fs-legend {
+  display: flex; flex-wrap: wrap; gap: .5rem .9rem;
+  font-size: .74rem; color: var(--md-default-fg-color--light); margin: .55rem 0;
+}
+.fs-legend span { display: inline-flex; align-items: center; gap: .35rem; }
+.fs-key { width: 14px; height: 0; display: inline-block; }
+.fs-key-contour { border-top: 1.5px solid var(--md-default-fg-color--lightest); }
+.fs-key-path { border-top: 2.5px solid var(--md-accent-fg-color); }
+.fs-key-min {
+  width: 10px; height: 10px; border: 0;
+  background:
+    linear-gradient(var(--md-default-fg-color), var(--md-default-fg-color)) center/10px 1.5px no-repeat,
+    linear-gradient(var(--md-default-fg-color), var(--md-default-fg-color)) center/1.5px 10px no-repeat;
+}
+
+/* ---- SVG elements ---- */
+.fs-axlab { font-size: 12px; fill: var(--md-default-fg-color--light); }
+.fs-tick  { font-size: 11px; fill: var(--md-default-fg-color--light); font-variant-numeric: tabular-nums; }
+
+.fs-contour { fill: none; stroke: var(--md-default-fg-color--lightest); stroke-width: 1.2; }
+.fs-cross { stroke: var(--md-default-fg-color); stroke-width: 1.5; }
+.fs-star  { font-size: 16px; fill: var(--md-accent-fg-color); }
+
+.fs-path {
+  fill: none; stroke: var(--md-accent-fg-color); stroke-width: 2.2;
+  stroke-linejoin: round; stroke-linecap: round;
+}
+.fs-path--bad { stroke: var(--mlw-warn, #e0603a); stroke-dasharray: 5 3; }
+.fs-step { fill: var(--md-accent-fg-color); stroke: var(--md-default-bg-color); stroke-width: 1; }
+
+.fs-start {
+  fill: var(--md-default-bg-color); stroke: var(--md-accent-fg-color);
+  stroke-width: 2.5; cursor: grab;
+}
+
+/* status colouring */
+.fs-conv.fs-good { color: var(--md-accent-fg-color); }
+.fs-conv.fs-bad  { color: var(--mlw-warn, #e0603a); }
+
+/* widget: gaussian-anomaly.css */
+/* gaussian-anomaly — theme-aware styles on the shared .mlw-* base classes.
+ * Every color is a Material theme variable so light/dark both read correctly. */
+
+/* slider rows (mirrors the sigmoid widget's layout, self-contained here) */
+.mlw-ga-sliders { margin: .2rem 0 .7rem; }
+.mlw-ga-sliders label { display: block; font-size: .8rem; margin: .4rem 0; color: var(--md-default-fg-color--light); }
+.mlw-ga-sliders input[type=range] { width: 100%; margin-top: .2rem; accent-color: var(--md-accent-fg-color); cursor: pointer; }
+.mlw-ga-sliders .mlw-val { float: right; font-family: var(--md-code-font-family, monospace); color: var(--md-default-fg-color); font-variant-numeric: tabular-nums; }
+
+/* density layer */
+.mlw-ga-region  { fill: var(--md-accent-fg-color); opacity: .07; stroke: none; }
+.mlw-ga-contour { fill: none; stroke: var(--md-default-fg-color--lightest); stroke-width: 1; }
+.mlw-ga-bound   { fill: none; stroke: var(--md-accent-fg-color); stroke-width: 2.5; stroke-dasharray: 6 4; }
+.mlw-ga-mucross { stroke: var(--md-accent-fg-color); stroke-width: 2; opacity: .85; }
+
+/* points */
+.mlw-ga-pt        { fill: var(--md-default-fg-color--light); stroke: var(--md-default-bg-color); stroke-width: 1.5; cursor: grab; }
+.mlw-ga-pt--anom  { fill: #d1495b; }
+.mlw-ga-probe     { fill: var(--md-default-bg-color); stroke: #c026a3; stroke-width: 3; cursor: grab; }
+.mlw-ga-probe--anom { stroke: #d1495b; }
+
+.mlw-ga-tick { fill: var(--md-default-fg-color--light); font-size: 13px; font-family: var(--md-code-font-family, monospace); }
+
+/* legend */
+.mlw-ga-legend { display: flex; flex-wrap: wrap; gap: .4rem .9rem; font-size: .78rem; color: var(--md-default-fg-color--light); margin: .1rem 0 .5rem; }
+.mlw-ga-legend span { display: inline-flex; align-items: center; gap: .3rem; }
+.mlw-ga-sw { width: .7rem; height: .7rem; border-radius: 50%; display: inline-block; }
+.mlw-ga-sw--ok    { background: var(--md-default-fg-color--light); }
+.mlw-ga-sw--anom  { background: #d1495b; }
+.mlw-ga-sw--probe { background: var(--md-default-bg-color); border: 2px solid #c026a3; }
+
+/* probe verdict emphasis */
+.mlw-ga-pv--anom { color: #d1495b; font-weight: 700; }
+
+/* widget: gradient-descent.css */
+/* gradient-descent widget — theme-aware styles layered on the shared .mlw-* base.
+ * All colours come from Material CSS variables so light/dark both work; the one
+ * "warning" red used for a diverging path falls back to a mid orange-red that reads
+ * on either theme. */
+
+.gd-lr {
+  display: block;
+  font-size: .85rem;
+  margin-bottom: .5rem;
+}
+.gd-lr .gd-a { font-variant-numeric: tabular-nums; color: var(--md-accent-fg-color); }
+.gd-slider { width: 100%; margin: .35rem 0 .1rem; accent-color: var(--md-accent-fg-color); }
+.gd-crit {
+  display: block;
+  font-size: .72rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.gd-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem .9rem;
+  font-size: .74rem;
+  color: var(--md-default-fg-color--light);
+  margin: .55rem 0;
+}
+.gd-legend span { display: inline-flex; align-items: center; gap: .35rem; }
+.gd-key { width: 14px; height: 0; display: inline-block; }
+.gd-key-contour { border-top: 1.5px solid var(--md-default-fg-color--lightest); }
+.gd-key-path { border-top: 2.5px solid var(--md-accent-fg-color); }
+.gd-key-min {
+  width: 10px; height: 10px;
+  color: var(--md-accent-fg-color);
+  border: 0;
+  background:
+    linear-gradient(var(--md-default-fg-color), var(--md-default-fg-color)) center/10px 1.5px no-repeat,
+    linear-gradient(var(--md-default-fg-color), var(--md-default-fg-color)) center/1.5px 10px no-repeat;
+}
+
+/* ---- SVG elements ---- */
+.gd-axlab { font-size: 12px; fill: var(--md-default-fg-color--light); }
+.gd-tick { font-size: 11px; fill: var(--md-default-fg-color--light); }
+
+.gd-contour {
+  fill: none;
+  stroke: var(--md-default-fg-color--lightest);
+  stroke-width: 1.2;
+}
+.gd-cross { stroke: var(--md-default-fg-color); stroke-width: 1.5; }
+.gd-star { font-size: 16px; fill: var(--md-accent-fg-color); }
+
+.gd-path {
+  fill: none;
+  stroke: var(--md-accent-fg-color);
+  stroke-width: 2.2;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+.gd-path--bad { stroke: var(--mlw-warn, #e0603a); stroke-dasharray: 5 3; }
+.gd-step { fill: var(--md-accent-fg-color); stroke: var(--md-default-bg-color); stroke-width: 1; }
+
+.gd-start-dot {
+  fill: var(--md-default-bg-color);
+  stroke: var(--md-accent-fg-color);
+  stroke-width: 2.5;
+  cursor: grab;
+}
+
+/* status pill colouring */
+.gd-status.gd-good { color: var(--md-accent-fg-color); }
+.gd-status.gd-bad { color: var(--mlw-warn, #e0603a); }
+
+/* widget: kmeans.css */
+/* kmeans widget — extra classes layered on the shared .mlw-* base classes.
+ * Cluster hues are a fixed categorical palette (like the diagnosis badge colors in
+ * polynomial-overfit.css): chosen to read on BOTH light and dark themes. Everything
+ * else (grid, axes, text, halos) pulls from Material theme variables. */
+
+/* categorical cluster colors — used for point fills and centroid crosses */
+.mlw-km-c0 { color: #d1495b; }  /* red   */
+.mlw-km-c1 { color: #3d7dca; }  /* blue  */
+.mlw-km-c2 { color: #2e8b57; }  /* green */
+.mlw-km-c3 { color: #d98a1f; }  /* amber */
+.mlw-km-c4 { color: #8250df; }  /* purple*/
+
+/* points take their cluster color via currentColor; unassigned = neutral */
+.mlw-km-pt      { fill: currentColor; stroke: var(--md-default-bg-color); stroke-width: 1.5; }
+.mlw-km-pt--un  { color: var(--md-default-fg-color--lighter); }
+
+/* assignment segment: point -> its centroid (the thing distortion sums up) */
+.mlw-km-link { stroke: currentColor; stroke-width: 1; opacity: 0.45; }
+
+/* centroid cross: a bg halo disc + two thick diagonal strokes in the cluster color */
+.mlw-km-halo  { fill: var(--md-default-bg-color); stroke: var(--md-default-fg-color--lightest); stroke-width: 1; }
+.mlw-km-cross { stroke: currentColor; stroke-width: 4; stroke-linecap: round; }
+.mlw-km-cross--drag { stroke-width: 5; }
+.mlw-km-clabel { fill: currentColor; font-size: 12px; font-weight: 700;
+  font-family: var(--md-code-font-family, monospace); }
+
+/* side: next-step guidance + control layout */
+.mlw-km-next { margin: .1rem 0 .55rem; padding: .3rem .55rem; border-radius: 6px;
+  font-size: .82rem; font-weight: 600; background: var(--md-code-bg-color);
+  border: 1px solid var(--md-default-fg-color--lightest); }
+.mlw-km-next b { color: var(--md-accent-fg-color); }
+
+.mlw-km-krow { display: flex; align-items: center; gap: .5rem; margin: .3rem 0 .5rem;
+  font-size: .82rem; }
+.mlw-km-krow .mlw-km-kval { font-family: var(--md-code-font-family, monospace);
+  font-weight: 700; min-width: 1.2em; text-align: center; }
+.mlw-km-krow button { width: 1.8em; }
+
+/* the recommended next button glows in the accent color */
+.mlw-btns .mlw-km-hot { border-color: var(--md-accent-fg-color);
+  color: var(--md-accent-fg-color); font-weight: 700; }
+
+/* inertia (distortion J) mini-chart */
+.mlw-km-jwrap { margin: .5rem 0 .2rem; }
+.mlw-km-jhead { font-size: .78rem; color: var(--md-default-fg-color--light);
+  display: flex; justify-content: space-between; }
+.mlw-km-jhead b { color: var(--md-default-fg-color); font-variant-numeric: tabular-nums; }
+.mlw-km-jchart { width: 100%; height: auto; margin-top: .2rem;
+  background: var(--md-code-bg-color); border-radius: 6px; }
+.mlw-km-jline { fill: none; stroke: var(--md-accent-fg-color); stroke-width: 2;
+  stroke-linejoin: round; stroke-linecap: round; }
+.mlw-km-jdot  { fill: var(--md-accent-fg-color); stroke: var(--md-default-bg-color); stroke-width: 1.5; }
+.mlw-km-jbase { stroke: var(--md-default-fg-color--lightest); stroke-width: 1; }
+.mlw-km-jtick { fill: var(--md-default-fg-color--light); font-size: 10px;
+  font-family: var(--md-code-font-family, monospace); }
+.mlw-km-jempty { fill: var(--md-default-fg-color--light); font-size: 12px; }
+
+/* widget: matrix-transform.css */
+/* matrix-transform widget — theme-aware styles on the shared .mlw-* base.
+ * Column colours are load-bearing: blue (accent) = first column / î′,
+ * pink (--mlw-drag) = second column / ĵ′, gold (--mlw-line) = the image M·v.
+ * All colours come from Material CSS variables so light + dark both read. */
+
+/* --- matrix display in the side panel --- */
+.mt-eqrow { display:flex; align-items:center; gap:.55rem; margin-bottom:.7rem; }
+.mt-eqlab { font-family:var(--md-code-font-family,monospace); font-size:1.15rem; }
+.mt-mat {
+  display:grid; grid-template-columns:1.9rem 1.9rem; row-gap:.15rem;
+  padding:.15rem .5rem; border-left:2px solid var(--md-default-fg-color--light);
+  border-right:2px solid var(--md-default-fg-color--light); border-radius:3px;
+  font-family:var(--md-code-font-family,monospace); font-size:1.05rem; text-align:center;
+}
+.mt-a, .mt-c { color:var(--md-accent-fg-color); font-weight:700; }
+.mt-b, .mt-d { color:var(--mlw-drag); font-weight:700; }
+
+/* colour keys reused in stats + slider labels */
+.mt-clr-i { color:var(--md-accent-fg-color); }
+.mt-clr-j { color:var(--mlw-drag); }
+.mt-clr-v { fill:var(--md-default-fg-color--light); }
+.mt-clr-mv { fill:var(--mlw-line); }
+
+/* --- sliders (self-contained; not relying on cost-surface.css) --- */
+.mt-slider { display:flex; align-items:center; gap:.55rem; font-size:.82rem; margin:.28rem 0;
+             font-family:var(--md-code-font-family,monospace); }
+.mt-slider input[type=range] { flex:1; min-width:0; }
+.mt-slider .k { width:1rem; font-weight:700; font-style:italic; text-align:center; }
+.mt-slider .v { width:2.6rem; text-align:right; color:var(--md-default-fg-color); }
+.mt-sl-i { accent-color:var(--md-accent-fg-color); }
+.mt-sl-j { accent-color:var(--mlw-drag); }
+.mt-presets { margin-top:.55rem; }
+
+/* --- SVG: transformed grid + unit-square image --- */
+.mt-tgrid { stroke:var(--md-accent-fg-color); stroke-width:1; stroke-opacity:.32; }
+.mt-tgrid--0 { stroke-opacity:.6; stroke-width:1.4; }   /* image of the two axes */
+.mt-square { fill:var(--md-accent-fg-color); fill-opacity:.12;
+             stroke:var(--md-accent-fg-color); stroke-opacity:.35; stroke-width:1; }
+.mt-square--flip { fill:var(--mlw-drag); fill-opacity:.14;
+                   stroke:var(--mlw-drag); stroke-opacity:.4; }
+
+.mt-tick { fill:var(--md-default-fg-color--light); font-size:10px;
+           font-family:var(--md-code-font-family,monospace); opacity:.75; }
+.mt-lbl { font-size:14px; font-weight:700; font-family:var(--md-code-font-family,monospace); }
+
+/* --- vectors (arrow shaft + filled head share a class stem) --- */
+.mt-o { stroke:var(--md-default-fg-color--light); stroke-width:1.6; stroke-dasharray:4 3; opacity:.7; }
+.mt-o-head { fill:var(--md-default-fg-color--light); opacity:.7; }
+
+.mt-i { stroke:var(--md-accent-fg-color); stroke-width:3; stroke-linecap:round; }
+.mt-i-head { fill:var(--md-accent-fg-color); }
+.mt-j { stroke:var(--mlw-drag); stroke-width:3; stroke-linecap:round; }
+.mt-j-head { fill:var(--mlw-drag); }
+
+.mt-v { stroke:var(--md-default-fg-color--light); stroke-width:2; stroke-linecap:round; }
+.mt-v-head { fill:var(--md-default-fg-color--light); }
+.mt-mv { stroke:var(--mlw-line); stroke-width:3; stroke-linecap:round; }
+.mt-mv-head { fill:var(--mlw-line); }
+
+.mt-vgrab { cursor:grab; }
+.mt-plot { touch-action:none; }
+
+/* widget: neural-net-forward.css */
+/* neural-net-forward widget — theme-aware styles on the shared .mlw-* base classes.
+ * All colour comes from Material CSS variables (+ the shared --mlw-line gold), so the
+ * diagram reads correctly in both light and dark themes. */
+
+/* activation-function selector */
+.mlw-nn-acts { font-size:.8rem; margin:.2rem 0 .5rem; }
+.mlw-nn-acts .mlw-btns { margin-top:.3rem; }
+.mlw-nn-act--on { background:var(--md-accent-fg-color); color:var(--md-default-bg-color);
+                  border-color:var(--md-accent-fg-color); }
+
+/* sliders (self-contained so the widget doesn't depend on a sibling widget's CSS) */
+.mlw-sliders { margin:.2rem 0 .7rem; }
+.mlw-sliders label { display:block; font-size:.8rem; margin:.45rem 0; }
+.mlw-sliders input[type=range] { width:100%; margin-top:.25rem; accent-color:var(--md-accent-fg-color); cursor:pointer; }
+.mlw-sliders .mlw-val { float:right; font-family:var(--md-code-font-family,monospace); color:var(--mlw-line); }
+.mlw-nn-wsel .mlw-wsel-lab { color:var(--md-accent-fg-color); font-weight:600; }
+
+/* connections: width encodes |weight|, style encodes sign */
+.mlw-nn-edge      { stroke:var(--md-accent-fg-color); opacity:.55; stroke-linecap:round; }
+.mlw-nn-edge--neg { stroke:var(--md-default-fg-color--light); stroke-dasharray:5 4; opacity:.6; }
+.mlw-nn-edge--sel { stroke:var(--mlw-line); opacity:1; }
+.mlw-nn-wlab      { fill:var(--mlw-line); font-size:12px; font-weight:600;
+                    font-family:var(--md-code-font-family,monospace);
+                    paint-order:stroke; stroke:var(--md-default-bg-color); stroke-width:3px; }
+
+/* nodes: base shell + accent heat fill whose opacity = activation strength */
+.mlw-nn-node      { fill:var(--md-code-bg-color); stroke:var(--md-default-fg-color--lightest); stroke-width:2; cursor:pointer; }
+.mlw-nn-node--sel { stroke:var(--mlw-line); stroke-width:3.5; }
+.mlw-nn-fill      { stroke:none; fill:var(--md-accent-fg-color); pointer-events:none; }
+.mlw-nn-val       { fill:var(--md-default-fg-color); font-size:14px; font-weight:600;
+                    font-family:var(--md-code-font-family,monospace); pointer-events:none;
+                    paint-order:stroke; stroke:var(--md-default-bg-color); stroke-width:3px; }
+.mlw-nn-tag       { fill:var(--md-default-fg-color--light); font-size:12px;
+                    font-family:var(--md-code-font-family,monospace); pointer-events:none; }
+.mlw-nn-head      { fill:var(--md-default-fg-color--light); font-size:12px; font-weight:600;
+                    letter-spacing:.03em; text-transform:uppercase; }
+
+/* legend */
+.mlw-nn-legend { display:flex; flex-direction:column; gap:.3rem; font-size:.74rem;
+                 opacity:.85; margin:.2rem 0 .6rem; }
+.mlw-nn-legend span { display:flex; align-items:center; gap:.4rem; }
+.mlw-sw { width:.85rem; height:.85rem; border-radius:50%; display:inline-block; flex:none; }
+.mlw-sw--fill { background:var(--md-accent-fg-color); }
+.mlw-sw--pos  { width:1.1rem; height:0; border-top:3px solid var(--md-accent-fg-color); border-radius:0; }
+.mlw-sw--neg  { width:1.1rem; height:0; border-top:2px dashed var(--md-default-fg-color--light); border-radius:0; }
+
+/* widget: pca.css */
+/* pca widget — theme-aware styles on top of the shared .mlw-* base classes.
+ * All colors come from Material variables so light/dark both read correctly. */
+
+.mlw-cap {
+  font-size: 0.82rem;
+  color: var(--md-default-fg-color--light);
+  margin: 0 0 0.6rem;
+}
+
+/* the rotatable candidate axis (steered by the user) */
+.mlw-pca-axis {
+  stroke: var(--md-accent-fg-color);
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+/* the true first principal component (variance-maximizing direction) */
+.mlw-pca-pc {
+  stroke: var(--md-default-fg-color--light);
+  stroke-width: 2;
+  stroke-dasharray: 7 5;
+  opacity: 0.75;
+}
+/* perpendicular projection drops from each point to the axis */
+.mlw-pca-proj {
+  stroke: var(--md-default-fg-color--lighter);
+  stroke-width: 1.2;
+  opacity: 0.7;
+}
+/* the projected image of each point, sitting on the axis */
+.mlw-pca-projdot {
+  fill: var(--md-accent-fg-color);
+  stroke: var(--md-default-bg-color);
+  stroke-width: 1;
+}
+/* the cloud's mean (pivot of the axis) */
+.mlw-pca-mean {
+  fill: var(--md-default-bg-color);
+  stroke: var(--md-default-fg-color);
+  stroke-width: 2;
+}
+
+/* captured-variance bar */
+.mlw-varbar {
+  position: relative;
+  height: 12px;
+  margin: 0.5rem 0 0.35rem;
+  border-radius: 6px;
+  background: var(--md-code-bg-color);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  overflow: visible;
+}
+.mlw-varbar-fill {
+  height: 100%;
+  border-radius: 6px 0 0 6px;
+  background: var(--md-accent-fg-color);
+  transition: none;                 /* pedagogy: snap to true state, no animation */
+}
+.mlw-varbar-pc {                    /* tick marking the PC1 ceiling */
+  position: absolute;
+  top: -3px;
+  width: 2px;
+  height: 18px;
+  background: var(--md-default-fg-color--light);
+  transform: translateX(-1px);
+}
+.mlw-varpct {
+  font-size: 0.8rem;
+  color: var(--md-default-fg-color--light);
+  margin-bottom: 0.6rem;
+}
+.mlw-varpct .mlw-pct,
+.mlw-varpct .mlw-pcpct { font-variant-numeric: tabular-nums; color: var(--md-default-fg-color); }
+
+/* slider row */
+.mlw-pca-ctrl { margin: 0.3rem 0 0.6rem; }
+.mlw-pca-ctrl label {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--md-default-fg-color--light);
+}
+.mlw-pca-ctrl label b {
+  float: right;
+  color: var(--md-default-fg-color);
+  font-variant-numeric: tabular-nums;
+}
+.mlw-pca-ctrl input[type="range"] {
+  width: 100%;
+  margin-top: 0.3rem;
+  accent-color: var(--md-accent-fg-color);
+  cursor: ew-resize;
+}
+
+/* legend */
+.mlw-legend {
+  font-size: 0.76rem;
+  color: var(--md-default-fg-color--light);
+  margin: 0.5rem 0 0.3rem;
+}
+.mlw-key {
+  display: inline-block;
+  width: 16px;
+  height: 0;
+  vertical-align: middle;
+  margin-right: 3px;
+}
+.mlw-key--axis { border-top: 3px solid var(--md-accent-fg-color); }
+.mlw-key--pc { border-top: 2px dashed var(--md-default-fg-color--light); }
+.mlw-key--proj { border-top: 1.5px solid var(--md-default-fg-color--lighter); }
+
+/* widget: polynomial-overfit.css */
+/* polynomial-overfit — extra classes (base .mlw-* live in the shared harness stylesheet).
+ * All colors come from Material theme variables so light/dark both read correctly. */
+
+.mlw-curve {
+  fill: none;
+  stroke: var(--md-accent-fg-color);
+  stroke-width: 3;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.mlw-true {
+  fill: none;
+  stroke: var(--md-default-fg-color--light);
+  stroke-width: 2;
+  stroke-dasharray: 6 5;
+  opacity: 0.7;
+}
+
+.mlw-testdot {
+  fill: var(--md-default-bg-color);
+  stroke: var(--md-default-fg-color--light);
+  stroke-width: 2;
+}
+
+.mlw-cursor {
+  stroke: var(--md-default-fg-color--lighter);
+  stroke-width: 1;
+  stroke-dasharray: 3 3;
+}
+
+.mlw-curdot {
+  fill: var(--md-accent-fg-color);
+  stroke: var(--md-default-bg-color);
+  stroke-width: 2;
+}
+
+.mlw-curtxt {
+  fill: var(--md-default-fg-color);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* slider rows */
+.mlw-ctrl {
+  margin: 0.5rem 0;
+}
+.mlw-ctrl label {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--md-default-fg-color--light);
+  margin-bottom: 0.15rem;
+}
+.mlw-ctrl label b {
+  color: var(--md-default-fg-color);
+  font-variant-numeric: tabular-nums;
+}
+.mlw-ctrl input[type="range"] {
+  width: 100%;
+  accent-color: var(--md-accent-fg-color);
+}
+
+/* diagnosis badge */
+.mlw-diag {
+  border-radius: 6px;
+  padding: 0.35rem 0.6rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  background: var(--md-code-bg-color);
+}
+.mlw-diag--bias .mlw-diaglabel { color: #d98a1f; }   /* amber = high bias */
+.mlw-diag--var .mlw-diaglabel  { color: #d1495b; }   /* red = high variance */
+.mlw-diag--good .mlw-diaglabel { color: #2e8b57; }   /* green = just right */
+
+/* widget: precision-recall.css */
+/* precision-recall widget — theme-aware; reuses the shared .mlw-* base classes.
+ * Gold (--mlw-line) = positive class, blue (--mlw-c0) = negative, red ring (--mlw-drag) = misclassified. */
+.ml-widget { --mlw-c0: #4c8dff; }
+
+/* panel / axis labels */
+.mlw-panel-lab { fill: var(--md-default-fg-color--light); font-size: 12px; font-weight: 600; }
+.mlw-axlabel { fill: var(--md-default-fg-color--light); font-size: 12px; }
+.mlw-reglabel { fill: var(--md-default-fg-color--light); font-size: 12px; }
+.mlw-declabel { fill: var(--md-accent-fg-color); font-size: 12px; font-weight: 600; }
+
+/* score-strip dots */
+.mlw-pr-dot { stroke: var(--md-default-bg-color); stroke-width: 1.5; }
+.mlw-pr-dot--pos { fill: var(--mlw-line); }
+.mlw-pr-dot--neg { fill: var(--mlw-c0); }
+.mlw-pr-dot--miss { stroke: var(--mlw-drag); stroke-width: 3; }
+
+/* predict-1 shaded region + threshold handle */
+.mlw-pr-pos-reg { fill: var(--md-accent-fg-color); opacity: .09; }
+.mlw-pr-thresh { stroke: var(--md-accent-fg-color); stroke-width: 2; }
+.mlw-pr-thresh--drag { stroke-width: 3; }
+.mlw-pr-thumb { fill: var(--md-accent-fg-color); stroke: var(--md-default-bg-color); stroke-width: 1.5; cursor: ew-resize; }
+
+/* PR curve */
+.mlw-pr-curve { fill: none; stroke: var(--mlw-line); stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; }
+.mlw-pr-base { stroke: var(--md-default-fg-color--light); stroke-width: 1.3; stroke-dasharray: 5 4; opacity: .7; }
+.mlw-pr-guide { stroke: var(--md-accent-fg-color); stroke-width: 1.2; stroke-dasharray: 3 3; opacity: .8; }
+.mlw-pr-here { fill: var(--md-accent-fg-color); stroke: var(--md-default-bg-color); stroke-width: 2; }
+
+/* confusion matrix (3-col grid: corner + two actual columns) */
+.mlw-cm { display: grid; grid-template-columns: auto 1fr 1fr; gap: 3px; margin-bottom: .7rem;
+          font-family: var(--md-code-font-family, monospace); }
+.mlw-cm-corn { }
+.mlw-cm-top, .mlw-cm-lab { display: flex; align-items: center; justify-content: center;
+          font-size: .72rem; color: var(--md-default-fg-color--light); text-align: center; }
+.mlw-cm-lab { writing-mode: initial; padding: 0 .25rem; }
+.mlw-cm-cell { display: flex; flex-direction: column; align-items: center; justify-content: center;
+          padding: .3rem .1rem; border-radius: 5px; background: var(--md-code-bg-color); }
+.mlw-cm-cell small { font-size: .62rem; opacity: .7; letter-spacing: .04em; }
+.mlw-cm-cell b { font-size: 1.05rem; line-height: 1.1; }
+.mlw-cm-tp { box-shadow: inset 0 0 0 2px var(--mlw-line); }
+.mlw-cm-tn { box-shadow: inset 0 0 0 2px var(--mlw-c0); }
+.mlw-cm-fp, .mlw-cm-fn { box-shadow: inset 0 0 0 2px var(--mlw-drag); }
+
+/* sliders (same pattern as sibling widgets) */
+.mlw-sliders { margin: .2rem 0 .6rem; }
+.mlw-sliders label { display: block; font-size: .8rem; margin: .45rem 0; }
+.mlw-sliders input[type=range] { width: 100%; margin-top: .25rem; accent-color: var(--md-accent-fg-color); cursor: pointer; }
+.mlw-sliders .mlw-val { float: right; font-family: var(--md-code-font-family, monospace); color: var(--mlw-line); }
+
+/* legend */
+.mlw-pr-legend { display: flex; flex-wrap: wrap; gap: .3rem .8rem; font-size: .75rem; opacity: .9; margin-bottom: .6rem; }
+.mlw-pr-legend span { display: flex; align-items: center; gap: .4rem; }
+.mlw-sw { width: .8rem; height: .8rem; border-radius: 50%; display: inline-block; flex: none; }
+.mlw-sw--pos { background: var(--mlw-line); }
+.mlw-sw--neg { background: var(--mlw-c0); }
+.mlw-sw--miss { background: transparent; border: 2.5px solid var(--mlw-drag); }
+
+/* widget: rl-gridworld.css */
+/* rl-gridworld widget — theme-aware styles layered on the shared .mlw-* base classes.
+ * All colours come from Material CSS variables (light + dark both work); the one
+ * "cost of exploring" warning tint falls back to a mid orange-red that reads on either. */
+
+/* ---- controls ---- */
+.rlg-ctl { display: block; font-size: .85rem; margin-bottom: .5rem; }
+.rlg-ctl label { display: block; }
+.rlg-ctl b { font-variant-numeric: tabular-nums; color: var(--md-accent-fg-color); }
+.rlg-ctl input[type="range"] { width: 100%; margin: .3rem 0 .05rem; accent-color: var(--md-accent-fg-color); }
+.rlg-sub { display: block; font-size: .7rem; color: var(--md-default-fg-color--light); }
+
+/* ---- legend ---- */
+.rlg-legend {
+  display: flex; flex-wrap: wrap; gap: .45rem .9rem;
+  font-size: .73rem; color: var(--md-default-fg-color--light); margin: .55rem 0;
+}
+.rlg-legend span { display: inline-flex; align-items: center; gap: .35rem; }
+.rlg-key { width: 13px; height: 0; display: inline-block; }
+.rlg-key-v { width: 11px; height: 11px; border: 1.5px solid var(--md-default-fg-color--lighter);
+  border-radius: 3px; background: var(--md-code-bg-color); }
+.rlg-key-pol { border-top: 3px solid var(--md-accent-fg-color); }
+.rlg-key-q { border-top: 2px dotted var(--md-default-fg-color--light); }
+
+/* ---- SVG: state cells ---- */
+.rlg-cell { fill: var(--md-code-bg-color); stroke: var(--md-default-fg-color--lightest); stroke-width: 1.2; }
+.rlg-cell--term { stroke: var(--md-accent-fg-color); stroke-width: 1.6; cursor: ns-resize; }
+.rlg-fill { fill: var(--md-accent-fg-color); opacity: .18; }
+
+.rlg-slab { font-size: 13px; font-weight: 700; fill: var(--md-default-fg-color);
+  font-family: var(--md-code-font-family, monospace); }
+.rlg-sub-svg { font-size: 10px; fill: var(--md-default-fg-color--light); }
+.rlg-drag { font-size: 10px; fill: var(--md-accent-fg-color); font-weight: 700; }
+
+.rlg-rew-num { font-size: 30px; font-weight: 800; fill: var(--md-accent-fg-color);
+  font-variant-numeric: tabular-nums; }
+.rlg-v { font-size: 27px; font-weight: 800; fill: var(--md-default-fg-color);
+  font-variant-numeric: tabular-nums; }
+.rlg-parrow { font-size: 26px; fill: var(--md-accent-fg-color); font-weight: 700; }
+
+.rlg-q { font-size: 12px; fill: var(--md-default-fg-color--light);
+  font-variant-numeric: tabular-nums; font-family: var(--md-code-font-family, monospace); }
+.rlg-q--best { fill: var(--md-accent-fg-color); font-weight: 800; }
+
+/* ---- SVG: greedy-run track ---- */
+.rlg-tracklab { font-size: 11px; fill: var(--md-default-fg-color--light); }
+.rlg-trackbase { stroke: var(--md-default-fg-color--lightest); stroke-width: 1.5; }
+.rlg-trackpath { stroke: var(--md-accent-fg-color); stroke-width: 3; stroke-linecap: round; }
+.rlg-trackhead { fill: var(--md-accent-fg-color); }
+.rlg-tdot { fill: var(--md-default-fg-color--lighter); stroke: var(--md-default-bg-color); stroke-width: 1.5; }
+.rlg-tdot--term { fill: var(--md-accent-fg-color); }
+.rlg-tstart { fill: none; stroke: var(--md-accent-fg-color); stroke-width: 2; }
+.rlg-tsub { font-size: 10px; fill: var(--md-default-fg-color--light);
+  font-family: var(--md-code-font-family, monospace); }
+
+/* ---- stats warn tint ---- */
+.rlg-gap.rlg-warnval { color: var(--mlw-warn, #e0603a); font-weight: 700; }
+
+/* widget: sigmoid.css */
+/* sigmoid widget — theme-aware styles layered on the shared .mlw-* base classes */
+.mlw-eq sup { font-size:.7em; }
+.mlw-sliders { margin:.2rem 0 .7rem; }
+.mlw-sliders label { display:block; font-size:.8rem; margin:.45rem 0; }
+.mlw-sliders input[type=range] { width:100%; margin-top:.25rem; accent-color:var(--md-accent-fg-color); cursor:pointer; }
+.mlw-sliders .mlw-val { float:right; font-family:var(--md-code-font-family,monospace); color:var(--mlw-line); }
+
+.mlw-sig-curve { fill:none; stroke:var(--mlw-line); stroke-width:3; stroke-linejoin:round; stroke-linecap:round; }
+.mlw-sig-thresh { stroke:var(--md-default-fg-color--light); stroke-width:1.5; stroke-dasharray:5 4; opacity:.7; }
+.mlw-sig-dec { stroke:var(--md-accent-fg-color); stroke-width:1.5; stroke-dasharray:4 3; opacity:.85; }
+.mlw-sig-dec-dot { fill:var(--md-accent-fg-color); stroke:var(--md-default-bg-color); stroke-width:1.5; }
+.mlw-sig-region { fill:var(--md-accent-fg-color); opacity:.09; }
+.mlw-sig-drop { stroke:var(--mlw-drag); stroke-width:1.3; stroke-dasharray:3 3; opacity:.85; }
+.mlw-sig-q { fill:var(--mlw-drag); stroke:var(--md-default-bg-color); stroke-width:1.5; cursor:ew-resize; }
+.mlw-sig-q--drag { r:9; }
+
+.mlw-tick { fill:var(--md-default-fg-color--light); font-size:12px; font-family:var(--md-code-font-family,monospace); }
+.mlw-declabel { fill:var(--md-accent-fg-color); font-size:12px; font-weight:600; }
+.mlw-reglabel { fill:var(--md-default-fg-color--light); font-size:12px; }
+
+/* widget: softmax.css */
+/* softmax widget — theme-aware styles layered on the shared .mlw-* base classes */
+.mlw-eq sub { font-size:.7em; }
+.mlw-eq sup { font-size:.7em; }
+
+.mlw-sm-title { fill:var(--md-default-fg-color--light); font-size:13px; font-weight:600; }
+
+/* left group: raw logit bars — neutral, draggable */
+.mlw-sm-logit { fill:var(--md-default-fg-color--lightest); stroke:var(--md-default-fg-color--light);
+  stroke-width:1; cursor:ns-resize; }
+.mlw-sm-logit--sel { fill:var(--mlw-drag,var(--md-accent-fg-color)); stroke:var(--md-accent-fg-color); }
+.mlw-sm-handle { stroke:var(--md-default-fg-color); stroke-width:2.5; stroke-linecap:round; pointer-events:none; }
+
+/* right group: computed softmax probabilities — accent, the star of the show */
+.mlw-sm-prob { fill:var(--md-accent-fg-color); opacity:.42; pointer-events:none; }
+.mlw-sm-prob--max { opacity:.92; }
+
+.mlw-sm-vlab { fill:var(--md-default-fg-color); font-size:12px; font-weight:600;
+  font-family:var(--md-code-font-family,monospace); pointer-events:none; }
+.mlw-sm-clab { fill:var(--md-default-fg-color--light); font-size:13px; pointer-events:none; }
+.mlw-sm-clab--max { fill:var(--md-accent-fg-color); font-weight:700; }
+.mlw-sm-predict { fill:var(--md-accent-fg-color); font-size:11px; font-weight:600;
+  letter-spacing:.05em; text-transform:uppercase; pointer-events:none; }
